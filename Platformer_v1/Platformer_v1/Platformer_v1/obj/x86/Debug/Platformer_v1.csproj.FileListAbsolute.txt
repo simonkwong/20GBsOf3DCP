@@ -1,0 +1,6 @@
+c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Platformer_v1.exe
+c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Platformer_v1.pdb
+c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Platformer_v1.csprojResolveAssemblyReference.cache
+c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Platformer_v1.exe
+c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Platformer_v1.pdb
