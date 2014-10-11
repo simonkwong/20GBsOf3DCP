@@ -1,2 +1,0 @@
-Content\CataSong.xnb
-Content\CataSong.wma
