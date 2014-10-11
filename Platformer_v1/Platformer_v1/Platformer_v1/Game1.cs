@@ -12,6 +12,8 @@ using Microsoft.Xna.Framework.Media;
 namespace Platformer_v1
 {
     /// <summary>
+    /// GAME OVER MESSAGE:
+    /// "SSSShhhh no tears, only dreams now" 
     /// This is the main type for your game
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
@@ -19,6 +21,7 @@ namespace Platformer_v1
         GraphicsDeviceManager graphics;
         public SpriteBatch spriteBatch;
         World mGameWorld;
+        Song song;
         public int Width { get; set; }
         public int Height { get; set; }
 
@@ -55,6 +58,8 @@ namespace Platformer_v1
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             mGameWorld = new World(this, Width, Height);
+            song = Content.Load<Song>("CataSong");
+            MediaPlayer.Play(song);
 
 
             // TODO: use this.Content to load your game content here
