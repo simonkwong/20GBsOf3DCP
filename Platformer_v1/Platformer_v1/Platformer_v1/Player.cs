@@ -16,22 +16,28 @@ namespace Platformer_v1
         Vector2 playerPosition;
         float playerRotation;
         Vector2 playerVelocity;
+        String playerName;
 
 
-        public Player()
+        public Player(String playerName, Vector2 iniPos)
         {
-            
+            this.playerName = playerName;
+            this.playerPosition = iniPos;
+            this.playerTextureOrigin = Vector2.Zero;
+            this.playerVelocity = Vector2.Zero;
+            this.playerRotation = 0;
         }
 
 
         public void LoadContent(ContentManager content)
         {
-
+            playerTexture = content.Load<Texture2D>("spriteArt/Pacheco");
         }
 
         public void Update(GameTime gameTime)
         {
-
+            // player controls go in here
+            // and animation stuff
         }
 
         public Texture2D getTexture()
@@ -56,11 +62,9 @@ namespace Platformer_v1
 
         public Vector2 getVelocity()
         {
+
             return playerVelocity;
         }
-
-
-
 
     }
 }
