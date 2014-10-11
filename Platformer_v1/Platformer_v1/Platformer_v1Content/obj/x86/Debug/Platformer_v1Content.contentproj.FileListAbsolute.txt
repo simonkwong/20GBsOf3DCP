@@ -1,2 +1,0 @@
-c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1Content\obj\x86\Debug\Platformer_v1Content.contentprojResolveAssemblyReference.cache
-C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1Content\obj\x86\Debug\Platformer_v1Content.contentprojResolveAssemblyReference.cache
