@@ -8,10 +8,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1Content\</RootDirectory>
-      <LoggerRootDirectory>c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\</LoggerRootDirectory>
-      <IntermediateDirectory>c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

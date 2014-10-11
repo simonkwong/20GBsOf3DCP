@@ -4,3 +4,9 @@ c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v
 c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Platformer_v1.exe
 c:\users\jordan\documents\visual studio 2012\Projects\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Platformer_v1.pdb
+C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Platformer_v1.exe
+C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Platformer_v1.pdb
+C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Platformer_v1.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Platformer_v1.exe
+C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\Platformer_v1.pdb

@@ -15,7 +15,7 @@ namespace Platformer_v1
         public int WorldHeight { get; set; }
         Camera camera;
 
-        public List<WorldObject> worldObjects;
+        public List<I_WorldObject> worldObjects;
 
         public World(Game1 containingGame, int w, int h)
         {
@@ -23,7 +23,7 @@ namespace Platformer_v1
             WorldWidth = w;
             WorldHeight = h;
             camera = new Camera(containingGame.spriteBatch);
-            worldObjects = new List<WorldObject>();        
+            worldObjects = new List<I_WorldObject>();        
         }
 
         public void LoadContent(ContentManager content)
@@ -31,14 +31,14 @@ namespace Platformer_v1
             // load in XML file and add everything
             // into the worldObject list
 
-            
+
         }
 
         public void Update(GameTime gameTime)
         {
 
             // update worldObject's logic
-            foreach (WorldObject x in worldObjects)
+            foreach (I_WorldObject x in worldObjects)
             {
 
             }
@@ -47,7 +47,7 @@ namespace Platformer_v1
         public void Draw(SpriteBatch sb)
         {
             // camera draws every worldObject
-            foreach (WorldObject x in worldObjects)
+            foreach (I_WorldObject x in worldObjects)
             {
                 camera.Draw(x);
             }
