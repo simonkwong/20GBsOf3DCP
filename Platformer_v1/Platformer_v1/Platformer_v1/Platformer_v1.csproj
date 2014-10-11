@@ -81,7 +81,6 @@
     <Compile Include="WorldObject.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CataSong.mp3" />
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
