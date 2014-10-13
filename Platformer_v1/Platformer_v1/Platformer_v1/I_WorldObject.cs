@@ -24,6 +24,32 @@ namespace Platformer_v1
 
         Vector2 getVelocity();
 
+        BoundingBox getBoundingBox();
+
+        // determines if the phsyics engine will update it
+        bool hasPhysics();
+
+
+        // if false will be deleted from the worldObject list!
+        bool isAlive();
+
+
+        // tests if object is rigid aka can I stand on / walk through this
+        bool isRigid();
+
+
+        // alert a world object that a collision has occured with the given object
+        void alertCollision(I_WorldObject collidedObject);
+
+
+
+
+        // also mainly for debugging
+        Color getColor();
+
+        // for debugging
+        String getName();
+
     }
 
 }

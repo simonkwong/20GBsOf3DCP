@@ -29,7 +29,7 @@ namespace Platformer_v1
             Vector2 objPosInCameraSpace = obj.getPosition();
             Vector2 objPosInScreenSpace = objPosInCameraSpace;
 
-            mSpriteBatch.Draw(obj.getTexture(), objPosInScreenSpace, null, Color.White, obj.getRotation(), obj.getTextureOrigin(), 1.0f, SpriteEffects.None, 0);
+            mSpriteBatch.Draw(obj.getTexture(), objPosInScreenSpace, null, obj.getColor(), obj.getRotation(), obj.getTextureOrigin(), 1.0f, SpriteEffects.None, 0);
 
         }
 

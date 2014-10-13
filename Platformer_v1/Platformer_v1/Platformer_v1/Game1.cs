@@ -56,6 +56,8 @@ namespace Platformer_v1
             spriteBatch = new SpriteBatch(GraphicsDevice);
             mGameWorld = new World(this, Width, Height);
 
+            mGameWorld.LoadContent(Content);
+
 
             // TODO: use this.Content to load your game content here
         }

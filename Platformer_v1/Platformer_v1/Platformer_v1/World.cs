@@ -29,10 +29,13 @@ namespace Platformer_v1
             // and add everything to the worldObjects list
 
             
+            
             // For now hardcoding in some stuff for testing reasons
             Player p = new Player("Pacheco", new Vector2(0,0));
+            TestBlock b = new TestBlock(new Vector2(200, 200));
 
             worldObjects.Add(p);
+            worldObjects.Add(b);
 
         }
 
@@ -46,10 +49,64 @@ namespace Platformer_v1
 
         public void Update(GameTime gameTime)
         {
+            List<I_WorldObject> toDelete = new List<I_WorldObject>();
+
             // update worldObject's logic
             foreach (I_WorldObject x in worldObjects)
             {
                 x.Update(gameTime);
+
+                checkCollisions(x);
+
+                checkForAliveness(x, toDelete);
+            }
+
+
+            // delete dead objects from the list populated by 
+            // checkForAliveness
+            foreach (I_WorldObject x in toDelete)
+            {
+                worldObjects.Remove(x);
+            }
+        }
+
+
+        public void checkCollisions(I_WorldObject x)
+        {
+            // collision check loop against every other I_worldObject
+            // this is probally not the most efficent way but yolo
+
+
+            // if a collision occurs it alerts the object that it has
+            // and what it collided with
+
+            // its up to the object to decide what it will do about that
+
+            foreach (I_WorldObject y in worldObjects)
+            {
+                if (Object.ReferenceEquals(x, y))
+                {
+                    // do not compare to itself!
+                    continue;
+                }
+
+                if (x.getBoundingBox().Intersects(y.getBoundingBox()))
+                {
+                    x.alertCollision(y);
+
+                }
+            }
+        }
+
+
+        public void checkForAliveness(I_WorldObject x, List<I_WorldObject> toDelete)
+        {
+            // checks if the worldObject should be removed from the
+            // worldObject list
+
+            if (!x.isAlive())
+            {
+                toDelete.Add(x);
             }
         }
 
