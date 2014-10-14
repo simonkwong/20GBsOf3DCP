@@ -30,13 +30,17 @@ namespace Platformer_v1
 
             
             
-            // For now hardcoding in some stuff for testing reasons
-            Player p = new Player("Pacheco", new Vector2(0,0));
-            TestBlock b = new TestBlock(new Vector2(200, 200));
+            // Changing PlayerName to Adam, Jordan, Pacheco, or Simon draws that texture
 
+            Player p = new Player("Jordan", WorldData.GetInstance().playerInitialPosition);
+
+            foreach (Vector2 platPos in WorldData.GetInstance().platformPositions)
+            {
+                TestBlock b = new TestBlock(platPos);
+                worldObjects.Add(b);
+            }
+            
             worldObjects.Add(p);
-            worldObjects.Add(b);
-
         }
 
         public void LoadContent(ContentManager content)

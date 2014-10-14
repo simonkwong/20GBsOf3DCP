@@ -19,16 +19,18 @@ namespace Platformer_v1
         Vector2 getTextureOrigin();
 
         Vector2 getPosition();
+        void setPosition(Vector2 newPosition);
 
         float getRotation();
 
         Vector2 getVelocity();
+        void setVelocity(Vector2 newVelocity);
 
         BoundingBox getBoundingBox();
 
         // determines if the phsyics engine will update it
         bool hasPhysics();
-
+        void setPhysics(bool p);
 
         // if false will be deleted from the worldObject list!
         bool isAlive();

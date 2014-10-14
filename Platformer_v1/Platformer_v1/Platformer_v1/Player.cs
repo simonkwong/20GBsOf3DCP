@@ -20,6 +20,7 @@ namespace Platformer_v1
         String playerName;
         Color playerColor;
         BoundingBox playerBoundingBox;
+        bool physics;
 
         public Player(String playerName, Vector2 iniPos)
         {
@@ -29,14 +30,13 @@ namespace Platformer_v1
             this.playerVelocity = Vector2.Zero;
             this.playerRotation = 0;
             playerColor = Color.White;
-            playerGravity = new Vector2(0, 0.09f);
-
+            playerGravity = new Vector2(0, 0.098f);
+            physics = true;
         }
-
-
+        
         public void LoadContent(ContentManager content)
         {
-            playerTexture = content.Load<Texture2D>("spriteArt/Pacheco");
+            playerTexture = content.Load<Texture2D>("spriteArt/" + playerName);
             UpdateBoundingBox();
         }
 
@@ -45,22 +45,23 @@ namespace Platformer_v1
             // player controls go in here
             
             // and eventually animation stuff
-
-
-
-            if (this.playerPosition.Y > 500)
+            
+            if (this.playerPosition.Y + playerTexture.Height > WorldData.GetInstance().ScreenHeight)
             {
                 this.playerVelocity = Vector2.Zero;
             }
             else
             {
-                // if falling
-                this.playerVelocity += this.playerGravity;
+                if (hasPhysics())
+                    // if falling
+                    this.playerVelocity += this.playerGravity;
+
+                else
+                    setPhysics(true);
             }
 
             this.playerPosition += this.playerVelocity;
-
-
+            
             this.playerColor = Color.White;
 
             UpdateBoundingBox();
@@ -94,8 +95,6 @@ namespace Platformer_v1
             {
                 this.playerPosition += new Vector2(2, 0);
             }
-
-
         }
 
         public Texture2D getTexture()
@@ -113,6 +112,11 @@ namespace Platformer_v1
             return playerPosition;
         }
 
+        public void setPosition(Vector2 newPosition)
+        {
+            playerPosition += newPosition;
+        }
+
         public float getRotation()
         {
             return playerRotation;
@@ -123,15 +127,24 @@ namespace Platformer_v1
             return playerVelocity;
         }
 
+        public void setVelocity(Vector2 newVelocity)
+        {
+            playerVelocity = newVelocity;
+        }
+
         public BoundingBox getBoundingBox()
         {
             return playerBoundingBox;
         }
 
-
         public bool hasPhysics()
         {
-            return true;
+            return physics;
+        }
+
+        public void setPhysics(bool p)
+        {
+            physics = p;
         }
 
         public void alertCollision(I_WorldObject collidedObject)

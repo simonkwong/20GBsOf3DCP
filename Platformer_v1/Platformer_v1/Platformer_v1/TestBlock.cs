@@ -18,7 +18,7 @@ namespace Platformer_v1
         Vector2 blockVelocity;
         BoundingBox blockBoundingBox;
         Color blockColor;
-
+        bool physics;
 
         public TestBlock(Vector2 iniPos)
         {
@@ -27,13 +27,12 @@ namespace Platformer_v1
             this.blockVelocity = Vector2.Zero;
             this.blockRotation = 0;
             this.blockColor = Color.White;
+            this.physics = false;
         }
-
-
 
         public void LoadContent(ContentManager content)
         {
-            blockTexture = content.Load<Texture2D>("spriteArt/yellowblock");
+            blockTexture = content.Load<Texture2D>("spriteArt/usf");
 
             UpdateBoundingBox();
         }
@@ -62,6 +61,10 @@ namespace Platformer_v1
             return blockPosition;
         }
 
+        public void setPosition(Vector2 newPosition)
+        {
+            blockPosition += newPosition;
+        }
 
         public float getRotation()
         {
@@ -73,6 +76,11 @@ namespace Platformer_v1
             return blockVelocity;
         }
 
+        public void setVelocity(Vector2 newVelocity)
+        {
+            blockVelocity = newVelocity;
+        }
+
         public BoundingBox getBoundingBox()
         {
             return blockBoundingBox;
@@ -81,9 +89,13 @@ namespace Platformer_v1
 
         public bool hasPhysics()
         {
-            return false;
+            return physics;
         }
 
+        public void setPhysics(bool p)
+        {
+            physics = p;
+        }
 
         public void alertCollision(I_WorldObject collidedObject)
         {
@@ -93,12 +105,14 @@ namespace Platformer_v1
                 
                 // 4 simple cases of collision
 
-                if (this.getBoundingBox().Max.X > collidedObject.getBoundingBox().Min.X)
+                if (collidedObject.getPosition().Y + collidedObject.getTexture().Height > 
+                    this.getBoundingBox().Min.Y)
                 {
-
+                    collidedObject.setVelocity(Vector2.Zero);
+                    collidedObject.setPhysics(false);
                 }
                 
-
+                collidedObject.setPosition(collidedObject.getVelocity());
             }
 
 
@@ -112,7 +126,7 @@ namespace Platformer_v1
 
         public String getName()
         {
-            return "yellowBox";
+            return "platform";
         }
 
         public Color getColor()
