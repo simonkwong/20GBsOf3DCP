@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorldData>
+
+  <Gravity type = "Vector2">
+    <x> 0 </x>
+    <y> 9.8 </y>
+  </Gravity>
+
+  <ScreenWidth type = "int">
+    1080
+  </ScreenWidth>
+    
+  <ScreenHeight type = "int">
+    720
+  </ScreenHeight>
+
+  <playerInitialPosition type = "Vector2">
+    <x> 0 </x>
+    <y> 0 </y>
+  </playerInitialPosition>
+  
+  <platformPositions type = "Vector2List">
+    <pos> <x> 200 </x> <y> 650 </y> </pos>
+    <pos> <x> 400 </x> <y> 650 </y> </pos>
+    <pos> <x> 500 </x> <y> 600 </y> </pos>
+  </platformPositions>
+  
+</WorldData>
