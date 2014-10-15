@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>spriteArt\Pacheco.png</Source>
+      <Name>spriteArt\Pacheco</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Pacheco.xnb</Output>
+      <Time>2014-10-13T14:00:19.175729-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\Adam.png</Source>
+      <Name>spriteArt\Adam</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Adam.xnb</Output>
+      <Time>2014-10-13T14:00:18.0037908-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\Jordan.png</Source>
+      <Name>spriteArt\Jordan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Jordan.xnb</Output>
+      <Time>2014-10-13T14:00:18.0037908-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\Simon.png</Source>
+      <Name>spriteArt\Simon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Simon.xnb</Output>
+      <Time>2014-10-13T14:00:19.2069809-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\background.png</Source>
+      <Name>spriteArt\background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\background.xnb</Output>
+      <Time>2014-10-13T16:02:23.1147658-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\usf.png</Source>
+      <Name>spriteArt\usf</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\usf.xnb</Output>
+      <Time>2014-10-13T16:37:18.745726-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\Spikes.png</Source>
+      <Name>spriteArt\Spikes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Spikes.xnb</Output>
+      <Time>2014-10-15T04:57:44.5058535-07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{345C7EDF-FE0F-476E-BDB3-6E97A7BE5EC8}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-10-11T00:40:50.0587021-07:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
