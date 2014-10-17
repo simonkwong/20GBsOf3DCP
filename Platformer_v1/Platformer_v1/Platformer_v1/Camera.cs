@@ -19,6 +19,7 @@ namespace Platformer_v1
         public float Zoom { get; set; }
         public I_WorldObject trackMe;
         Vector2 objPosInScreenSpace;
+        public bool tracking;
 
         private SpriteBatch mSpriteBatch;
 
@@ -29,13 +30,12 @@ namespace Platformer_v1
             Rotation = 0.0f;
             Zoom = 1.0f;
             this.trackMe = trackMe;
+            tracking = false;
         }
 
         public void Update(GameTime gameTime)
         {
-            this.Position = trackMe.getPosition();
-
-            
+            this.Position = trackMe.getPosition();            
         }
 
         public void Draw(I_WorldObject obj)
@@ -47,11 +47,12 @@ namespace Platformer_v1
                 Vector2 objPosInCameraSpace = obj.getPosition() - new Vector2((trackMe.getPosition()).X - (WorldData.GetInstance().ScreenWidth / 2), 0);
                 objPosInScreenSpace = objPosInCameraSpace;
 
+                tracking = true;
 
             }
             else
             {
-
+                tracking = false;
                 Vector2 objPosInCameraSpace = obj.getPosition();
                 objPosInScreenSpace = objPosInCameraSpace;
             }

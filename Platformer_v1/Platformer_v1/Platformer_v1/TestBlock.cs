@@ -48,6 +48,12 @@ namespace Platformer_v1
             UpdateBoundingBox();
         }
 
+        public bool shouldIcheckCollisions()
+        {
+            return false;
+        }
+
+
 
 
         public void Update(GameTime gameTime)

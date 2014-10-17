@@ -47,9 +47,14 @@ namespace Platformer_v1
 
         public void LoadContent(ContentManager content)
         {
-            enemyTexture = content.Load<Texture2D>("spriteArt/" + enemyName);
+            enemyTexture = content.Load<Texture2D>("spriteArt/" + "pachecoface");
 
             UpdateBoundingBox();
+        }
+
+        public bool shouldIcheckCollisions()
+        {
+            return false;
         }
 
         public void Update(GameTime gameTime)
@@ -65,6 +70,8 @@ namespace Platformer_v1
                 RandomizeMovement();
                 currentElapsedTime = 0f;
             }
+
+            setPosition(getDirection() * getSpeed() * (float)gameTime.ElapsedGameTime.TotalSeconds);
 
             UpdateBoundingBox();
         }

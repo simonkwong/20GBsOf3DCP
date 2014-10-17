@@ -12,6 +12,8 @@ namespace Platformer_v1
     class Player : I_WorldObject
     {
         Texture2D playerTexture;
+        Texture2D playerTextureLeft;
+        Texture2D playerTextureRight;
         Vector2 playerTextureOrigin;
         Vector2 playerPosition;
         float playerRotation;
@@ -21,7 +23,7 @@ namespace Platformer_v1
         BoundingBox playerBoundingBox;
 
 
-       
+
         int PLAYER_SPEED;
         Vector2 GRAVITY;
 
@@ -40,7 +42,7 @@ namespace Platformer_v1
         bool rigidness;
         bool aliveness;
 
-        
+
 
         bool gravityState;
         List<I_WorldObject> worldObjects;
@@ -61,10 +63,18 @@ namespace Platformer_v1
             this.worldObjects = objectsList;
             this.gravityState = true;
         }
-        
+
+        public bool shouldIcheckCollisions()
+        {
+            return true;
+        }
+
         public void LoadContent(ContentManager content)
         {
             playerTexture = content.Load<Texture2D>("spriteArt/" + playerName);
+            playerTextureLeft = content.Load<Texture2D>("spriteArt/" + playerName + "L");
+            playerTextureRight = content.Load<Texture2D>("spriteArt/" + playerName + "R");
+
             UpdateBoundingBox();
         }
 
@@ -86,7 +96,7 @@ namespace Platformer_v1
 
             adjustPositionByVelocity();
 
-            UpdateBoundingBox();           
+            UpdateBoundingBox();
         }
 
         private void checkForStandingOnSomething()
@@ -96,7 +106,7 @@ namespace Platformer_v1
                 if (x.isRigid())
                 {
                     // first check that player intersects object via x projection
-                    if ( (this.playerBoundingBox.Min.X >= x.getBoundingBox().Min.X && this.playerBoundingBox.Min.X <= x.getBoundingBox().Max.X) 
+                    if ((this.playerBoundingBox.Min.X >= x.getBoundingBox().Min.X && this.playerBoundingBox.Min.X <= x.getBoundingBox().Max.X)
                          || this.playerBoundingBox.Max.X >= x.getBoundingBox().Min.X && this.playerBoundingBox.Max.X <= x.getBoundingBox().Max.X)
                     {
                         // now we check if were above the object
@@ -110,7 +120,7 @@ namespace Platformer_v1
             }
         }
 
-      
+
 
         private void UpdateMovement(KeyboardState kbCurrentState, GamePadState gpCurrentState)
         {
@@ -129,16 +139,18 @@ namespace Platformer_v1
                     this.playerVelocity = new Vector2(0, -4);
                     gravityState = true;
                 }
-  
+
             }
 
             if (kbCurrentState.IsKeyDown(Keys.Left) || gpCurrentState.IsButtonDown(Buttons.DPadLeft))
             {
+                playerTexture = playerTextureLeft;
                 this.playerPosition += new Vector2(-2, 0);
             }
 
             if (kbCurrentState.IsKeyDown(Keys.Right) || gpCurrentState.IsButtonDown(Buttons.DPadRight))
             {
+                playerTexture = playerTextureRight;
                 this.playerPosition += new Vector2(2, 0);
             }
         }
@@ -149,24 +161,24 @@ namespace Platformer_v1
             {
                 this.playerVelocity += this.GRAVITY;
             }
-           
+
 
             this.playerPosition += this.playerVelocity;
         }
-   
+
         public void alertCollision(I_WorldObject collidedObject)
         {
             if (!collidedObject.isRigid())
             {
-                if (collidedObject.getName() == "Spikes")
+                if (collidedObject.getName() == "Spikes" || collidedObject.getName() == "SpikeField")
                 {
                     setAlive(false);
-                    
+
                     this.setVelocity(Vector2.Zero);
                     this.setDirection(new Vector2(1, 0));
                     this.setSpeed(Vector2.Zero);
                     this.setPhysics(false);
-                    
+
                     playerPosition = WorldData.GetInstance().playerInitialPosition;
 
                     setAlive(true);
@@ -204,7 +216,7 @@ namespace Platformer_v1
                     if (myAABB.Min.Y < other.Min.Y)
                     {
                         Console.WriteLine("STANDING ON SOMETHING");
-                 
+
                         this.playerPosition.Y -= (yMovement);
                         this.setVelocity(new Vector2(0, 0));
                     }
@@ -214,7 +226,7 @@ namespace Platformer_v1
                         this.setVelocity(new Vector2(0, 0));
                     }
                 }
-            }   
+            }
         }
 
 
@@ -257,22 +269,22 @@ namespace Platformer_v1
 
         public Vector2 getDirection()
         {
-            return new Vector2(0,0);
+            return new Vector2(0, 0);
         }
 
         public void setDirection(Vector2 newDirection)
         {
-            
+
         }
 
         public Vector2 getSpeed()
         {
-            return new Vector2(0,0);
+            return new Vector2(0, 0);
         }
 
         public void setSpeed(Vector2 newSpeed)
         {
-            
+
         }
 
         public BoundingBox getBoundingBox()
@@ -287,7 +299,7 @@ namespace Platformer_v1
 
         public void setPhysics(bool p)
         {
-            
+
         }
 
         public bool isAlive()

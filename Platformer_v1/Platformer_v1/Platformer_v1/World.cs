@@ -18,7 +18,7 @@ namespace Platformer_v1
         public int WorldHeight { get; set; }
         Camera camera;
 
-        const int MAX_SPIKES = 10500;
+        const int MAX_SPIKEFIELDS = 10;
 
         public List<I_WorldObject> worldObjects;
 
@@ -26,7 +26,8 @@ namespace Platformer_v1
         private ScrollingBackground scrollingBackground;
 
         Vector2 currentPosition = Vector2.Zero;
-            
+        Song song;
+
 
         public World(Game1 containingGame, int w, int h)
         {
@@ -38,30 +39,22 @@ namespace Platformer_v1
 
             worldObjects = new List<I_WorldObject>();
 
-            Player p = new Player("Simon", WorldData.GetInstance().playerInitialPosition, worldObjects);
+            Player p = new Player("Jordan", WorldData.GetInstance().playerInitialPosition, worldObjects);
 
             camera = new Camera(containingGame.spriteBatch, p);
 
             // Read in the xml
             // and add everything to the worldObjects list
-            
+
             // Changing PlayerName to Adam, Jordan, Pacheco, or Simon draws that texture
-            
-            for (int i = 0; i < MAX_SPIKES; i += 30)
-            {
-                TestBlock s = new TestBlock("Spikes", new Vector2(i, WorldData.GetInstance().ScreenHeight - 20));
-                s.setRigid(false);
-                s.setDirection(new Vector2(0, -1));
-                // worldObjects.Add(s);
-            }
-            
+
 
             foreach (Vector2 spikePos in WorldData.GetInstance().spikePositions)
             {
                 TestBlock s = new TestBlock("Spikes", spikePos + new Vector2(0, 2));
                 s.setDirection(new Vector2(0, -1));
                 s.setRigid(false);
-                // worldObjects.Add(s);
+                worldObjects.Add(s);
             }
 
             foreach (Vector2 enemPos in WorldData.GetInstance().enemyPositions)
@@ -76,17 +69,19 @@ namespace Platformer_v1
                 TestBlock b = new TestBlock("usf", platPos);
                 worldObjects.Add(b);
             }
-            
+
             worldObjects.Add(p);
         }
 
         public void LoadContent(ContentManager content)
         {
+            song = content.Load<Song>("chant1");
+            // MediaPlayer.Play(song);
 
             backgroundImage = content.Load<Texture2D>("spriteArt/background");
             scrollingBackground = new ScrollingBackground(content, "spriteArt/background");
 
-            foreach(I_WorldObject x in worldObjects)
+            foreach (I_WorldObject x in worldObjects)
             {
                 x.LoadContent(content);
             }
@@ -98,25 +93,18 @@ namespace Platformer_v1
 
             List<I_WorldObject> toDelete = new List<I_WorldObject>();
 
+            scrollBackground();
+
             // update worldObject's logic
             foreach (I_WorldObject x in worldObjects)
             {
-                if (x.getName() == "Simon" || x.getName() == "Jordan" || x.getName() == "Adam")
-                {
-                    currentPosition = x.getPosition();
-                }
 
                 x.Update(gameTime);
-
-                if (x.getName() == "Simon" || x.getName() == "Jordan" || x.getName() == "Adam") 
-                {
-                    scrollBackground(x);
-                }
-
 
                 checkCollisions(x);
 
                 checkForAliveness(x, toDelete);
+
             }
 
 
@@ -128,19 +116,25 @@ namespace Platformer_v1
             }
         }
 
-        private void scrollBackground(I_WorldObject x)
+        private void scrollBackground()
         {
-            
-            if (currentPosition.X - x.getPosition().X > 0)
-            {
-                scrollingBackground.BackgroundOffset -= 1;
-                scrollingBackground.ParallaxOffset -= 6;
-            }
+            GamePadState controller = GamePad.GetState(PlayerIndex.One);
 
-            if (currentPosition.X - x.getPosition().X < 0)
+
+            if (camera.tracking)
             {
-                scrollingBackground.BackgroundOffset += 1;
-                scrollingBackground.ParallaxOffset += 6;
+
+                if (Keyboard.GetState().IsKeyDown(Keys.Left) || controller.IsButtonDown(Buttons.DPadLeft))
+                {
+                    scrollingBackground.BackgroundOffset -= 0.5f;
+                    scrollingBackground.ParallaxOffset -= 200;
+                }
+
+                if (Keyboard.GetState().IsKeyDown(Keys.Right) || controller.IsButtonDown(Buttons.DPadRight))
+                {
+                    scrollingBackground.BackgroundOffset += 0.5f;
+                    scrollingBackground.ParallaxOffset += 200;
+                }
             }
         }
 
@@ -155,7 +149,10 @@ namespace Platformer_v1
 
             // its up to the object to decide what it will do about that
 
-
+            if (!x.shouldIcheckCollisions())
+            {
+                return;
+            }
 
             foreach (I_WorldObject y in worldObjects)
             {
@@ -163,7 +160,7 @@ namespace Platformer_v1
                 {
                     // do not compare to itself!
                     continue;
-                }                
+                }
 
                 if (x.getBoundingBox().Intersects(y.getBoundingBox()))
                 {
@@ -186,7 +183,6 @@ namespace Platformer_v1
 
         public void Draw(SpriteBatch sb)
         {
-
             scrollingBackground.Draw(sb);
             // camera draws every worldObject
             foreach (I_WorldObject x in worldObjects)

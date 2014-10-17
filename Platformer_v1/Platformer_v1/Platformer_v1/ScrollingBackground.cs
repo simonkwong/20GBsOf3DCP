@@ -20,8 +20,8 @@ namespace Platformer_v1
         int scrollWidth = 1080;
         int scrollHeight = 720;
 
-        int backgroundOffset;
-        int scrollOffset;
+        float backgroundOffset;
+        float scrollOffset;
 
         public ScrollingBackground(ContentManager content, string sBackground)
         {
@@ -35,7 +35,7 @@ namespace Platformer_v1
             drawParallax = false;
         }
         
-        public int BackgroundOffset
+        public float BackgroundOffset
         {
             get { return backgroundOffset; }
             set
@@ -52,7 +52,7 @@ namespace Platformer_v1
             }
         }
 
-        public int ParallaxOffset
+        public float ParallaxOffset
         {
             get { return scrollOffset; }
             set
@@ -81,21 +81,21 @@ namespace Platformer_v1
         public void Draw(SpriteBatch batch)
         {
 
-            batch.Draw(mytexture, new Rectangle(-1 * backgroundOffset, 0, backgroundWidth, screenHeight), Color.White);
+            batch.Draw(mytexture, new Rectangle(-1 * (int) backgroundOffset, 0, backgroundWidth, screenHeight), Color.White);
 
             if (backgroundOffset > backgroundWidth - screenWidth)
             {
-                batch.Draw(mytexture, new Rectangle((-1 * backgroundOffset) + backgroundWidth, 0, backgroundWidth, screenHeight), Color.White);
+                batch.Draw(mytexture, new Rectangle((-1 * (int) backgroundOffset) + backgroundWidth, 0, backgroundWidth, screenHeight), Color.White);
             }
 
             if (drawParallax)
             {
 
-                batch.Draw(background, new Rectangle(-1 * scrollOffset, 0, scrollWidth, screenHeight), Color.SlateGray);
+                batch.Draw(background, new Rectangle(-1 * (int) scrollOffset, 0, scrollWidth, screenHeight), Color.SlateGray);
 
                 if (scrollOffset > scrollWidth - screenWidth)
                 {
-                    batch.Draw(background, new Rectangle((-1 * scrollOffset) + scrollWidth, 0, scrollWidth, screenHeight), Color.SlateGray);
+                    batch.Draw(background, new Rectangle((-1 * (int) scrollOffset) + scrollWidth, 0, scrollWidth, screenHeight), Color.SlateGray);
                 }
             }
         }

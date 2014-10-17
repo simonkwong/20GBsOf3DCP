@@ -57,6 +57,9 @@ namespace Platformer_v1
         // for debugging
         String getName();
 
+
+        bool shouldIcheckCollisions();
+
     }
 
 }
