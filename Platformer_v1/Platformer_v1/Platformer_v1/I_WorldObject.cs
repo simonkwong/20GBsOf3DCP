@@ -26,6 +26,12 @@ namespace Platformer_v1
         Vector2 getVelocity();
         void setVelocity(Vector2 newVelocity);
 
+        Vector2 getDirection();
+        void setDirection(Vector2 newDirection);
+
+        Vector2 getSpeed();
+        void setSpeed(Vector2 newSpeed);
+
         BoundingBox getBoundingBox();
 
         // determines if the phsyics engine will update it
@@ -34,16 +40,15 @@ namespace Platformer_v1
 
         // if false will be deleted from the worldObject list!
         bool isAlive();
-
+        void setAlive(bool a);
 
         // tests if object is rigid aka can I stand on / walk through this
         bool isRigid();
+        void setRigid(bool r);
 
 
         // alert a world object that a collision has occured with the given object
         void alertCollision(I_WorldObject collidedObject);
-
-
 
 
         // also mainly for debugging

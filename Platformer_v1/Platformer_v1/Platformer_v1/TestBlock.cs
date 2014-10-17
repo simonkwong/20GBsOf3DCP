@@ -19,20 +19,31 @@ namespace Platformer_v1
         BoundingBox blockBoundingBox;
         Color blockColor;
         bool physics;
+        Vector2 blockDirection;
+        Vector2 blockSpeed;
+        String platformName;
+        bool rigidness;
+        bool aliveness;
 
-        public TestBlock(Vector2 iniPos)
+        public TestBlock(String platformName, Vector2 iniPos)
         {
+
+            this.platformName = platformName;
             this.blockPosition = iniPos;
             this.blockTextureOrigin = Vector2.Zero;
             this.blockVelocity = Vector2.Zero;
             this.blockRotation = 0;
             this.blockColor = Color.White;
             this.physics = false;
+            this.blockDirection = Vector2.Zero;
+            this.blockSpeed = Vector2.Zero;
+            rigidness = true;
+            aliveness = true;
         }
 
         public void LoadContent(ContentManager content)
         {
-            blockTexture = content.Load<Texture2D>("spriteArt/usf");
+            blockTexture = content.Load<Texture2D>("spriteArt/" + platformName);
 
             UpdateBoundingBox();
         }
@@ -81,6 +92,26 @@ namespace Platformer_v1
             blockVelocity = newVelocity;
         }
 
+        public Vector2 getDirection()
+        {
+            return blockDirection;
+        }
+
+        public void setDirection(Vector2 newDirection)
+        {
+            blockDirection = newDirection;
+        }
+
+        public Vector2 getSpeed()
+        {
+            return blockSpeed;
+        }
+
+        public void setSpeed(Vector2 newSpeed)
+        {
+            blockSpeed = newSpeed;
+        }
+
         public BoundingBox getBoundingBox()
         {
             return blockBoundingBox;
@@ -99,34 +130,28 @@ namespace Platformer_v1
 
         public void alertCollision(I_WorldObject collidedObject)
         {
-            // do not allow collidedObject to enter it
-            if (this.isRigid())
-            { 
-                
-                // 4 simple cases of collision
 
-                if (collidedObject.getPosition().Y + collidedObject.getTexture().Height > 
-                    this.getBoundingBox().Min.Y)
-                {
-                    collidedObject.setVelocity(Vector2.Zero);
-                    collidedObject.setPhysics(false);
-                }
-                
-                collidedObject.setPosition(collidedObject.getVelocity());
+            if (collidedObject.getName() == "usf" || collidedObject.getName() == "Spikes")
+            {
+                //update boundingBox size
             }
 
-
-            this.blockColor = Color.Red;
+            //this.blockColor = Color.Red;
         }
 
         public bool isAlive()
         {
-            return true;
+            return aliveness;
+        }
+
+        public void setAlive(bool a)
+        {
+            aliveness = a;
         }
 
         public String getName()
         {
-            return "platform";
+            return platformName;
         }
 
         public Color getColor()
@@ -136,7 +161,12 @@ namespace Platformer_v1
 
         public bool isRigid()
         {
-            return true;
+            return rigidness;
+        }
+
+        public void setRigid(bool r)
+        {
+            rigidness = r;
         }
 
         protected void UpdateBoundingBox()

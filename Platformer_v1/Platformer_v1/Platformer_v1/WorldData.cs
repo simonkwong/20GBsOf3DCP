@@ -22,17 +22,31 @@ namespace Platformer_v1
         public int ScreenWidth { get; private set; }
         public int ScreenHeight { get; private set; }
         public Vector2 playerInitialPosition { get; private set; }
+        public int MaxJumpHeight { get; private set; }
         public List<Vector2> platformPositions { get; private set; }
+        public List<Vector2> spikePositions { get; private set; }
+        public List<Vector2> enemyPositions { get; private set; }
+        public Vector2 playerDirection { get; private set; }
+        public int playerSpeed { get; private set; }
+        public int enemySpeed { get; private set; }
+        public int enemyMaxMovement { get; private set; }
 
         private static WorldData wData;
 
         private WorldData()
         {
-            Gravity = new Vector2(0, 0);
+            Gravity = Vector2.Zero; ;
             ScreenWidth = 0;
             ScreenHeight = 0;
-            playerInitialPosition = new Vector2(0, 0);
+            playerInitialPosition = Vector2.Zero;
+            MaxJumpHeight = 0;
             platformPositions = new List<Vector2>();
+            spikePositions = new List<Vector2>();
+            enemyPositions = new List<Vector2>();
+            playerDirection = Vector2.Zero;
+            playerSpeed = 0;
+            enemySpeed = 0;
+            enemyMaxMovement = 0;
         }
 
         public static WorldData GetInstance()

@@ -22,8 +22,7 @@ namespace Platformer_v1
         public int Width { get; set; }
         public int Height { get; set; }
 
-        Texture2D backgroundImage;
-        private ScrollingBackground scrollingBackground;
+       
 
         public Game1()
         {
@@ -57,8 +56,7 @@ namespace Platformer_v1
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             mGameWorld = new World(this, Width, Height);
-            backgroundImage = Content.Load<Texture2D>("spriteArt/background");
-            scrollingBackground = new ScrollingBackground(Content, "spriteArt/background");
+
             mGameWorld.LoadContent(Content);
 
 
@@ -82,20 +80,10 @@ namespace Platformer_v1
         protected override void Update(GameTime gameTime)
         {
             // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
+                Keyboard.GetState().IsKeyDown(Keys.Escape))
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Left) || GamePad.GetState(PlayerIndex.One).IsButtonDown(Buttons.DPadLeft))
-            {
-                scrollingBackground.BackgroundOffset -= 3;
-                scrollingBackground.ParallaxOffset -= 6;
-            }
-
-            if (Keyboard.GetState().IsKeyDown(Keys.Right) || GamePad.GetState(PlayerIndex.One).IsButtonDown(Buttons.DPadRight))
-            {
-                scrollingBackground.BackgroundOffset += 3;
-                scrollingBackground.ParallaxOffset += 6;
-            }
+                this.Exit();            
 
             // TODO: Add your update logic here
             mGameWorld.Update(gameTime);
@@ -111,7 +99,7 @@ namespace Platformer_v1
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-            scrollingBackground.Draw(spriteBatch);
+            
             mGameWorld.Draw(spriteBatch);
             spriteBatch.End();
 

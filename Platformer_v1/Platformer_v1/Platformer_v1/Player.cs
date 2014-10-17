@@ -21,6 +21,28 @@ namespace Platformer_v1
         Color playerColor;
         BoundingBox playerBoundingBox;
         bool physics;
+        int PLAYER_SPEED;
+        Vector2 GRAVITY;
+
+        enum State
+        {
+            Walking,
+            Jumping,
+            InTheAir
+        }
+
+        State playerState;
+        KeyboardState kbCurrentState;
+        KeyboardState kbPreviousState;
+        Vector2 currentPosition;
+        Vector2 playerDirection;
+        Vector2 playerSpeed;
+
+        GamePadState gpCurrentState;
+        GamePadState gpPreviousState;
+
+        bool rigidness;
+        bool aliveness;
 
         public Player(String playerName, Vector2 iniPos)
         {
@@ -29,9 +51,18 @@ namespace Platformer_v1
             this.playerTextureOrigin = Vector2.Zero;
             this.playerVelocity = Vector2.Zero;
             this.playerRotation = 0;
-            playerColor = Color.White;
-            playerGravity = new Vector2(0, 0.098f);
+            this.playerColor = Color.White;
+            this.playerGravity = new Vector2(0, 0.078f);
+            this.playerSpeed = Vector2.Zero;
+            this.playerDirection = WorldData.GetInstance().playerDirection;
+            this.playerState = State.InTheAir;
+
             physics = true;
+            rigidness = false;
+            aliveness = true;
+            currentPosition = Vector2.Zero;
+            PLAYER_SPEED = WorldData.GetInstance().playerSpeed;
+            GRAVITY = WorldData.GetInstance().Gravity;
         }
         
         public void LoadContent(ContentManager content)
@@ -43,57 +74,155 @@ namespace Platformer_v1
         public void Update(GameTime gameTime)
         {
             // player controls go in here
-            
-            // and eventually animation stuff
-            
-            if (this.playerPosition.Y + playerTexture.Height > WorldData.GetInstance().ScreenHeight)
-            {
-                this.playerVelocity = Vector2.Zero;
-            }
-            else
-            {
-                if (hasPhysics())
-                    // if falling
-                    this.playerVelocity += this.playerGravity;
 
-                else
-                    setPhysics(true);
-            }
-
-            this.playerPosition += this.playerVelocity;
-            
             this.playerColor = Color.White;
 
-            UpdateBoundingBox();
+            kbCurrentState = Keyboard.GetState();
+            gpCurrentState = GamePad.GetState(PlayerIndex.One);
 
-            getControlInput(gameTime);
+            adjustPosition();
+
+            if (playerSpeed == Vector2.Zero && isAlive() && playerState != State.InTheAir)
+            {
+                UpdateMovement(kbCurrentState, gpCurrentState);
+            }
+            
+            UpdateBoundingBox();
+            
+            kbPreviousState = kbCurrentState;
+            gpPreviousState = gpCurrentState;
         }
 
 
-        private void getControlInput(GameTime gameTime)
+        private void UpdateMovement(KeyboardState kbCurrentState, GamePadState gpCurrentState)
         {
 
-            KeyboardState keyboard = Keyboard.GetState();
-
-            if (keyboard.IsKeyDown(Keys.Up))
+            if (kbCurrentState.IsKeyDown(Keys.Up) || gpCurrentState.IsButtonDown(Buttons.DPadUp))
             {
+                playerState = State.Jumping;
+                playerDirection = new Vector2(0, -1);
                 this.playerPosition -= new Vector2(0, 4);
+                 
             }
 
-            if (keyboard.IsKeyDown(Keys.Down))
-            {
-                this.playerPosition += new Vector2(0, 2);
-            }
-
-
-            if (keyboard.IsKeyDown(Keys.Left))
+            if (kbCurrentState.IsKeyDown(Keys.Left) || gpCurrentState.IsButtonDown(Buttons.DPadLeft))
             {
                 this.playerPosition += new Vector2(-2, 0);
             }
 
-            if (keyboard.IsKeyDown(Keys.Right))
+            if (kbCurrentState.IsKeyDown(Keys.Right) || gpCurrentState.IsButtonDown(Buttons.DPadRight))
             {
                 this.playerPosition += new Vector2(2, 0);
+            }
+        }
+
+        private void adjustPosition()
+        {
+            if (this.playerBoundingBox.Min.X < 0)
+            {
+                this.playerPosition = new Vector2(0, playerPosition.Y);
+            }
+
+            if (this.playerBoundingBox.Max.Y >= WorldData.GetInstance().ScreenHeight)
+            {
+                this.setVelocity(Vector2.Zero);
+                this.setPosition(playerVelocity);
+                this.playerState = State.Walking;
+            }
+            else
+            {
+                if (hasPhysics())
+                {
+                    // is falling
+                    this.playerVelocity += this.playerGravity;
+                    this.setPosition(playerVelocity);
+                }
+                else
+                    setPhysics(true);
+
+            }
+
+            UpdateBoundingBox();
+        }
+   
+        public void alertCollision(I_WorldObject collidedObject)
+        {
+
+
+            if (!collidedObject.isRigid())
+            {
+                if (collidedObject.getName() == "Spikes")
+                {
+                    setAlive(false);
+                    
+                    this.setVelocity(Vector2.Zero);
+                    this.setDirection(new Vector2(1, 0));
+                    this.setSpeed(Vector2.Zero);
+                    this.setPhysics(false);
+                    this.playerState = State.InTheAir;
+                    
+                    playerPosition = WorldData.GetInstance().playerInitialPosition;
+
+                    setAlive(true);
+                }
+            }
+
+            if (collidedObject.isRigid())
+            {
+                //this.playerColor = Color.Red;
+
+                BoundingBox myAABB = this.playerBoundingBox;
+                BoundingBox other = collidedObject.getBoundingBox();
+
+                int leftBound = (int)Math.Max(myAABB.Min.X, other.Min.X);
+                int rightBound = (int)Math.Min(myAABB.Max.X, other.Max.X);
+                int upperBound = (int)Math.Max(myAABB.Min.Y, other.Min.Y);
+                int lowerBound = (int)Math.Min(myAABB.Max.Y, other.Max.Y);
+
+                int xMovement = rightBound - leftBound;
+                int yMovement = lowerBound - upperBound;
+
+                if (xMovement < yMovement)
+                {
+                    if (myAABB.Min.X < other.Min.X)
+                    {
+                        this.playerPosition.X -= xMovement;
+                        dropPlayer();
+                    }
+                    else
+                    {
+                        this.playerPosition.X += xMovement;
+                        dropPlayer();
+                    }
+                }
+                if (yMovement <= xMovement)
+                {
+                    if (myAABB.Min.Y < other.Min.Y)
+                    {
+                        this.playerPosition.Y -= yMovement;
+                        this.setVelocity(Vector2.Zero);
+                        this.setPosition(playerVelocity);
+                        this.setDirection(new Vector2(1, 0));
+                        this.setSpeed(Vector2.Zero);
+                        this.setPhysics(false);
+                        this.playerState = State.Walking;
+                    }
+                    else
+                    {
+                        this.playerPosition.Y += yMovement;
+                        dropPlayer();
+                    }
+                }
+            }   
+        }
+
+        private void dropPlayer()
+        {
+            if (playerState != State.Walking)
+            {
+                playerDirection.Y = 1;
+                playerSpeed = WorldData.GetInstance().Gravity;
+                playerState = State.Walking;
             }
         }
 
@@ -132,6 +261,26 @@ namespace Platformer_v1
             playerVelocity = newVelocity;
         }
 
+        public Vector2 getDirection()
+        {
+            return playerDirection;
+        }
+
+        public void setDirection(Vector2 newDirection)
+        {
+            playerDirection = newDirection;
+        }
+
+        public Vector2 getSpeed()
+        {
+            return playerSpeed;
+        }
+
+        public void setSpeed(Vector2 newSpeed)
+        {
+            playerSpeed = newSpeed;
+        }
+
         public BoundingBox getBoundingBox()
         {
             return playerBoundingBox;
@@ -147,14 +296,14 @@ namespace Platformer_v1
             physics = p;
         }
 
-        public void alertCollision(I_WorldObject collidedObject)
-        {
-            this.playerColor = Color.Red;
-        }
-
         public bool isAlive()
         {
-            return true;
+            return aliveness;
+        }
+
+        public void setAlive(bool a)
+        {
+            aliveness = a;
         }
 
         public String getName()
@@ -169,8 +318,14 @@ namespace Platformer_v1
 
         public bool isRigid()
         {
-            return false;
+            return rigidness;
         }
+
+        public void setRigid(bool r)
+        {
+            rigidness = r;
+        }
+
 
         protected void UpdateBoundingBox()
         {
@@ -178,7 +333,6 @@ namespace Platformer_v1
             this.playerBoundingBox.Min.Y = this.getPosition().Y;
             this.playerBoundingBox.Max.X = this.getPosition().X + this.getTexture().Width;
             this.playerBoundingBox.Max.Y = this.getPosition().Y + this.getTexture().Height;
-
 
         }
     }
