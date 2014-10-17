@@ -34,15 +34,16 @@ namespace Platformer_v1
             WorldWidth = w;
             WorldHeight = h;
 
-            Player p = new Player("Simon", WorldData.GetInstance().playerInitialPosition);
+
+
+            worldObjects = new List<I_WorldObject>();
+
+            Player p = new Player("Simon", WorldData.GetInstance().playerInitialPosition, worldObjects);
 
             camera = new Camera(containingGame.spriteBatch, p);
-            worldObjects = new List<I_WorldObject>();   
-     
+
             // Read in the xml
             // and add everything to the worldObjects list
-
-            
             
             // Changing PlayerName to Adam, Jordan, Pacheco, or Simon draws that texture
             
@@ -51,7 +52,7 @@ namespace Platformer_v1
                 TestBlock s = new TestBlock("Spikes", new Vector2(i, WorldData.GetInstance().ScreenHeight - 20));
                 s.setRigid(false);
                 s.setDirection(new Vector2(0, -1));
-                worldObjects.Add(s);
+                // worldObjects.Add(s);
             }
             
 
@@ -60,7 +61,7 @@ namespace Platformer_v1
                 TestBlock s = new TestBlock("Spikes", spikePos + new Vector2(0, 2));
                 s.setDirection(new Vector2(0, -1));
                 s.setRigid(false);
-                worldObjects.Add(s);
+                // worldObjects.Add(s);
             }
 
             foreach (Vector2 enemPos in WorldData.GetInstance().enemyPositions)
@@ -104,9 +105,8 @@ namespace Platformer_v1
                 {
                     currentPosition = x.getPosition();
                 }
-                x.Update(gameTime);
 
-                x.setPosition(x.getDirection() * x.getSpeed() * (float)gameTime.ElapsedGameTime.TotalSeconds);
+                x.Update(gameTime);
 
                 if (x.getName() == "Simon" || x.getName() == "Jordan" || x.getName() == "Adam") 
                 {
@@ -155,18 +155,19 @@ namespace Platformer_v1
 
             // its up to the object to decide what it will do about that
 
+
+
             foreach (I_WorldObject y in worldObjects)
             {
                 if (Object.ReferenceEquals(x, y))
                 {
                     // do not compare to itself!
                     continue;
-                }
+                }                
 
                 if (x.getBoundingBox().Intersects(y.getBoundingBox()))
                 {
                     x.alertCollision(y);
-
                 }
             }
         }

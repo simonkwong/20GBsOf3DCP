@@ -3,7 +3,7 @@
 
   <Gravity type = "Vector2">
     <x> 0 </x>
-    <y> 196 </y>
+    <y> 0.1 </y>
   </Gravity>
 
   <ScreenWidth type = "int">

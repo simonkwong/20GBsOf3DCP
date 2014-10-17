@@ -11,7 +11,6 @@ namespace Platformer_v1
 {
     class Player : I_WorldObject
     {
-        Vector2 playerGravity;
         Texture2D playerTexture;
         Vector2 playerTextureOrigin;
         Vector2 playerPosition;
@@ -20,7 +19,9 @@ namespace Platformer_v1
         String playerName;
         Color playerColor;
         BoundingBox playerBoundingBox;
-        bool physics;
+
+
+       
         int PLAYER_SPEED;
         Vector2 GRAVITY;
 
@@ -31,20 +32,20 @@ namespace Platformer_v1
             InTheAir
         }
 
-        State playerState;
         KeyboardState kbCurrentState;
-        KeyboardState kbPreviousState;
         Vector2 currentPosition;
-        Vector2 playerDirection;
-        Vector2 playerSpeed;
 
         GamePadState gpCurrentState;
-        GamePadState gpPreviousState;
 
         bool rigidness;
         bool aliveness;
 
-        public Player(String playerName, Vector2 iniPos)
+        
+
+        bool gravityState;
+        List<I_WorldObject> worldObjects;
+
+        public Player(String playerName, Vector2 iniPos, List<I_WorldObject> objectsList)
         {
             this.playerName = playerName;
             this.playerPosition = iniPos;
@@ -52,17 +53,13 @@ namespace Platformer_v1
             this.playerVelocity = Vector2.Zero;
             this.playerRotation = 0;
             this.playerColor = Color.White;
-            this.playerGravity = new Vector2(0, 0.078f);
-            this.playerSpeed = Vector2.Zero;
-            this.playerDirection = WorldData.GetInstance().playerDirection;
-            this.playerState = State.InTheAir;
-
-            physics = true;
             rigidness = false;
             aliveness = true;
             currentPosition = Vector2.Zero;
             PLAYER_SPEED = WorldData.GetInstance().playerSpeed;
             GRAVITY = WorldData.GetInstance().Gravity;
+            this.worldObjects = objectsList;
+            this.gravityState = true;
         }
         
         public void LoadContent(ContentManager content)
@@ -80,29 +77,59 @@ namespace Platformer_v1
             kbCurrentState = Keyboard.GetState();
             gpCurrentState = GamePad.GetState(PlayerIndex.One);
 
-            adjustPosition();
 
-            if (playerSpeed == Vector2.Zero && isAlive() && playerState != State.InTheAir)
-            {
-                UpdateMovement(kbCurrentState, gpCurrentState);
-            }
-            
-            UpdateBoundingBox();
-            
-            kbPreviousState = kbCurrentState;
-            gpPreviousState = gpCurrentState;
+            gravityState = true;
+            checkForStandingOnSomething();
+
+            UpdateMovement(kbCurrentState, gpCurrentState);
+
+
+            adjustPositionByVelocity();
+
+            UpdateBoundingBox();           
         }
 
+        private void checkForStandingOnSomething()
+        {
+            foreach (I_WorldObject x in worldObjects)
+            {
+                if (x.isRigid())
+                {
+                    // first check that player intersects object via x projection
+                    if ( (this.playerBoundingBox.Min.X >= x.getBoundingBox().Min.X && this.playerBoundingBox.Min.X <= x.getBoundingBox().Max.X) 
+                         || this.playerBoundingBox.Max.X >= x.getBoundingBox().Min.X && this.playerBoundingBox.Max.X <= x.getBoundingBox().Max.X)
+                    {
+                        // now we check if were above the object
+                        if (x.getBoundingBox().Min.Y - this.playerBoundingBox.Max.Y >= -2 && x.getBoundingBox().Min.Y - this.playerBoundingBox.Max.Y <= 2)
+                        {
+                            gravityState = false;
+                        }
+
+                    }
+                }
+            }
+        }
+
+      
 
         private void UpdateMovement(KeyboardState kbCurrentState, GamePadState gpCurrentState)
         {
 
+            // prevent player from going out of left side of screen
+            if (this.playerBoundingBox.Min.X < 0)
+            {
+                this.playerPosition = new Vector2(0, playerPosition.Y);
+            }
+
+
             if (kbCurrentState.IsKeyDown(Keys.Up) || gpCurrentState.IsButtonDown(Buttons.DPadUp))
             {
-                playerState = State.Jumping;
-                playerDirection = new Vector2(0, -1);
-                this.playerPosition -= new Vector2(0, 4);
-                 
+                if (!gravityState)
+                {
+                    this.playerVelocity = new Vector2(0, -4);
+                    gravityState = true;
+                }
+  
             }
 
             if (kbCurrentState.IsKeyDown(Keys.Left) || gpCurrentState.IsButtonDown(Buttons.DPadLeft))
@@ -116,39 +143,19 @@ namespace Platformer_v1
             }
         }
 
-        private void adjustPosition()
+        private void adjustPositionByVelocity()
         {
-            if (this.playerBoundingBox.Min.X < 0)
+            if (this.gravityState)
             {
-                this.playerPosition = new Vector2(0, playerPosition.Y);
+                this.playerVelocity += this.GRAVITY;
             }
+           
 
-            if (this.playerBoundingBox.Max.Y >= WorldData.GetInstance().ScreenHeight)
-            {
-                this.setVelocity(Vector2.Zero);
-                this.setPosition(playerVelocity);
-                this.playerState = State.Walking;
-            }
-            else
-            {
-                if (hasPhysics())
-                {
-                    // is falling
-                    this.playerVelocity += this.playerGravity;
-                    this.setPosition(playerVelocity);
-                }
-                else
-                    setPhysics(true);
-
-            }
-
-            UpdateBoundingBox();
+            this.playerPosition += this.playerVelocity;
         }
    
         public void alertCollision(I_WorldObject collidedObject)
         {
-
-
             if (!collidedObject.isRigid())
             {
                 if (collidedObject.getName() == "Spikes")
@@ -159,7 +166,6 @@ namespace Platformer_v1
                     this.setDirection(new Vector2(1, 0));
                     this.setSpeed(Vector2.Zero);
                     this.setPhysics(false);
-                    this.playerState = State.InTheAir;
                     
                     playerPosition = WorldData.GetInstance().playerInitialPosition;
 
@@ -187,44 +193,32 @@ namespace Platformer_v1
                     if (myAABB.Min.X < other.Min.X)
                     {
                         this.playerPosition.X -= xMovement;
-                        dropPlayer();
                     }
                     else
                     {
                         this.playerPosition.X += xMovement;
-                        dropPlayer();
                     }
                 }
-                if (yMovement <= xMovement)
+                else
                 {
                     if (myAABB.Min.Y < other.Min.Y)
                     {
-                        this.playerPosition.Y -= yMovement;
-                        this.setVelocity(Vector2.Zero);
-                        this.setPosition(playerVelocity);
-                        this.setDirection(new Vector2(1, 0));
-                        this.setSpeed(Vector2.Zero);
-                        this.setPhysics(false);
-                        this.playerState = State.Walking;
+                        Console.WriteLine("STANDING ON SOMETHING");
+                 
+                        this.playerPosition.Y -= (yMovement);
+                        this.setVelocity(new Vector2(0, 0));
                     }
                     else
                     {
-                        this.playerPosition.Y += yMovement;
-                        dropPlayer();
+                        this.playerPosition.Y += (yMovement);
+                        this.setVelocity(new Vector2(0, 0));
                     }
                 }
             }   
         }
 
-        private void dropPlayer()
-        {
-            if (playerState != State.Walking)
-            {
-                playerDirection.Y = 1;
-                playerSpeed = WorldData.GetInstance().Gravity;
-                playerState = State.Walking;
-            }
-        }
+
+
 
         public Texture2D getTexture()
         {
@@ -263,22 +257,22 @@ namespace Platformer_v1
 
         public Vector2 getDirection()
         {
-            return playerDirection;
+            return new Vector2(0,0);
         }
 
         public void setDirection(Vector2 newDirection)
         {
-            playerDirection = newDirection;
+            
         }
 
         public Vector2 getSpeed()
         {
-            return playerSpeed;
+            return new Vector2(0,0);
         }
 
         public void setSpeed(Vector2 newSpeed)
         {
-            playerSpeed = newSpeed;
+            
         }
 
         public BoundingBox getBoundingBox()
@@ -288,12 +282,12 @@ namespace Platformer_v1
 
         public bool hasPhysics()
         {
-            return physics;
+            return true;
         }
 
         public void setPhysics(bool p)
         {
-            physics = p;
+            
         }
 
         public bool isAlive()

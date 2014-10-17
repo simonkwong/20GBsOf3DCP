@@ -54,9 +54,11 @@ namespace Platformer_v1
 
         public void Update(GameTime gameTime)
         {
-            currentElapsedTime += (float) gameTime.ElapsedGameTime.TotalSeconds;
+            currentElapsedTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             this.enemyColor = Color.White;
+
+            adjustPosition();
 
             if (currentElapsedTime >= movementUpdate)
             {
@@ -99,6 +101,32 @@ namespace Platformer_v1
 
 
             enemySpeed = new Vector2(iX * WorldData.GetInstance().enemySpeed, iY * WorldData.GetInstance().enemySpeed);
+        }
+
+        private void adjustPosition()
+        {
+            if (this.enemyBoundingBox.Min.X < 0)
+            {
+                this.enemyPosition = new Vector2(0, enemyPosition.Y);
+                this.enemyDirection *= -1;
+            }
+
+            if (this.enemyBoundingBox.Min.Y < 0)
+            {
+                this.enemyPosition = new Vector2(enemyPosition.X, 0);
+                this.enemyDirection *= -1;
+            }
+
+
+            if (this.enemyBoundingBox.Max.Y > WorldData.GetInstance().ScreenHeight)
+            {
+                this.enemyPosition = new Vector2(enemyPosition.X, WorldData.GetInstance().ScreenHeight - enemyTexture.Height);
+                this.enemyDirection *= -1;
+            }
+
+
+
+            UpdateBoundingBox();
         }
 
         public Texture2D getTexture()
@@ -176,8 +204,49 @@ namespace Platformer_v1
         public void alertCollision(I_WorldObject collidedObject)
         {
 
- 
+            if (collidedObject.isRigid())
+            {
+                //this.playerColor = Color.Red;
 
+                BoundingBox myAABB = this.enemyBoundingBox;
+                BoundingBox other = collidedObject.getBoundingBox();
+
+                int leftBound = (int)Math.Max(myAABB.Min.X, other.Min.X);
+                int rightBound = (int)Math.Min(myAABB.Max.X, other.Max.X);
+                int upperBound = (int)Math.Max(myAABB.Min.Y, other.Min.Y);
+                int lowerBound = (int)Math.Min(myAABB.Max.Y, other.Max.Y);
+
+                int xMovement = rightBound - leftBound;
+                int yMovement = lowerBound - upperBound;
+
+                if (xMovement < yMovement)
+                {
+                    if (myAABB.Min.X < other.Min.X)
+                    {
+                        this.enemyPosition.X -= xMovement;
+                        this.enemyDirection *= -1;
+                    }
+                    else
+                    {
+                        this.enemyPosition.X += xMovement;
+                        this.enemyDirection *= -1;
+                    }
+                }
+                if (yMovement <= xMovement)
+                {
+                    if (myAABB.Min.Y < other.Min.Y)
+                    {
+                        this.enemyPosition.Y -= yMovement;
+                        this.enemyDirection *= -1;
+                    }
+                    else
+                    {
+                        this.enemyPosition.Y += yMovement;
+                        this.enemyDirection *= -1;
+                    }
+                }
+
+            }
             //this.blockColor = Color.Red;
         }
 
@@ -213,12 +282,12 @@ namespace Platformer_v1
 
         protected void UpdateBoundingBox()
         {
-            this.enemyBoundingBox.Min.X = this.getPosition().X;
-            this.enemyBoundingBox.Min.Y = this.getPosition().Y;
-            this.enemyBoundingBox.Max.X = this.getPosition().X + this.getTexture().Width;
-            this.enemyBoundingBox.Max.Y = this.getPosition().Y + this.getTexture().Height;
+            this.enemyBoundingBox.Min.X = this.getPosition().X + 15;
+            this.enemyBoundingBox.Min.Y = this.getPosition().Y + 15;
+            this.enemyBoundingBox.Max.X = this.getPosition().X + this.getTexture().Width - 15;
+            this.enemyBoundingBox.Max.Y = this.getPosition().Y + this.getTexture().Height - 15;
 
-        
+
         }
     }
 }
