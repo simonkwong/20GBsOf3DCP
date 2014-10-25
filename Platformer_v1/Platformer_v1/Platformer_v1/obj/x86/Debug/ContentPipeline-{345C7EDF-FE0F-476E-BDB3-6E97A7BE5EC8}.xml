@@ -2,85 +2,13 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>spriteArt\Pacheco.png</Source>
-      <Name>spriteArt\Pacheco</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Pacheco.xnb</Output>
-      <Time>2014-10-17T02:59:10.9558683-07:00</Time>
-    </Item>
-    <Item>
       <Source>spriteArt\Adam.png</Source>
       <Name>spriteArt\Adam</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Adam.xnb</Output>
-      <Time>2014-10-17T02:59:10.9258483-07:00</Time>
-    </Item>
-    <Item>
-      <Source>spriteArt\Jordan.png</Source>
-      <Name>spriteArt\Jordan</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Jordan.xnb</Output>
-      <Time>2014-10-17T02:59:10.9448615-07:00</Time>
-    </Item>
-    <Item>
-      <Source>spriteArt\Simon.png</Source>
-      <Name>spriteArt\Simon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Simon.xnb</Output>
-      <Time>2014-10-17T02:59:10.9608716-07:00</Time>
-    </Item>
-    <Item>
-      <Source>spriteArt\background.png</Source>
-      <Name>spriteArt\background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\background.xnb</Output>
-      <Time>2014-10-17T02:59:10.9378557-07:00</Time>
-    </Item>
-    <Item>
-      <Source>spriteArt\usf.png</Source>
-      <Name>spriteArt\usf</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\usf.xnb</Output>
-      <Time>2014-10-17T02:59:10.977883-07:00</Time>
-    </Item>
-    <Item>
-      <Source>spriteArt\Spikes.png</Source>
-      <Name>spriteArt\Spikes</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Spikes.xnb</Output>
-      <Time>2014-10-17T02:59:10.9748821-07:00</Time>
-    </Item>
-    <Item>
-      <Source>spriteArt\Demon.png</Source>
-      <Name>spriteArt\Demon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Demon.xnb</Output>
-      <Time>2014-10-17T02:59:10.9418589-07:00</Time>
-    </Item>
-    <Item>
-      <Source>spriteArt\SpikeField.png</Source>
-      <Name>spriteArt\SpikeField</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\SpikeField.xnb</Output>
-      <Time>2014-10-17T02:59:10.9708783-07:00</Time>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Adam.xnb</Output>
+      <Time>2014-10-24T04:08:15.7130387-07:00</Time>
     </Item>
     <Item>
       <Source>spriteArt\AdamL.png</Source>
@@ -88,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\AdamL.xnb</Output>
-      <Time>2014-10-17T02:59:10.9298504-07:00</Time>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\AdamL.xnb</Output>
+      <Time>2014-10-24T04:08:15.7150365-07:00</Time>
     </Item>
     <Item>
       <Source>spriteArt\AdamR.png</Source>
@@ -97,8 +25,35 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\AdamR.xnb</Output>
-      <Time>2014-10-17T02:59:10.9328535-07:00</Time>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\AdamR.xnb</Output>
+      <Time>2014-10-24T04:08:15.7170371-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\background.png</Source>
+      <Name>spriteArt\background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\background.xnb</Output>
+      <Time>2014-10-24T04:08:15.7420408-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\Demon.png</Source>
+      <Name>spriteArt\Demon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Demon.xnb</Output>
+      <Time>2014-10-24T04:08:15.7190376-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\Jordan.png</Source>
+      <Name>spriteArt\Jordan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Jordan.xnb</Output>
+      <Time>2014-10-24T04:08:15.7210392-07:00</Time>
     </Item>
     <Item>
       <Source>spriteArt\JordanL.png</Source>
@@ -106,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\JordanL.xnb</Output>
-      <Time>2014-10-17T02:59:10.9488631-07:00</Time>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\JordanL.xnb</Output>
+      <Time>2014-10-24T04:08:15.7240387-07:00</Time>
     </Item>
     <Item>
       <Source>spriteArt\JordanR.png</Source>
@@ -115,8 +70,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\JordanR.xnb</Output>
-      <Time>2014-10-17T02:59:10.9518656-07:00</Time>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\JordanR.xnb</Output>
+      <Time>2014-10-24T04:08:15.7250371-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\Pacheco.png</Source>
+      <Name>spriteArt\Pacheco</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Pacheco.xnb</Output>
+      <Time>2014-10-24T04:08:15.7260387-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\Simon.png</Source>
+      <Name>spriteArt\Simon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Simon.xnb</Output>
+      <Time>2014-10-24T04:08:15.7280397-07:00</Time>
     </Item>
     <Item>
       <Source>spriteArt\SimonL.png</Source>
@@ -124,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\SimonL.xnb</Output>
-      <Time>2014-10-17T02:59:10.9638736-07:00</Time>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\SimonL.xnb</Output>
+      <Time>2014-10-24T04:08:15.7300597-07:00</Time>
     </Item>
     <Item>
       <Source>spriteArt\SimonR.png</Source>
@@ -133,8 +106,35 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\SimonR.xnb</Output>
-      <Time>2014-10-17T02:59:10.9668756-07:00</Time>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\SimonR.xnb</Output>
+      <Time>2014-10-24T04:08:15.7320381-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\SpikeField.png</Source>
+      <Name>spriteArt\SpikeField</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\SpikeField.xnb</Output>
+      <Time>2014-10-24T04:08:15.7340381-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\Spikes.png</Source>
+      <Name>spriteArt\Spikes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\Spikes.xnb</Output>
+      <Time>2014-10-24T04:08:15.7350392-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\usf.png</Source>
+      <Name>spriteArt\usf</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\usf.xnb</Output>
+      <Time>2014-10-24T04:08:15.7470407-07:00</Time>
     </Item>
     <Item>
       <Source>spriteArt\pachecoface.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\pachecoface.xnb</Output>
-      <Time>2014-10-17T04:33:02.0125953-07:00</Time>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\pachecoface.xnb</Output>
+      <Time>2014-10-24T04:08:15.7450402-07:00</Time>
     </Item>
     <Item>
       <Source>chant1.mp3</Source>
@@ -151,9 +151,18 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\chant1.xnb</Output>
-      <Extra>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\chant1.wma</Extra>
-      <Time>2014-10-17T04:49:24.2765037-07:00</Time>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\chant1.xnb</Output>
+      <Extra>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\chant1.wma</Extra>
+      <Time>2014-10-24T04:08:15.6911209-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\signoutside.png</Source>
+      <Name>spriteArt\signoutside</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\signoutside.xnb</Output>
+      <Time>2014-10-24T04:53:22.0216358-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -162,10 +171,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -194,7 +203,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-09-10T11:40:29.4902362-07:00</Value>
+        <Value>2014-10-23T01:06:18.1268429-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

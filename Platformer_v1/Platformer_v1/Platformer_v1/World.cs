@@ -19,14 +19,18 @@ namespace Platformer_v1
         Camera camera;
 
         const int MAX_SPIKEFIELDS = 10;
+        bool storyflip = false;
 
         public List<I_WorldObject> worldObjects;
 
         Texture2D backgroundImage;
         private ScrollingBackground scrollingBackground;
+        Texture2D firstImage;
+        private background background;
 
         Vector2 currentPosition = Vector2.Zero;
         Song song;
+        private background firstBackground;
 
 
         public World(Game1 containingGame, int w, int h)
@@ -35,51 +39,63 @@ namespace Platformer_v1
             WorldWidth = w;
             WorldHeight = h;
 
-
-
-            worldObjects = new List<I_WorldObject>();
-
-            Player p = new Player("Jordan", WorldData.GetInstance().playerInitialPosition, worldObjects);
-
-            camera = new Camera(containingGame.spriteBatch, p);
-
-            // Read in the xml
-            // and add everything to the worldObjects list
-
-            // Changing PlayerName to Adam, Jordan, Pacheco, or Simon draws that texture
-
-
-            foreach (Vector2 spikePos in WorldData.GetInstance().spikePositions)
+            if (storyflip == false)
             {
-                TestBlock s = new TestBlock("Spikes", spikePos + new Vector2(0, 2));
-                s.setDirection(new Vector2(0, -1));
-                s.setRigid(false);
-                worldObjects.Add(s);
+                worldObjects = new List<I_WorldObject>();
+                faces f = new faces("Adam", WorldData.GetInstance().playerInitialPosition, worldObjects);
+                faces fp = new faces("Pacheco", WorldData.GetInstance().playerInitialPosition, worldObjects);
+                camera = new Camera(containingGame.spriteBatch, f);
+                worldObjects.Add(f);
+                worldObjects.Add(fp);
             }
 
-            foreach (Vector2 enemPos in WorldData.GetInstance().enemyPositions)
+            if (storyflip != false)
             {
-                Enemy e = new Enemy("Demon", enemPos);
-                e.setRigid(false);
-                worldObjects.Add(e);
-            }
+                worldObjects = new List<I_WorldObject>();
 
-            foreach (Vector2 platPos in WorldData.GetInstance().platformPositions)
-            {
-                TestBlock b = new TestBlock("usf", platPos);
-                worldObjects.Add(b);
-            }
+                Player p = new Player("Adam", WorldData.GetInstance().playerInitialPosition, worldObjects);
 
-            worldObjects.Add(p);
+                camera = new Camera(containingGame.spriteBatch, p);
+
+                // Read in the xml
+                // and add everything to the worldObjects list
+
+                // Changing PlayerName to Adam, Jordan, Pacheco, or Simon draws that texture
+
+
+                foreach (Vector2 spikePos in WorldData.GetInstance().spikePositions)
+                {
+                    TestBlock s = new TestBlock("Spikes", spikePos + new Vector2(0, 2));
+                    s.setDirection(new Vector2(0, -1));
+                    s.setRigid(false);
+                    worldObjects.Add(s);
+                }
+
+                foreach (Vector2 enemPos in WorldData.GetInstance().enemyPositions)
+                {
+                    Enemy e = new Enemy("Demon", enemPos);
+                    e.setRigid(false);
+                    worldObjects.Add(e);
+                }
+
+                foreach (Vector2 platPos in WorldData.GetInstance().platformPositions)
+                {
+                    TestBlock b = new TestBlock("usf", platPos);
+                    worldObjects.Add(b);
+                }
+
+                worldObjects.Add(p);
+            }
         }
 
         public void LoadContent(ContentManager content)
         {
             song = content.Load<Song>("chant1");
             // MediaPlayer.Play(song);
-
+            firstImage = content.Load<Texture2D>("spriteArt/signoutside");
             backgroundImage = content.Load<Texture2D>("spriteArt/background");
             scrollingBackground = new ScrollingBackground(content, "spriteArt/background");
+            firstBackground = new background(content, "spriteArt/signoutside");
 
             foreach (I_WorldObject x in worldObjects)
             {
@@ -89,30 +105,34 @@ namespace Platformer_v1
 
         public void Update(GameTime gameTime)
         {
-            camera.Update(gameTime);
+           
+                camera.Update(gameTime);
 
-            List<I_WorldObject> toDelete = new List<I_WorldObject>();
+                if (storyflip != false)
+                {
 
-            scrollBackground();
+                List<I_WorldObject> toDelete = new List<I_WorldObject>();
 
-            // update worldObject's logic
-            foreach (I_WorldObject x in worldObjects)
-            {
+                scrollBackground();
 
-                x.Update(gameTime);
+                // update worldObject's logic
+                foreach (I_WorldObject x in worldObjects)
+                {
 
-                checkCollisions(x);
+                    x.Update(gameTime);
 
-                checkForAliveness(x, toDelete);
+                    checkCollisions(x);
 
-            }
+                    checkForAliveness(x, toDelete);
 
+                }
 
-            // delete dead objects from the list populated by 
-            // checkForAliveness
-            foreach (I_WorldObject x in toDelete)
-            {
-                worldObjects.Remove(x);
+                 // delete dead objects from the list populated by 
+                // checkForAliveness
+                foreach (I_WorldObject x in toDelete)
+                {
+                    worldObjects.Remove(x);
+                }
             }
         }
 
@@ -183,7 +203,15 @@ namespace Platformer_v1
 
         public void Draw(SpriteBatch sb)
         {
-            scrollingBackground.Draw(sb);
+
+            if (storyflip == false)
+            {
+                firstBackground.Draw(sb);
+            }
+            else
+            {
+                scrollingBackground.Draw(sb);
+            }
             // camera draws every worldObject
             foreach (I_WorldObject x in worldObjects)
             {

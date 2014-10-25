@@ -5,3 +5,4 @@ C:\Users\Simon\Downloads\Platformer\Platformer\20GBsOf3DCP-master\Platformer_v1\
 C:\Users\Simon\Downloads\Platformer\Platformer_v1\Platformer_v1\Platformer_v1Content\obj\x86\Debug\Platformer_v1Content.contentprojResolveAssemblyReference.cache
 C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer with Different Physics Engine\Platformer_v1\Platformer_v1\Platformer_v1Content\obj\x86\Debug\Platformer_v1Content.contentprojResolveAssemblyReference.cache
 C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer\Platformer_v1\Platformer_v1\Platformer_v1Content\obj\x86\Debug\Platformer_v1Content.contentprojResolveAssemblyReference.cache
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1Content\obj\x86\Debug\Platformer_v1Content.contentprojResolveAssemblyReference.cache
