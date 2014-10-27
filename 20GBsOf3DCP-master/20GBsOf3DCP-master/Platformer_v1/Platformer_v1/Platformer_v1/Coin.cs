@@ -78,6 +78,8 @@ namespace Platformer_v1
 
         public void Update(GameTime gameTime)
         {
+            UpdateBoundingBox();
+
             mTimeSinceLastFrame += (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (mTimeSinceLastFrame > SecondsPerFrame)
             {
@@ -250,8 +252,8 @@ namespace Platformer_v1
         {
             this.coinBoundingBox.Min.X = this.getPosition().X;
             this.coinBoundingBox.Min.Y = this.getPosition().Y;
-            this.coinBoundingBox.Max.X = this.getPosition().X + this.mWidth;
-            this.coinBoundingBox.Max.Y = this.getPosition().Y + this.getTexture().Height;
+            this.coinBoundingBox.Max.X = this.getPosition().X + 1;
+            this.coinBoundingBox.Max.Y = this.getPosition().Y + 1;
         }
     }
 }

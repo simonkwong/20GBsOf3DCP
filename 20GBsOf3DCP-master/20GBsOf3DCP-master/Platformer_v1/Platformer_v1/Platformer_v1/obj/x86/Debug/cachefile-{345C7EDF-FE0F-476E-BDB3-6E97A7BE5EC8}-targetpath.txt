@@ -14,8 +14,8 @@ Content\spriteArt\SpikeField.xnb
 Content\spriteArt\Spikes.xnb
 Content\spriteArt\usf.xnb
 Content\spriteArt\pachecoface.xnb
-Content\spriteArt\coin.xnb
 Content\spriteArt\scroll.xnb
+Content\spriteArt\coin.xnb
 Content\chant1.xnb
 Content\chant1.wma
 Content\WorldData.xml

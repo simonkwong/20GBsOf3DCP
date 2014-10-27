@@ -169,7 +169,6 @@ namespace Platformer_v1
 
                 if (collidedObject.getName() == "coin")
                 {
-                    Console.WriteLine("Hitler has nothing on Ebola!");
 
                     collidedObject.setAlive(false);
                 }

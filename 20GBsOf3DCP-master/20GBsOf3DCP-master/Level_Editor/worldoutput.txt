@@ -10,18 +10,6 @@
 </enemyPositions>
 
 <platformPositions type = "Vector2List">
-	<pos> <x>0</x> <y>0</y> </pos>
-	<pos> <x>0</x> <y>35</y> </pos>
-	<pos> <x>0</x> <y>70</y> </pos>
-	<pos> <x>0</x> <y>105</y> </pos>
-	<pos> <x>0</x> <y>140</y> </pos>
-	<pos> <x>0</x> <y>175</y> </pos>
-	<pos> <x>0</x> <y>210</y> </pos>
-	<pos> <x>0</x> <y>245</y> </pos>
-	<pos> <x>0</x> <y>280</y> </pos>
-	<pos> <x>0</x> <y>315</y> </pos>
-	<pos> <x>0</x> <y>350</y> </pos>
-	<pos> <x>0</x> <y>385</y> </pos>
 	<pos> <x>0</x> <y>420</y> </pos>
 	<pos> <x>0</x> <y>455</y> </pos>
 	<pos> <x>0</x> <y>490</y> </pos>
@@ -31,19 +19,6 @@
 	<pos> <x>0</x> <y>630</y> </pos>
 	<pos> <x>0</x> <y>665</y> </pos>
 	<pos> <x>0</x> <y>700</y> </pos>
-	<pos> <x>35</x> <y>0</y> </pos>
-	<pos> <x>35</x> <y>35</y> </pos>
-	<pos> <x>35</x> <y>70</y> </pos>
-	<pos> <x>35</x> <y>105</y> </pos>
-	<pos> <x>35</x> <y>140</y> </pos>
-	<pos> <x>35</x> <y>175</y> </pos>
-	<pos> <x>35</x> <y>210</y> </pos>
-	<pos> <x>35</x> <y>245</y> </pos>
-	<pos> <x>35</x> <y>280</y> </pos>
-	<pos> <x>35</x> <y>315</y> </pos>
-	<pos> <x>35</x> <y>350</y> </pos>
-	<pos> <x>35</x> <y>385</y> </pos>
-	<pos> <x>35</x> <y>420</y> </pos>
 	<pos> <x>35</x> <y>455</y> </pos>
 	<pos> <x>35</x> <y>490</y> </pos>
 	<pos> <x>35</x> <y>525</y> </pos>
@@ -52,20 +27,6 @@
 	<pos> <x>35</x> <y>630</y> </pos>
 	<pos> <x>35</x> <y>665</y> </pos>
 	<pos> <x>35</x> <y>700</y> </pos>
-	<pos> <x>70</x> <y>0</y> </pos>
-	<pos> <x>70</x> <y>35</y> </pos>
-	<pos> <x>70</x> <y>70</y> </pos>
-	<pos> <x>70</x> <y>105</y> </pos>
-	<pos> <x>70</x> <y>140</y> </pos>
-	<pos> <x>70</x> <y>175</y> </pos>
-	<pos> <x>70</x> <y>210</y> </pos>
-	<pos> <x>70</x> <y>245</y> </pos>
-	<pos> <x>70</x> <y>280</y> </pos>
-	<pos> <x>70</x> <y>315</y> </pos>
-	<pos> <x>70</x> <y>350</y> </pos>
-	<pos> <x>70</x> <y>385</y> </pos>
-	<pos> <x>70</x> <y>420</y> </pos>
-	<pos> <x>70</x> <y>455</y> </pos>
 	<pos> <x>70</x> <y>490</y> </pos>
 	<pos> <x>70</x> <y>525</y> </pos>
 	<pos> <x>70</x> <y>560</y> </pos>
@@ -73,20 +34,6 @@
 	<pos> <x>70</x> <y>630</y> </pos>
 	<pos> <x>70</x> <y>665</y> </pos>
 	<pos> <x>70</x> <y>700</y> </pos>
-	<pos> <x>105</x> <y>0</y> </pos>
-	<pos> <x>105</x> <y>35</y> </pos>
-	<pos> <x>105</x> <y>70</y> </pos>
-	<pos> <x>105</x> <y>105</y> </pos>
-	<pos> <x>105</x> <y>140</y> </pos>
-	<pos> <x>105</x> <y>175</y> </pos>
-	<pos> <x>105</x> <y>210</y> </pos>
-	<pos> <x>105</x> <y>245</y> </pos>
-	<pos> <x>105</x> <y>280</y> </pos>
-	<pos> <x>105</x> <y>315</y> </pos>
-	<pos> <x>105</x> <y>350</y> </pos>
-	<pos> <x>105</x> <y>385</y> </pos>
-	<pos> <x>105</x> <y>420</y> </pos>
-	<pos> <x>105</x> <y>455</y> </pos>
 	<pos> <x>105</x> <y>490</y> </pos>
 	<pos> <x>105</x> <y>525</y> </pos>
 	<pos> <x>105</x> <y>560</y> </pos>
@@ -94,340 +41,77 @@
 	<pos> <x>105</x> <y>630</y> </pos>
 	<pos> <x>105</x> <y>665</y> </pos>
 	<pos> <x>105</x> <y>700</y> </pos>
-	<pos> <x>140</x> <y>0</y> </pos>
-	<pos> <x>140</x> <y>35</y> </pos>
-	<pos> <x>140</x> <y>70</y> </pos>
-	<pos> <x>140</x> <y>105</y> </pos>
-	<pos> <x>140</x> <y>140</y> </pos>
-	<pos> <x>140</x> <y>175</y> </pos>
-	<pos> <x>140</x> <y>210</y> </pos>
-	<pos> <x>140</x> <y>245</y> </pos>
-	<pos> <x>140</x> <y>280</y> </pos>
-	<pos> <x>140</x> <y>315</y> </pos>
-	<pos> <x>140</x> <y>350</y> </pos>
-	<pos> <x>140</x> <y>385</y> </pos>
-	<pos> <x>140</x> <y>420</y> </pos>
-	<pos> <x>140</x> <y>455</y> </pos>
 	<pos> <x>140</x> <y>525</y> </pos>
 	<pos> <x>140</x> <y>560</y> </pos>
 	<pos> <x>140</x> <y>595</y> </pos>
 	<pos> <x>140</x> <y>630</y> </pos>
 	<pos> <x>140</x> <y>665</y> </pos>
 	<pos> <x>140</x> <y>700</y> </pos>
-	<pos> <x>175</x> <y>0</y> </pos>
-	<pos> <x>175</x> <y>35</y> </pos>
-	<pos> <x>175</x> <y>70</y> </pos>
-	<pos> <x>175</x> <y>105</y> </pos>
-	<pos> <x>175</x> <y>140</y> </pos>
-	<pos> <x>175</x> <y>175</y> </pos>
-	<pos> <x>175</x> <y>210</y> </pos>
-	<pos> <x>175</x> <y>245</y> </pos>
-	<pos> <x>175</x> <y>280</y> </pos>
-	<pos> <x>175</x> <y>315</y> </pos>
-	<pos> <x>175</x> <y>350</y> </pos>
-	<pos> <x>175</x> <y>385</y> </pos>
-	<pos> <x>175</x> <y>420</y> </pos>
-	<pos> <x>175</x> <y>455</y> </pos>
 	<pos> <x>175</x> <y>525</y> </pos>
 	<pos> <x>175</x> <y>560</y> </pos>
 	<pos> <x>175</x> <y>595</y> </pos>
 	<pos> <x>175</x> <y>630</y> </pos>
 	<pos> <x>175</x> <y>665</y> </pos>
 	<pos> <x>175</x> <y>700</y> </pos>
-	<pos> <x>210</x> <y>0</y> </pos>
-	<pos> <x>210</x> <y>35</y> </pos>
-	<pos> <x>210</x> <y>70</y> </pos>
-	<pos> <x>210</x> <y>105</y> </pos>
-	<pos> <x>210</x> <y>140</y> </pos>
-	<pos> <x>210</x> <y>175</y> </pos>
-	<pos> <x>210</x> <y>210</y> </pos>
-	<pos> <x>210</x> <y>245</y> </pos>
-	<pos> <x>210</x> <y>280</y> </pos>
-	<pos> <x>210</x> <y>315</y> </pos>
-	<pos> <x>210</x> <y>350</y> </pos>
-	<pos> <x>210</x> <y>385</y> </pos>
-	<pos> <x>210</x> <y>420</y> </pos>
-	<pos> <x>210</x> <y>455</y> </pos>
-	<pos> <x>210</x> <y>490</y> </pos>
-	<pos> <x>210</x> <y>525</y> </pos>
 	<pos> <x>210</x> <y>560</y> </pos>
 	<pos> <x>210</x> <y>595</y> </pos>
 	<pos> <x>210</x> <y>630</y> </pos>
 	<pos> <x>210</x> <y>665</y> </pos>
 	<pos> <x>210</x> <y>700</y> </pos>
-	<pos> <x>245</x> <y>0</y> </pos>
-	<pos> <x>245</x> <y>35</y> </pos>
-	<pos> <x>245</x> <y>70</y> </pos>
-	<pos> <x>245</x> <y>105</y> </pos>
-	<pos> <x>245</x> <y>140</y> </pos>
-	<pos> <x>245</x> <y>175</y> </pos>
-	<pos> <x>245</x> <y>210</y> </pos>
-	<pos> <x>245</x> <y>245</y> </pos>
-	<pos> <x>245</x> <y>280</y> </pos>
-	<pos> <x>245</x> <y>315</y> </pos>
-	<pos> <x>245</x> <y>350</y> </pos>
-	<pos> <x>245</x> <y>385</y> </pos>
-	<pos> <x>245</x> <y>420</y> </pos>
-	<pos> <x>245</x> <y>455</y> </pos>
-	<pos> <x>245</x> <y>490</y> </pos>
-	<pos> <x>245</x> <y>525</y> </pos>
 	<pos> <x>245</x> <y>560</y> </pos>
 	<pos> <x>245</x> <y>595</y> </pos>
 	<pos> <x>245</x> <y>630</y> </pos>
 	<pos> <x>245</x> <y>665</y> </pos>
 	<pos> <x>245</x> <y>700</y> </pos>
-	<pos> <x>280</x> <y>0</y> </pos>
-	<pos> <x>280</x> <y>35</y> </pos>
-	<pos> <x>280</x> <y>70</y> </pos>
-	<pos> <x>280</x> <y>105</y> </pos>
-	<pos> <x>280</x> <y>140</y> </pos>
-	<pos> <x>280</x> <y>175</y> </pos>
-	<pos> <x>280</x> <y>210</y> </pos>
-	<pos> <x>280</x> <y>245</y> </pos>
-	<pos> <x>280</x> <y>280</y> </pos>
-	<pos> <x>280</x> <y>315</y> </pos>
-	<pos> <x>280</x> <y>350</y> </pos>
-	<pos> <x>280</x> <y>385</y> </pos>
-	<pos> <x>280</x> <y>420</y> </pos>
-	<pos> <x>280</x> <y>455</y> </pos>
-	<pos> <x>280</x> <y>490</y> </pos>
-	<pos> <x>280</x> <y>525</y> </pos>
-	<pos> <x>280</x> <y>560</y> </pos>
-	<pos> <x>280</x> <y>595</y> </pos>
-	<pos> <x>280</x> <y>630</y> </pos>
-	<pos> <x>280</x> <y>665</y> </pos>
-	<pos> <x>315</x> <y>0</y> </pos>
-	<pos> <x>315</x> <y>35</y> </pos>
-	<pos> <x>315</x> <y>70</y> </pos>
-	<pos> <x>315</x> <y>105</y> </pos>
-	<pos> <x>315</x> <y>140</y> </pos>
-	<pos> <x>315</x> <y>175</y> </pos>
-	<pos> <x>315</x> <y>210</y> </pos>
-	<pos> <x>315</x> <y>245</y> </pos>
-	<pos> <x>315</x> <y>280</y> </pos>
-	<pos> <x>315</x> <y>315</y> </pos>
-	<pos> <x>315</x> <y>350</y> </pos>
-	<pos> <x>315</x> <y>385</y> </pos>
-	<pos> <x>315</x> <y>420</y> </pos>
-	<pos> <x>315</x> <y>455</y> </pos>
-	<pos> <x>315</x> <y>490</y> </pos>
-	<pos> <x>315</x> <y>525</y> </pos>
-	<pos> <x>315</x> <y>560</y> </pos>
-	<pos> <x>315</x> <y>595</y> </pos>
-	<pos> <x>315</x> <y>630</y> </pos>
-	<pos> <x>315</x> <y>665</y> </pos>
-	<pos> <x>350</x> <y>0</y> </pos>
-	<pos> <x>350</x> <y>35</y> </pos>
-	<pos> <x>350</x> <y>70</y> </pos>
-	<pos> <x>350</x> <y>105</y> </pos>
-	<pos> <x>350</x> <y>140</y> </pos>
-	<pos> <x>350</x> <y>175</y> </pos>
-	<pos> <x>350</x> <y>210</y> </pos>
-	<pos> <x>350</x> <y>245</y> </pos>
-	<pos> <x>350</x> <y>280</y> </pos>
-	<pos> <x>350</x> <y>315</y> </pos>
-	<pos> <x>350</x> <y>350</y> </pos>
-	<pos> <x>350</x> <y>385</y> </pos>
-	<pos> <x>350</x> <y>420</y> </pos>
-	<pos> <x>350</x> <y>455</y> </pos>
-	<pos> <x>350</x> <y>490</y> </pos>
-	<pos> <x>350</x> <y>525</y> </pos>
-	<pos> <x>350</x> <y>560</y> </pos>
-	<pos> <x>350</x> <y>595</y> </pos>
-	<pos> <x>350</x> <y>630</y> </pos>
-	<pos> <x>350</x> <y>665</y> </pos>
-	<pos> <x>385</x> <y>0</y> </pos>
-	<pos> <x>385</x> <y>35</y> </pos>
-	<pos> <x>385</x> <y>70</y> </pos>
-	<pos> <x>385</x> <y>105</y> </pos>
-	<pos> <x>385</x> <y>140</y> </pos>
-	<pos> <x>385</x> <y>175</y> </pos>
-	<pos> <x>385</x> <y>210</y> </pos>
-	<pos> <x>385</x> <y>280</y> </pos>
-	<pos> <x>385</x> <y>315</y> </pos>
-	<pos> <x>385</x> <y>350</y> </pos>
-	<pos> <x>385</x> <y>385</y> </pos>
-	<pos> <x>385</x> <y>420</y> </pos>
-	<pos> <x>385</x> <y>455</y> </pos>
-	<pos> <x>385</x> <y>490</y> </pos>
-	<pos> <x>385</x> <y>525</y> </pos>
 	<pos> <x>385</x> <y>560</y> </pos>
 	<pos> <x>385</x> <y>595</y> </pos>
 	<pos> <x>385</x> <y>630</y> </pos>
 	<pos> <x>385</x> <y>665</y> </pos>
 	<pos> <x>385</x> <y>700</y> </pos>
-	<pos> <x>420</x> <y>0</y> </pos>
-	<pos> <x>420</x> <y>35</y> </pos>
-	<pos> <x>420</x> <y>70</y> </pos>
-	<pos> <x>420</x> <y>105</y> </pos>
-	<pos> <x>420</x> <y>140</y> </pos>
-	<pos> <x>420</x> <y>175</y> </pos>
-	<pos> <x>420</x> <y>210</y> </pos>
-	<pos> <x>420</x> <y>245</y> </pos>
-	<pos> <x>420</x> <y>280</y> </pos>
-	<pos> <x>420</x> <y>315</y> </pos>
-	<pos> <x>420</x> <y>350</y> </pos>
-	<pos> <x>420</x> <y>385</y> </pos>
-	<pos> <x>420</x> <y>420</y> </pos>
-	<pos> <x>420</x> <y>455</y> </pos>
-	<pos> <x>420</x> <y>490</y> </pos>
-	<pos> <x>420</x> <y>525</y> </pos>
 	<pos> <x>420</x> <y>560</y> </pos>
 	<pos> <x>420</x> <y>595</y> </pos>
 	<pos> <x>420</x> <y>630</y> </pos>
 	<pos> <x>420</x> <y>665</y> </pos>
 	<pos> <x>420</x> <y>700</y> </pos>
-	<pos> <x>455</x> <y>0</y> </pos>
-	<pos> <x>455</x> <y>35</y> </pos>
-	<pos> <x>455</x> <y>70</y> </pos>
-	<pos> <x>455</x> <y>105</y> </pos>
-	<pos> <x>455</x> <y>140</y> </pos>
-	<pos> <x>455</x> <y>175</y> </pos>
-	<pos> <x>455</x> <y>210</y> </pos>
-	<pos> <x>455</x> <y>245</y> </pos>
-	<pos> <x>455</x> <y>280</y> </pos>
-	<pos> <x>455</x> <y>315</y> </pos>
-	<pos> <x>455</x> <y>350</y> </pos>
-	<pos> <x>455</x> <y>385</y> </pos>
-	<pos> <x>455</x> <y>420</y> </pos>
-	<pos> <x>455</x> <y>455</y> </pos>
-	<pos> <x>455</x> <y>490</y> </pos>
-	<pos> <x>455</x> <y>525</y> </pos>
 	<pos> <x>455</x> <y>560</y> </pos>
 	<pos> <x>455</x> <y>595</y> </pos>
 	<pos> <x>455</x> <y>630</y> </pos>
 	<pos> <x>455</x> <y>665</y> </pos>
 	<pos> <x>455</x> <y>700</y> </pos>
-	<pos> <x>490</x> <y>0</y> </pos>
-	<pos> <x>490</x> <y>35</y> </pos>
-	<pos> <x>490</x> <y>70</y> </pos>
-	<pos> <x>490</x> <y>105</y> </pos>
-	<pos> <x>490</x> <y>140</y> </pos>
-	<pos> <x>490</x> <y>175</y> </pos>
-	<pos> <x>490</x> <y>210</y> </pos>
-	<pos> <x>490</x> <y>245</y> </pos>
-	<pos> <x>490</x> <y>280</y> </pos>
-	<pos> <x>490</x> <y>315</y> </pos>
-	<pos> <x>490</x> <y>350</y> </pos>
-	<pos> <x>490</x> <y>385</y> </pos>
-	<pos> <x>490</x> <y>420</y> </pos>
-	<pos> <x>490</x> <y>455</y> </pos>
 	<pos> <x>490</x> <y>525</y> </pos>
 	<pos> <x>490</x> <y>560</y> </pos>
 	<pos> <x>490</x> <y>595</y> </pos>
 	<pos> <x>490</x> <y>630</y> </pos>
 	<pos> <x>490</x> <y>665</y> </pos>
 	<pos> <x>490</x> <y>700</y> </pos>
-	<pos> <x>525</x> <y>0</y> </pos>
-	<pos> <x>525</x> <y>35</y> </pos>
-	<pos> <x>525</x> <y>70</y> </pos>
-	<pos> <x>525</x> <y>105</y> </pos>
-	<pos> <x>525</x> <y>140</y> </pos>
-	<pos> <x>525</x> <y>175</y> </pos>
-	<pos> <x>525</x> <y>210</y> </pos>
-	<pos> <x>525</x> <y>245</y> </pos>
-	<pos> <x>525</x> <y>280</y> </pos>
-	<pos> <x>525</x> <y>315</y> </pos>
-	<pos> <x>525</x> <y>350</y> </pos>
-	<pos> <x>525</x> <y>385</y> </pos>
-	<pos> <x>525</x> <y>420</y> </pos>
-	<pos> <x>525</x> <y>490</y> </pos>
 	<pos> <x>525</x> <y>525</y> </pos>
 	<pos> <x>525</x> <y>560</y> </pos>
 	<pos> <x>525</x> <y>595</y> </pos>
 	<pos> <x>525</x> <y>630</y> </pos>
 	<pos> <x>525</x> <y>665</y> </pos>
 	<pos> <x>525</x> <y>700</y> </pos>
-	<pos> <x>560</x> <y>0</y> </pos>
-	<pos> <x>560</x> <y>35</y> </pos>
-	<pos> <x>560</x> <y>70</y> </pos>
-	<pos> <x>560</x> <y>105</y> </pos>
-	<pos> <x>560</x> <y>140</y> </pos>
-	<pos> <x>560</x> <y>175</y> </pos>
-	<pos> <x>560</x> <y>210</y> </pos>
-	<pos> <x>560</x> <y>245</y> </pos>
-	<pos> <x>560</x> <y>280</y> </pos>
-	<pos> <x>560</x> <y>315</y> </pos>
-	<pos> <x>560</x> <y>350</y> </pos>
-	<pos> <x>560</x> <y>385</y> </pos>
-	<pos> <x>560</x> <y>455</y> </pos>
-	<pos> <x>560</x> <y>490</y> </pos>
 	<pos> <x>560</x> <y>560</y> </pos>
 	<pos> <x>560</x> <y>595</y> </pos>
 	<pos> <x>560</x> <y>630</y> </pos>
 	<pos> <x>560</x> <y>665</y> </pos>
 	<pos> <x>560</x> <y>700</y> </pos>
-	<pos> <x>595</x> <y>0</y> </pos>
-	<pos> <x>595</x> <y>35</y> </pos>
-	<pos> <x>595</x> <y>70</y> </pos>
-	<pos> <x>595</x> <y>105</y> </pos>
-	<pos> <x>595</x> <y>140</y> </pos>
-	<pos> <x>595</x> <y>175</y> </pos>
-	<pos> <x>595</x> <y>210</y> </pos>
-	<pos> <x>595</x> <y>245</y> </pos>
-	<pos> <x>595</x> <y>280</y> </pos>
-	<pos> <x>595</x> <y>315</y> </pos>
-	<pos> <x>595</x> <y>350</y> </pos>
-	<pos> <x>595</x> <y>420</y> </pos>
-	<pos> <x>595</x> <y>455</y> </pos>
-	<pos> <x>595</x> <y>490</y> </pos>
 	<pos> <x>595</x> <y>560</y> </pos>
 	<pos> <x>595</x> <y>595</y> </pos>
 	<pos> <x>595</x> <y>630</y> </pos>
 	<pos> <x>595</x> <y>665</y> </pos>
 	<pos> <x>595</x> <y>700</y> </pos>
-	<pos> <x>630</x> <y>0</y> </pos>
-	<pos> <x>630</x> <y>35</y> </pos>
-	<pos> <x>630</x> <y>70</y> </pos>
-	<pos> <x>630</x> <y>105</y> </pos>
-	<pos> <x>630</x> <y>140</y> </pos>
-	<pos> <x>630</x> <y>175</y> </pos>
-	<pos> <x>630</x> <y>210</y> </pos>
-	<pos> <x>630</x> <y>245</y> </pos>
-	<pos> <x>630</x> <y>280</y> </pos>
-	<pos> <x>630</x> <y>315</y> </pos>
-	<pos> <x>630</x> <y>350</y> </pos>
-	<pos> <x>630</x> <y>385</y> </pos>
-	<pos> <x>630</x> <y>455</y> </pos>
-	<pos> <x>630</x> <y>490</y> </pos>
 	<pos> <x>630</x> <y>560</y> </pos>
 	<pos> <x>630</x> <y>595</y> </pos>
 	<pos> <x>630</x> <y>630</y> </pos>
 	<pos> <x>630</x> <y>665</y> </pos>
 	<pos> <x>630</x> <y>700</y> </pos>
-	<pos> <x>665</x> <y>0</y> </pos>
-	<pos> <x>665</x> <y>35</y> </pos>
-	<pos> <x>665</x> <y>70</y> </pos>
-	<pos> <x>665</x> <y>105</y> </pos>
-	<pos> <x>665</x> <y>140</y> </pos>
-	<pos> <x>665</x> <y>175</y> </pos>
-	<pos> <x>665</x> <y>210</y> </pos>
-	<pos> <x>665</x> <y>245</y> </pos>
-	<pos> <x>665</x> <y>280</y> </pos>
-	<pos> <x>665</x> <y>315</y> </pos>
-	<pos> <x>665</x> <y>350</y> </pos>
-	<pos> <x>665</x> <y>385</y> </pos>
-	<pos> <x>665</x> <y>420</y> </pos>
 	<pos> <x>665</x> <y>525</y> </pos>
 	<pos> <x>665</x> <y>560</y> </pos>
 	<pos> <x>665</x> <y>595</y> </pos>
 	<pos> <x>665</x> <y>630</y> </pos>
 	<pos> <x>665</x> <y>665</y> </pos>
 	<pos> <x>665</x> <y>700</y> </pos>
-	<pos> <x>700</x> <y>0</y> </pos>
-	<pos> <x>700</x> <y>35</y> </pos>
-	<pos> <x>700</x> <y>70</y> </pos>
-	<pos> <x>700</x> <y>105</y> </pos>
-	<pos> <x>700</x> <y>140</y> </pos>
-	<pos> <x>700</x> <y>175</y> </pos>
-	<pos> <x>700</x> <y>210</y> </pos>
-	<pos> <x>700</x> <y>245</y> </pos>
-	<pos> <x>700</x> <y>280</y> </pos>
-	<pos> <x>700</x> <y>315</y> </pos>
-	<pos> <x>700</x> <y>350</y> </pos>
 	<pos> <x>700</x> <y>385</y> </pos>
-	<pos> <x>700</x> <y>420</y> </pos>
-	<pos> <x>700</x> <y>455</y> </pos>
 	<pos> <x>700</x> <y>490</y> </pos>
 	<pos> <x>700</x> <y>525</y> </pos>
 	<pos> <x>700</x> <y>560</y> </pos>
@@ -435,19 +119,7 @@
 	<pos> <x>700</x> <y>630</y> </pos>
 	<pos> <x>700</x> <y>665</y> </pos>
 	<pos> <x>700</x> <y>700</y> </pos>
-	<pos> <x>735</x> <y>0</y> </pos>
-	<pos> <x>735</x> <y>35</y> </pos>
-	<pos> <x>735</x> <y>70</y> </pos>
-	<pos> <x>735</x> <y>105</y> </pos>
-	<pos> <x>735</x> <y>140</y> </pos>
-	<pos> <x>735</x> <y>175</y> </pos>
-	<pos> <x>735</x> <y>210</y> </pos>
-	<pos> <x>735</x> <y>245</y> </pos>
-	<pos> <x>735</x> <y>280</y> </pos>
-	<pos> <x>735</x> <y>315</y> </pos>
 	<pos> <x>735</x> <y>385</y> </pos>
-	<pos> <x>735</x> <y>420</y> </pos>
-	<pos> <x>735</x> <y>455</y> </pos>
 	<pos> <x>735</x> <y>490</y> </pos>
 	<pos> <x>735</x> <y>525</y> </pos>
 	<pos> <x>735</x> <y>560</y> </pos>
@@ -455,19 +127,7 @@
 	<pos> <x>735</x> <y>630</y> </pos>
 	<pos> <x>735</x> <y>665</y> </pos>
 	<pos> <x>735</x> <y>700</y> </pos>
-	<pos> <x>770</x> <y>0</y> </pos>
-	<pos> <x>770</x> <y>35</y> </pos>
-	<pos> <x>770</x> <y>70</y> </pos>
-	<pos> <x>770</x> <y>105</y> </pos>
-	<pos> <x>770</x> <y>140</y> </pos>
-	<pos> <x>770</x> <y>175</y> </pos>
-	<pos> <x>770</x> <y>210</y> </pos>
-	<pos> <x>770</x> <y>245</y> </pos>
-	<pos> <x>770</x> <y>280</y> </pos>
-	<pos> <x>770</x> <y>315</y> </pos>
 	<pos> <x>770</x> <y>385</y> </pos>
-	<pos> <x>770</x> <y>420</y> </pos>
-	<pos> <x>770</x> <y>455</y> </pos>
 	<pos> <x>770</x> <y>490</y> </pos>
 	<pos> <x>770</x> <y>525</y> </pos>
 	<pos> <x>770</x> <y>560</y> </pos>
@@ -475,178 +135,53 @@
 	<pos> <x>770</x> <y>630</y> </pos>
 	<pos> <x>770</x> <y>665</y> </pos>
 	<pos> <x>770</x> <y>700</y> </pos>
-	<pos> <x>805</x> <y>0</y> </pos>
-	<pos> <x>805</x> <y>35</y> </pos>
-	<pos> <x>805</x> <y>70</y> </pos>
-	<pos> <x>805</x> <y>105</y> </pos>
-	<pos> <x>805</x> <y>140</y> </pos>
-	<pos> <x>805</x> <y>175</y> </pos>
-	<pos> <x>805</x> <y>210</y> </pos>
-	<pos> <x>805</x> <y>245</y> </pos>
-	<pos> <x>805</x> <y>280</y> </pos>
-	<pos> <x>805</x> <y>315</y> </pos>
 	<pos> <x>805</x> <y>385</y> </pos>
-	<pos> <x>805</x> <y>420</y> </pos>
-	<pos> <x>805</x> <y>455</y> </pos>
-	<pos> <x>805</x> <y>490</y> </pos>
 	<pos> <x>805</x> <y>525</y> </pos>
 	<pos> <x>805</x> <y>560</y> </pos>
 	<pos> <x>805</x> <y>595</y> </pos>
 	<pos> <x>805</x> <y>630</y> </pos>
 	<pos> <x>805</x> <y>665</y> </pos>
 	<pos> <x>805</x> <y>700</y> </pos>
-	<pos> <x>840</x> <y>0</y> </pos>
-	<pos> <x>840</x> <y>35</y> </pos>
-	<pos> <x>840</x> <y>70</y> </pos>
-	<pos> <x>840</x> <y>105</y> </pos>
-	<pos> <x>840</x> <y>140</y> </pos>
-	<pos> <x>840</x> <y>175</y> </pos>
-	<pos> <x>840</x> <y>210</y> </pos>
-	<pos> <x>840</x> <y>245</y> </pos>
-	<pos> <x>840</x> <y>280</y> </pos>
-	<pos> <x>840</x> <y>315</y> </pos>
 	<pos> <x>840</x> <y>350</y> </pos>
 	<pos> <x>840</x> <y>385</y> </pos>
-	<pos> <x>840</x> <y>420</y> </pos>
-	<pos> <x>840</x> <y>455</y> </pos>
-	<pos> <x>840</x> <y>490</y> </pos>
-	<pos> <x>840</x> <y>525</y> </pos>
 	<pos> <x>840</x> <y>560</y> </pos>
 	<pos> <x>840</x> <y>595</y> </pos>
 	<pos> <x>840</x> <y>630</y> </pos>
 	<pos> <x>840</x> <y>665</y> </pos>
 	<pos> <x>840</x> <y>700</y> </pos>
-	<pos> <x>875</x> <y>0</y> </pos>
-	<pos> <x>875</x> <y>35</y> </pos>
-	<pos> <x>875</x> <y>70</y> </pos>
-	<pos> <x>875</x> <y>105</y> </pos>
-	<pos> <x>875</x> <y>140</y> </pos>
-	<pos> <x>875</x> <y>175</y> </pos>
-	<pos> <x>875</x> <y>210</y> </pos>
-	<pos> <x>875</x> <y>245</y> </pos>
-	<pos> <x>875</x> <y>280</y> </pos>
 	<pos> <x>875</x> <y>315</y> </pos>
 	<pos> <x>875</x> <y>350</y> </pos>
-	<pos> <x>875</x> <y>385</y> </pos>
-	<pos> <x>875</x> <y>420</y> </pos>
-	<pos> <x>875</x> <y>455</y> </pos>
-	<pos> <x>875</x> <y>490</y> </pos>
-	<pos> <x>875</x> <y>525</y> </pos>
-	<pos> <x>875</x> <y>560</y> </pos>
 	<pos> <x>875</x> <y>595</y> </pos>
 	<pos> <x>875</x> <y>630</y> </pos>
 	<pos> <x>875</x> <y>665</y> </pos>
 	<pos> <x>875</x> <y>700</y> </pos>
-	<pos> <x>910</x> <y>0</y> </pos>
-	<pos> <x>910</x> <y>35</y> </pos>
-	<pos> <x>910</x> <y>70</y> </pos>
-	<pos> <x>910</x> <y>105</y> </pos>
-	<pos> <x>910</x> <y>140</y> </pos>
-	<pos> <x>910</x> <y>175</y> </pos>
-	<pos> <x>910</x> <y>210</y> </pos>
-	<pos> <x>910</x> <y>245</y> </pos>
-	<pos> <x>910</x> <y>280</y> </pos>
 	<pos> <x>910</x> <y>315</y> </pos>
-	<pos> <x>910</x> <y>350</y> </pos>
-	<pos> <x>910</x> <y>385</y> </pos>
-	<pos> <x>910</x> <y>420</y> </pos>
-	<pos> <x>910</x> <y>455</y> </pos>
-	<pos> <x>910</x> <y>490</y> </pos>
-	<pos> <x>910</x> <y>525</y> </pos>
-	<pos> <x>910</x> <y>560</y> </pos>
 	<pos> <x>910</x> <y>630</y> </pos>
 	<pos> <x>910</x> <y>665</y> </pos>
 	<pos> <x>910</x> <y>700</y> </pos>
-	<pos> <x>945</x> <y>0</y> </pos>
-	<pos> <x>945</x> <y>35</y> </pos>
-	<pos> <x>945</x> <y>70</y> </pos>
-	<pos> <x>945</x> <y>105</y> </pos>
-	<pos> <x>945</x> <y>140</y> </pos>
-	<pos> <x>945</x> <y>175</y> </pos>
-	<pos> <x>945</x> <y>210</y> </pos>
-	<pos> <x>945</x> <y>245</y> </pos>
 	<pos> <x>945</x> <y>280</y> </pos>
-	<pos> <x>945</x> <y>315</y> </pos>
-	<pos> <x>945</x> <y>350</y> </pos>
-	<pos> <x>945</x> <y>385</y> </pos>
-	<pos> <x>945</x> <y>420</y> </pos>
-	<pos> <x>945</x> <y>455</y> </pos>
-	<pos> <x>945</x> <y>490</y> </pos>
-	<pos> <x>945</x> <y>525</y> </pos>
-	<pos> <x>945</x> <y>560</y> </pos>
 	<pos> <x>945</x> <y>630</y> </pos>
 	<pos> <x>945</x> <y>665</y> </pos>
 	<pos> <x>945</x> <y>700</y> </pos>
-	<pos> <x>980</x> <y>0</y> </pos>
-	<pos> <x>980</x> <y>35</y> </pos>
-	<pos> <x>980</x> <y>70</y> </pos>
-	<pos> <x>980</x> <y>105</y> </pos>
-	<pos> <x>980</x> <y>140</y> </pos>
-	<pos> <x>980</x> <y>175</y> </pos>
-	<pos> <x>980</x> <y>210</y> </pos>
-	<pos> <x>980</x> <y>245</y> </pos>
 	<pos> <x>980</x> <y>280</y> </pos>
-	<pos> <x>980</x> <y>315</y> </pos>
-	<pos> <x>980</x> <y>350</y> </pos>
-	<pos> <x>980</x> <y>385</y> </pos>
-	<pos> <x>980</x> <y>420</y> </pos>
-	<pos> <x>980</x> <y>455</y> </pos>
-	<pos> <x>980</x> <y>490</y> </pos>
-	<pos> <x>980</x> <y>525</y> </pos>
 	<pos> <x>980</x> <y>595</y> </pos>
 	<pos> <x>980</x> <y>630</y> </pos>
 	<pos> <x>980</x> <y>665</y> </pos>
 	<pos> <x>980</x> <y>700</y> </pos>
-	<pos> <x>1015</x> <y>0</y> </pos>
-	<pos> <x>1015</x> <y>35</y> </pos>
-	<pos> <x>1015</x> <y>70</y> </pos>
-	<pos> <x>1015</x> <y>105</y> </pos>
-	<pos> <x>1015</x> <y>140</y> </pos>
-	<pos> <x>1015</x> <y>175</y> </pos>
-	<pos> <x>1015</x> <y>210</y> </pos>
 	<pos> <x>1015</x> <y>280</y> </pos>
-	<pos> <x>1015</x> <y>315</y> </pos>
-	<pos> <x>1015</x> <y>350</y> </pos>
-	<pos> <x>1015</x> <y>385</y> </pos>
-	<pos> <x>1015</x> <y>420</y> </pos>
-	<pos> <x>1015</x> <y>455</y> </pos>
-	<pos> <x>1015</x> <y>490</y> </pos>
-	<pos> <x>1015</x> <y>525</y> </pos>
 	<pos> <x>1015</x> <y>560</y> </pos>
 	<pos> <x>1015</x> <y>595</y> </pos>
 	<pos> <x>1015</x> <y>630</y> </pos>
 	<pos> <x>1015</x> <y>665</y> </pos>
 	<pos> <x>1015</x> <y>700</y> </pos>
-	<pos> <x>1050</x> <y>0</y> </pos>
-	<pos> <x>1050</x> <y>35</y> </pos>
-	<pos> <x>1050</x> <y>70</y> </pos>
-	<pos> <x>1050</x> <y>105</y> </pos>
-	<pos> <x>1050</x> <y>140</y> </pos>
-	<pos> <x>1050</x> <y>175</y> </pos>
 	<pos> <x>1050</x> <y>280</y> </pos>
-	<pos> <x>1050</x> <y>315</y> </pos>
-	<pos> <x>1050</x> <y>350</y> </pos>
-	<pos> <x>1050</x> <y>385</y> </pos>
-	<pos> <x>1050</x> <y>420</y> </pos>
-	<pos> <x>1050</x> <y>455</y> </pos>
-	<pos> <x>1050</x> <y>490</y> </pos>
 	<pos> <x>1050</x> <y>525</y> </pos>
 	<pos> <x>1050</x> <y>560</y> </pos>
 	<pos> <x>1050</x> <y>595</y> </pos>
 	<pos> <x>1050</x> <y>630</y> </pos>
 	<pos> <x>1050</x> <y>665</y> </pos>
 	<pos> <x>1050</x> <y>700</y> </pos>
-	<pos> <x>1085</x> <y>0</y> </pos>
-	<pos> <x>1085</x> <y>35</y> </pos>
-	<pos> <x>1085</x> <y>70</y> </pos>
-	<pos> <x>1085</x> <y>105</y> </pos>
-	<pos> <x>1085</x> <y>140</y> </pos>
 	<pos> <x>1085</x> <y>280</y> </pos>
-	<pos> <x>1085</x> <y>315</y> </pos>
-	<pos> <x>1085</x> <y>350</y> </pos>
-	<pos> <x>1085</x> <y>385</y> </pos>
-	<pos> <x>1085</x> <y>420</y> </pos>
-	<pos> <x>1085</x> <y>455</y> </pos>
 	<pos> <x>1085</x> <y>490</y> </pos>
 	<pos> <x>1085</x> <y>525</y> </pos>
 	<pos> <x>1085</x> <y>560</y> </pos>
@@ -654,20 +189,7 @@
 	<pos> <x>1085</x> <y>630</y> </pos>
 	<pos> <x>1085</x> <y>665</y> </pos>
 	<pos> <x>1085</x> <y>700</y> </pos>
-	<pos> <x>1120</x> <y>0</y> </pos>
-	<pos> <x>1120</x> <y>35</y> </pos>
-	<pos> <x>1120</x> <y>70</y> </pos>
-	<pos> <x>1120</x> <y>105</y> </pos>
-	<pos> <x>1120</x> <y>140</y> </pos>
-	<pos> <x>1120</x> <y>175</y> </pos>
-	<pos> <x>1120</x> <y>210</y> </pos>
-	<pos> <x>1120</x> <y>245</y> </pos>
 	<pos> <x>1120</x> <y>280</y> </pos>
-	<pos> <x>1120</x> <y>315</y> </pos>
-	<pos> <x>1120</x> <y>350</y> </pos>
-	<pos> <x>1120</x> <y>385</y> </pos>
-	<pos> <x>1120</x> <y>420</y> </pos>
-	<pos> <x>1120</x> <y>455</y> </pos>
 	<pos> <x>1120</x> <y>490</y> </pos>
 	<pos> <x>1120</x> <y>525</y> </pos>
 	<pos> <x>1120</x> <y>560</y> </pos>
@@ -675,19 +197,6 @@
 	<pos> <x>1120</x> <y>630</y> </pos>
 	<pos> <x>1120</x> <y>665</y> </pos>
 	<pos> <x>1120</x> <y>700</y> </pos>
-	<pos> <x>1155</x> <y>0</y> </pos>
-	<pos> <x>1155</x> <y>35</y> </pos>
-	<pos> <x>1155</x> <y>70</y> </pos>
-	<pos> <x>1155</x> <y>105</y> </pos>
-	<pos> <x>1155</x> <y>140</y> </pos>
-	<pos> <x>1155</x> <y>175</y> </pos>
-	<pos> <x>1155</x> <y>210</y> </pos>
-	<pos> <x>1155</x> <y>245</y> </pos>
-	<pos> <x>1155</x> <y>280</y> </pos>
-	<pos> <x>1155</x> <y>315</y> </pos>
-	<pos> <x>1155</x> <y>350</y> </pos>
-	<pos> <x>1155</x> <y>385</y> </pos>
-	<pos> <x>1155</x> <y>420</y> </pos>
 	<pos> <x>1155</x> <y>455</y> </pos>
 	<pos> <x>1155</x> <y>490</y> </pos>
 	<pos> <x>1155</x> <y>525</y> </pos>
@@ -696,369 +205,87 @@
 	<pos> <x>1155</x> <y>630</y> </pos>
 	<pos> <x>1155</x> <y>665</y> </pos>
 	<pos> <x>1155</x> <y>700</y> </pos>
-	<pos> <x>1190</x> <y>0</y> </pos>
-	<pos> <x>1190</x> <y>35</y> </pos>
-	<pos> <x>1190</x> <y>70</y> </pos>
-	<pos> <x>1190</x> <y>105</y> </pos>
-	<pos> <x>1190</x> <y>140</y> </pos>
-	<pos> <x>1190</x> <y>175</y> </pos>
-	<pos> <x>1190</x> <y>210</y> </pos>
-	<pos> <x>1190</x> <y>245</y> </pos>
-	<pos> <x>1190</x> <y>280</y> </pos>
-	<pos> <x>1190</x> <y>315</y> </pos>
-	<pos> <x>1190</x> <y>350</y> </pos>
-	<pos> <x>1190</x> <y>385</y> </pos>
-	<pos> <x>1190</x> <y>420</y> </pos>
-	<pos> <x>1190</x> <y>455</y> </pos>
-	<pos> <x>1190</x> <y>490</y> </pos>
 	<pos> <x>1190</x> <y>525</y> </pos>
 	<pos> <x>1190</x> <y>560</y> </pos>
 	<pos> <x>1190</x> <y>595</y> </pos>
 	<pos> <x>1190</x> <y>630</y> </pos>
 	<pos> <x>1190</x> <y>665</y> </pos>
 	<pos> <x>1190</x> <y>700</y> </pos>
-	<pos> <x>1225</x> <y>0</y> </pos>
-	<pos> <x>1225</x> <y>35</y> </pos>
-	<pos> <x>1225</x> <y>70</y> </pos>
-	<pos> <x>1225</x> <y>105</y> </pos>
-	<pos> <x>1225</x> <y>140</y> </pos>
-	<pos> <x>1225</x> <y>175</y> </pos>
-	<pos> <x>1225</x> <y>210</y> </pos>
-	<pos> <x>1225</x> <y>245</y> </pos>
-	<pos> <x>1225</x> <y>280</y> </pos>
-	<pos> <x>1225</x> <y>315</y> </pos>
-	<pos> <x>1225</x> <y>350</y> </pos>
-	<pos> <x>1225</x> <y>385</y> </pos>
-	<pos> <x>1225</x> <y>420</y> </pos>
-	<pos> <x>1225</x> <y>455</y> </pos>
-	<pos> <x>1225</x> <y>490</y> </pos>
-	<pos> <x>1225</x> <y>525</y> </pos>
 	<pos> <x>1225</x> <y>560</y> </pos>
 	<pos> <x>1225</x> <y>595</y> </pos>
 	<pos> <x>1225</x> <y>630</y> </pos>
 	<pos> <x>1225</x> <y>665</y> </pos>
 	<pos> <x>1225</x> <y>700</y> </pos>
-	<pos> <x>1260</x> <y>0</y> </pos>
-	<pos> <x>1260</x> <y>35</y> </pos>
-	<pos> <x>1260</x> <y>70</y> </pos>
-	<pos> <x>1260</x> <y>105</y> </pos>
-	<pos> <x>1260</x> <y>140</y> </pos>
-	<pos> <x>1260</x> <y>175</y> </pos>
 	<pos> <x>1260</x> <y>210</y> </pos>
-	<pos> <x>1260</x> <y>245</y> </pos>
-	<pos> <x>1260</x> <y>280</y> </pos>
-	<pos> <x>1260</x> <y>315</y> </pos>
-	<pos> <x>1260</x> <y>420</y> </pos>
-	<pos> <x>1260</x> <y>455</y> </pos>
-	<pos> <x>1260</x> <y>490</y> </pos>
-	<pos> <x>1260</x> <y>525</y> </pos>
-	<pos> <x>1260</x> <y>560</y> </pos>
 	<pos> <x>1260</x> <y>595</y> </pos>
 	<pos> <x>1260</x> <y>630</y> </pos>
 	<pos> <x>1260</x> <y>665</y> </pos>
 	<pos> <x>1260</x> <y>700</y> </pos>
-	<pos> <x>1295</x> <y>0</y> </pos>
-	<pos> <x>1295</x> <y>35</y> </pos>
-	<pos> <x>1295</x> <y>70</y> </pos>
-	<pos> <x>1295</x> <y>105</y> </pos>
-	<pos> <x>1295</x> <y>175</y> </pos>
 	<pos> <x>1295</x> <y>210</y> </pos>
-	<pos> <x>1295</x> <y>245</y> </pos>
-	<pos> <x>1295</x> <y>280</y> </pos>
-	<pos> <x>1295</x> <y>315</y> </pos>
-	<pos> <x>1295</x> <y>350</y> </pos>
-	<pos> <x>1295</x> <y>455</y> </pos>
-	<pos> <x>1295</x> <y>490</y> </pos>
-	<pos> <x>1295</x> <y>525</y> </pos>
-	<pos> <x>1295</x> <y>560</y> </pos>
-	<pos> <x>1295</x> <y>595</y> </pos>
 	<pos> <x>1295</x> <y>630</y> </pos>
 	<pos> <x>1295</x> <y>665</y> </pos>
 	<pos> <x>1295</x> <y>700</y> </pos>
-	<pos> <x>1330</x> <y>0</y> </pos>
-	<pos> <x>1330</x> <y>35</y> </pos>
-	<pos> <x>1330</x> <y>70</y> </pos>
-	<pos> <x>1330</x> <y>105</y> </pos>
-	<pos> <x>1330</x> <y>140</y> </pos>
 	<pos> <x>1330</x> <y>210</y> </pos>
-	<pos> <x>1330</x> <y>245</y> </pos>
-	<pos> <x>1330</x> <y>280</y> </pos>
 	<pos> <x>1330</x> <y>315</y> </pos>
-	<pos> <x>1330</x> <y>350</y> </pos>
-	<pos> <x>1330</x> <y>385</y> </pos>
-	<pos> <x>1330</x> <y>490</y> </pos>
-	<pos> <x>1330</x> <y>525</y> </pos>
-	<pos> <x>1330</x> <y>560</y> </pos>
-	<pos> <x>1330</x> <y>595</y> </pos>
 	<pos> <x>1330</x> <y>630</y> </pos>
 	<pos> <x>1330</x> <y>665</y> </pos>
 	<pos> <x>1330</x> <y>700</y> </pos>
-	<pos> <x>1365</x> <y>0</y> </pos>
-	<pos> <x>1365</x> <y>35</y> </pos>
-	<pos> <x>1365</x> <y>70</y> </pos>
-	<pos> <x>1365</x> <y>105</y> </pos>
-	<pos> <x>1365</x> <y>140</y> </pos>
-	<pos> <x>1365</x> <y>175</y> </pos>
 	<pos> <x>1365</x> <y>210</y> </pos>
-	<pos> <x>1365</x> <y>245</y> </pos>
-	<pos> <x>1365</x> <y>280</y> </pos>
 	<pos> <x>1365</x> <y>315</y> </pos>
-	<pos> <x>1365</x> <y>350</y> </pos>
-	<pos> <x>1365</x> <y>385</y> </pos>
-	<pos> <x>1365</x> <y>420</y> </pos>
-	<pos> <x>1365</x> <y>525</y> </pos>
-	<pos> <x>1365</x> <y>560</y> </pos>
-	<pos> <x>1365</x> <y>595</y> </pos>
 	<pos> <x>1365</x> <y>665</y> </pos>
 	<pos> <x>1365</x> <y>700</y> </pos>
-	<pos> <x>1400</x> <y>0</y> </pos>
-	<pos> <x>1400</x> <y>35</y> </pos>
-	<pos> <x>1400</x> <y>70</y> </pos>
-	<pos> <x>1400</x> <y>105</y> </pos>
-	<pos> <x>1400</x> <y>140</y> </pos>
-	<pos> <x>1400</x> <y>175</y> </pos>
 	<pos> <x>1400</x> <y>210</y> </pos>
-	<pos> <x>1400</x> <y>245</y> </pos>
-	<pos> <x>1400</x> <y>280</y> </pos>
 	<pos> <x>1400</x> <y>315</y> </pos>
 	<pos> <x>1400</x> <y>350</y> </pos>
-	<pos> <x>1400</x> <y>385</y> </pos>
-	<pos> <x>1400</x> <y>420</y> </pos>
-	<pos> <x>1400</x> <y>455</y> </pos>
-	<pos> <x>1400</x> <y>490</y> </pos>
-	<pos> <x>1400</x> <y>525</y> </pos>
-	<pos> <x>1400</x> <y>560</y> </pos>
-	<pos> <x>1400</x> <y>595</y> </pos>
 	<pos> <x>1400</x> <y>665</y> </pos>
 	<pos> <x>1400</x> <y>700</y> </pos>
-	<pos> <x>1435</x> <y>0</y> </pos>
-	<pos> <x>1435</x> <y>35</y> </pos>
-	<pos> <x>1435</x> <y>70</y> </pos>
-	<pos> <x>1435</x> <y>105</y> </pos>
 	<pos> <x>1435</x> <y>210</y> </pos>
-	<pos> <x>1435</x> <y>245</y> </pos>
-	<pos> <x>1435</x> <y>280</y> </pos>
-	<pos> <x>1435</x> <y>315</y> </pos>
 	<pos> <x>1435</x> <y>350</y> </pos>
-	<pos> <x>1435</x> <y>385</y> </pos>
-	<pos> <x>1435</x> <y>420</y> </pos>
-	<pos> <x>1435</x> <y>455</y> </pos>
-	<pos> <x>1435</x> <y>490</y> </pos>
-	<pos> <x>1435</x> <y>525</y> </pos>
-	<pos> <x>1435</x> <y>560</y> </pos>
-	<pos> <x>1435</x> <y>595</y> </pos>
 	<pos> <x>1435</x> <y>665</y> </pos>
 	<pos> <x>1435</x> <y>700</y> </pos>
-	<pos> <x>1470</x> <y>0</y> </pos>
-	<pos> <x>1470</x> <y>35</y> </pos>
-	<pos> <x>1470</x> <y>70</y> </pos>
-	<pos> <x>1470</x> <y>105</y> </pos>
-	<pos> <x>1470</x> <y>175</y> </pos>
-	<pos> <x>1470</x> <y>210</y> </pos>
-	<pos> <x>1470</x> <y>245</y> </pos>
-	<pos> <x>1470</x> <y>280</y> </pos>
-	<pos> <x>1470</x> <y>315</y> </pos>
 	<pos> <x>1470</x> <y>350</y> </pos>
-	<pos> <x>1470</x> <y>385</y> </pos>
-	<pos> <x>1470</x> <y>420</y> </pos>
-	<pos> <x>1470</x> <y>455</y> </pos>
-	<pos> <x>1470</x> <y>490</y> </pos>
-	<pos> <x>1470</x> <y>525</y> </pos>
-	<pos> <x>1470</x> <y>560</y> </pos>
-	<pos> <x>1470</x> <y>595</y> </pos>
 	<pos> <x>1470</x> <y>630</y> </pos>
 	<pos> <x>1470</x> <y>665</y> </pos>
 	<pos> <x>1470</x> <y>700</y> </pos>
-	<pos> <x>1505</x> <y>0</y> </pos>
-	<pos> <x>1505</x> <y>35</y> </pos>
-	<pos> <x>1505</x> <y>70</y> </pos>
-	<pos> <x>1505</x> <y>175</y> </pos>
-	<pos> <x>1505</x> <y>210</y> </pos>
-	<pos> <x>1505</x> <y>245</y> </pos>
-	<pos> <x>1505</x> <y>280</y> </pos>
-	<pos> <x>1505</x> <y>315</y> </pos>
-	<pos> <x>1505</x> <y>350</y> </pos>
-	<pos> <x>1505</x> <y>385</y> </pos>
-	<pos> <x>1505</x> <y>420</y> </pos>
-	<pos> <x>1505</x> <y>455</y> </pos>
-	<pos> <x>1505</x> <y>490</y> </pos>
-	<pos> <x>1505</x> <y>525</y> </pos>
-	<pos> <x>1505</x> <y>560</y> </pos>
 	<pos> <x>1505</x> <y>595</y> </pos>
 	<pos> <x>1505</x> <y>630</y> </pos>
 	<pos> <x>1505</x> <y>665</y> </pos>
 	<pos> <x>1505</x> <y>700</y> </pos>
-	<pos> <x>1540</x> <y>0</y> </pos>
-	<pos> <x>1540</x> <y>35</y> </pos>
-	<pos> <x>1540</x> <y>70</y> </pos>
-	<pos> <x>1540</x> <y>140</y> </pos>
-	<pos> <x>1540</x> <y>175</y> </pos>
-	<pos> <x>1540</x> <y>210</y> </pos>
-	<pos> <x>1540</x> <y>245</y> </pos>
-	<pos> <x>1540</x> <y>280</y> </pos>
-	<pos> <x>1540</x> <y>315</y> </pos>
-	<pos> <x>1540</x> <y>350</y> </pos>
-	<pos> <x>1540</x> <y>385</y> </pos>
-	<pos> <x>1540</x> <y>420</y> </pos>
-	<pos> <x>1540</x> <y>455</y> </pos>
-	<pos> <x>1540</x> <y>490</y> </pos>
-	<pos> <x>1540</x> <y>525</y> </pos>
-	<pos> <x>1540</x> <y>560</y> </pos>
 	<pos> <x>1540</x> <y>595</y> </pos>
 	<pos> <x>1540</x> <y>630</y> </pos>
 	<pos> <x>1540</x> <y>665</y> </pos>
 	<pos> <x>1540</x> <y>700</y> </pos>
-	<pos> <x>1575</x> <y>0</y> </pos>
-	<pos> <x>1575</x> <y>35</y> </pos>
-	<pos> <x>1575</x> <y>70</y> </pos>
-	<pos> <x>1575</x> <y>175</y> </pos>
-	<pos> <x>1575</x> <y>210</y> </pos>
-	<pos> <x>1575</x> <y>245</y> </pos>
-	<pos> <x>1575</x> <y>280</y> </pos>
-	<pos> <x>1575</x> <y>315</y> </pos>
-	<pos> <x>1575</x> <y>350</y> </pos>
-	<pos> <x>1575</x> <y>385</y> </pos>
-	<pos> <x>1575</x> <y>420</y> </pos>
-	<pos> <x>1575</x> <y>455</y> </pos>
-	<pos> <x>1575</x> <y>490</y> </pos>
-	<pos> <x>1575</x> <y>525</y> </pos>
 	<pos> <x>1575</x> <y>560</y> </pos>
 	<pos> <x>1575</x> <y>595</y> </pos>
 	<pos> <x>1575</x> <y>630</y> </pos>
 	<pos> <x>1575</x> <y>665</y> </pos>
 	<pos> <x>1575</x> <y>700</y> </pos>
-	<pos> <x>1610</x> <y>0</y> </pos>
-	<pos> <x>1610</x> <y>35</y> </pos>
-	<pos> <x>1610</x> <y>70</y> </pos>
-	<pos> <x>1610</x> <y>105</y> </pos>
 	<pos> <x>1610</x> <y>210</y> </pos>
-	<pos> <x>1610</x> <y>245</y> </pos>
-	<pos> <x>1610</x> <y>280</y> </pos>
-	<pos> <x>1610</x> <y>315</y> </pos>
-	<pos> <x>1610</x> <y>350</y> </pos>
-	<pos> <x>1610</x> <y>385</y> </pos>
-	<pos> <x>1610</x> <y>420</y> </pos>
-	<pos> <x>1610</x> <y>455</y> </pos>
-	<pos> <x>1610</x> <y>490</y> </pos>
-	<pos> <x>1610</x> <y>525</y> </pos>
-	<pos> <x>1610</x> <y>560</y> </pos>
 	<pos> <x>1610</x> <y>595</y> </pos>
 	<pos> <x>1610</x> <y>630</y> </pos>
 	<pos> <x>1610</x> <y>665</y> </pos>
 	<pos> <x>1610</x> <y>700</y> </pos>
-	<pos> <x>1645</x> <y>0</y> </pos>
-	<pos> <x>1645</x> <y>35</y> </pos>
-	<pos> <x>1645</x> <y>70</y> </pos>
-	<pos> <x>1645</x> <y>105</y> </pos>
-	<pos> <x>1645</x> <y>140</y> </pos>
-	<pos> <x>1645</x> <y>175</y> </pos>
 	<pos> <x>1645</x> <y>210</y> </pos>
-	<pos> <x>1645</x> <y>245</y> </pos>
-	<pos> <x>1645</x> <y>280</y> </pos>
-	<pos> <x>1645</x> <y>315</y> </pos>
-	<pos> <x>1645</x> <y>350</y> </pos>
-	<pos> <x>1645</x> <y>385</y> </pos>
-	<pos> <x>1645</x> <y>455</y> </pos>
-	<pos> <x>1645</x> <y>490</y> </pos>
-	<pos> <x>1645</x> <y>525</y> </pos>
-	<pos> <x>1645</x> <y>560</y> </pos>
-	<pos> <x>1645</x> <y>595</y> </pos>
-	<pos> <x>1645</x> <y>630</y> </pos>
-	<pos> <x>1645</x> <y>665</y> </pos>
-	<pos> <x>1680</x> <y>0</y> </pos>
-	<pos> <x>1680</x> <y>35</y> </pos>
-	<pos> <x>1680</x> <y>70</y> </pos>
-	<pos> <x>1680</x> <y>105</y> </pos>
-	<pos> <x>1680</x> <y>140</y> </pos>
-	<pos> <x>1680</x> <y>175</y> </pos>
 	<pos> <x>1680</x> <y>210</y> </pos>
-	<pos> <x>1680</x> <y>245</y> </pos>
-	<pos> <x>1680</x> <y>280</y> </pos>
-	<pos> <x>1680</x> <y>315</y> </pos>
-	<pos> <x>1680</x> <y>350</y> </pos>
-	<pos> <x>1680</x> <y>385</y> </pos>
-	<pos> <x>1680</x> <y>420</y> </pos>
-	<pos> <x>1680</x> <y>455</y> </pos>
-	<pos> <x>1680</x> <y>490</y> </pos>
-	<pos> <x>1680</x> <y>525</y> </pos>
-	<pos> <x>1680</x> <y>560</y> </pos>
-	<pos> <x>1680</x> <y>595</y> </pos>
-	<pos> <x>1680</x> <y>630</y> </pos>
-	<pos> <x>1680</x> <y>665</y> </pos>
-	<pos> <x>1715</x> <y>0</y> </pos>
-	<pos> <x>1715</x> <y>35</y> </pos>
-	<pos> <x>1715</x> <y>70</y> </pos>
-	<pos> <x>1715</x> <y>105</y> </pos>
-	<pos> <x>1715</x> <y>140</y> </pos>
 	<pos> <x>1715</x> <y>175</y> </pos>
-	<pos> <x>1715</x> <y>210</y> </pos>
-	<pos> <x>1715</x> <y>245</y> </pos>
-	<pos> <x>1715</x> <y>280</y> </pos>
-	<pos> <x>1715</x> <y>315</y> </pos>
-	<pos> <x>1715</x> <y>350</y> </pos>
-	<pos> <x>1715</x> <y>385</y> </pos>
-	<pos> <x>1715</x> <y>420</y> </pos>
-	<pos> <x>1715</x> <y>455</y> </pos>
-	<pos> <x>1715</x> <y>490</y> </pos>
-	<pos> <x>1715</x> <y>525</y> </pos>
-	<pos> <x>1715</x> <y>560</y> </pos>
 	<pos> <x>1715</x> <y>595</y> </pos>
 	<pos> <x>1715</x> <y>630</y> </pos>
 	<pos> <x>1715</x> <y>665</y> </pos>
 	<pos> <x>1715</x> <y>700</y> </pos>
-	<pos> <x>1750</x> <y>0</y> </pos>
-	<pos> <x>1750</x> <y>35</y> </pos>
-	<pos> <x>1750</x> <y>70</y> </pos>
-	<pos> <x>1750</x> <y>105</y> </pos>
-	<pos> <x>1750</x> <y>140</y> </pos>
 	<pos> <x>1750</x> <y>175</y> </pos>
-	<pos> <x>1750</x> <y>210</y> </pos>
-	<pos> <x>1750</x> <y>245</y> </pos>
-	<pos> <x>1750</x> <y>280</y> </pos>
-	<pos> <x>1750</x> <y>315</y> </pos>
-	<pos> <x>1750</x> <y>350</y> </pos>
-	<pos> <x>1750</x> <y>385</y> </pos>
-	<pos> <x>1750</x> <y>420</y> </pos>
-	<pos> <x>1750</x> <y>455</y> </pos>
-	<pos> <x>1750</x> <y>490</y> </pos>
-	<pos> <x>1750</x> <y>525</y> </pos>
 	<pos> <x>1750</x> <y>560</y> </pos>
 	<pos> <x>1750</x> <y>595</y> </pos>
 	<pos> <x>1750</x> <y>630</y> </pos>
 	<pos> <x>1750</x> <y>665</y> </pos>
 	<pos> <x>1750</x> <y>700</y> </pos>
-	<pos> <x>1785</x> <y>0</y> </pos>
-	<pos> <x>1785</x> <y>35</y> </pos>
-	<pos> <x>1785</x> <y>70</y> </pos>
-	<pos> <x>1785</x> <y>105</y> </pos>
-	<pos> <x>1785</x> <y>140</y> </pos>
 	<pos> <x>1785</x> <y>175</y> </pos>
-	<pos> <x>1785</x> <y>210</y> </pos>
-	<pos> <x>1785</x> <y>245</y> </pos>
-	<pos> <x>1785</x> <y>280</y> </pos>
-	<pos> <x>1785</x> <y>315</y> </pos>
-	<pos> <x>1785</x> <y>350</y> </pos>
-	<pos> <x>1785</x> <y>385</y> </pos>
-	<pos> <x>1785</x> <y>420</y> </pos>
-	<pos> <x>1785</x> <y>455</y> </pos>
-	<pos> <x>1785</x> <y>490</y> </pos>
 	<pos> <x>1785</x> <y>525</y> </pos>
 	<pos> <x>1785</x> <y>560</y> </pos>
 	<pos> <x>1785</x> <y>595</y> </pos>
 	<pos> <x>1785</x> <y>630</y> </pos>
 	<pos> <x>1785</x> <y>665</y> </pos>
 	<pos> <x>1785</x> <y>700</y> </pos>
-	<pos> <x>1820</x> <y>0</y> </pos>
-	<pos> <x>1820</x> <y>35</y> </pos>
-	<pos> <x>1820</x> <y>70</y> </pos>
-	<pos> <x>1820</x> <y>105</y> </pos>
-	<pos> <x>1820</x> <y>140</y> </pos>
 	<pos> <x>1820</x> <y>175</y> </pos>
-	<pos> <x>1820</x> <y>210</y> </pos>
-	<pos> <x>1820</x> <y>245</y> </pos>
-	<pos> <x>1820</x> <y>280</y> </pos>
-	<pos> <x>1820</x> <y>315</y> </pos>
-	<pos> <x>1820</x> <y>350</y> </pos>
 	<pos> <x>1820</x> <y>490</y> </pos>
 	<pos> <x>1820</x> <y>525</y> </pos>
 	<pos> <x>1820</x> <y>560</y> </pos>
@@ -1066,17 +293,7 @@
 	<pos> <x>1820</x> <y>630</y> </pos>
 	<pos> <x>1820</x> <y>665</y> </pos>
 	<pos> <x>1820</x> <y>700</y> </pos>
-	<pos> <x>1855</x> <y>0</y> </pos>
-	<pos> <x>1855</x> <y>35</y> </pos>
-	<pos> <x>1855</x> <y>70</y> </pos>
-	<pos> <x>1855</x> <y>105</y> </pos>
-	<pos> <x>1855</x> <y>140</y> </pos>
 	<pos> <x>1855</x> <y>175</y> </pos>
-	<pos> <x>1855</x> <y>210</y> </pos>
-	<pos> <x>1855</x> <y>245</y> </pos>
-	<pos> <x>1855</x> <y>280</y> </pos>
-	<pos> <x>1855</x> <y>315</y> </pos>
-	<pos> <x>1855</x> <y>350</y> </pos>
 	<pos> <x>1855</x> <y>490</y> </pos>
 	<pos> <x>1855</x> <y>525</y> </pos>
 	<pos> <x>1855</x> <y>560</y> </pos>
@@ -1084,17 +301,6 @@
 	<pos> <x>1855</x> <y>630</y> </pos>
 	<pos> <x>1855</x> <y>665</y> </pos>
 	<pos> <x>1855</x> <y>700</y> </pos>
-	<pos> <x>1890</x> <y>0</y> </pos>
-	<pos> <x>1890</x> <y>35</y> </pos>
-	<pos> <x>1890</x> <y>70</y> </pos>
-	<pos> <x>1890</x> <y>105</y> </pos>
-	<pos> <x>1890</x> <y>140</y> </pos>
-	<pos> <x>1890</x> <y>175</y> </pos>
-	<pos> <x>1890</x> <y>210</y> </pos>
-	<pos> <x>1890</x> <y>245</y> </pos>
-	<pos> <x>1890</x> <y>280</y> </pos>
-	<pos> <x>1890</x> <y>315</y> </pos>
-	<pos> <x>1890</x> <y>350</y> </pos>
 	<pos> <x>1890</x> <y>490</y> </pos>
 	<pos> <x>1890</x> <y>525</y> </pos>
 	<pos> <x>1890</x> <y>560</y> </pos>
@@ -1102,96 +308,30 @@
 	<pos> <x>1890</x> <y>630</y> </pos>
 	<pos> <x>1890</x> <y>665</y> </pos>
 	<pos> <x>1890</x> <y>700</y> </pos>
-	<pos> <x>1925</x> <y>0</y> </pos>
-	<pos> <x>1925</x> <y>35</y> </pos>
-	<pos> <x>1925</x> <y>70</y> </pos>
-	<pos> <x>1925</x> <y>105</y> </pos>
-	<pos> <x>1925</x> <y>140</y> </pos>
-	<pos> <x>1925</x> <y>175</y> </pos>
-	<pos> <x>1925</x> <y>210</y> </pos>
-	<pos> <x>1925</x> <y>245</y> </pos>
-	<pos> <x>1925</x> <y>280</y> </pos>
-	<pos> <x>1925</x> <y>315</y> </pos>
-	<pos> <x>1925</x> <y>350</y> </pos>
-	<pos> <x>1925</x> <y>385</y> </pos>
-	<pos> <x>1925</x> <y>420</y> </pos>
-	<pos> <x>1925</x> <y>455</y> </pos>
 	<pos> <x>1925</x> <y>525</y> </pos>
 	<pos> <x>1925</x> <y>560</y> </pos>
 	<pos> <x>1925</x> <y>595</y> </pos>
 	<pos> <x>1925</x> <y>630</y> </pos>
 	<pos> <x>1925</x> <y>665</y> </pos>
 	<pos> <x>1925</x> <y>700</y> </pos>
-	<pos> <x>1960</x> <y>0</y> </pos>
-	<pos> <x>1960</x> <y>35</y> </pos>
-	<pos> <x>1960</x> <y>70</y> </pos>
-	<pos> <x>1960</x> <y>105</y> </pos>
-	<pos> <x>1960</x> <y>140</y> </pos>
-	<pos> <x>1960</x> <y>175</y> </pos>
-	<pos> <x>1960</x> <y>210</y> </pos>
-	<pos> <x>1960</x> <y>245</y> </pos>
-	<pos> <x>1960</x> <y>280</y> </pos>
-	<pos> <x>1960</x> <y>315</y> </pos>
-	<pos> <x>1960</x> <y>350</y> </pos>
-	<pos> <x>1960</x> <y>385</y> </pos>
-	<pos> <x>1960</x> <y>420</y> </pos>
-	<pos> <x>1960</x> <y>455</y> </pos>
 	<pos> <x>1960</x> <y>525</y> </pos>
 	<pos> <x>1960</x> <y>560</y> </pos>
 	<pos> <x>1960</x> <y>595</y> </pos>
 	<pos> <x>1960</x> <y>630</y> </pos>
 	<pos> <x>1960</x> <y>665</y> </pos>
 	<pos> <x>1960</x> <y>700</y> </pos>
-	<pos> <x>1995</x> <y>0</y> </pos>
-	<pos> <x>1995</x> <y>35</y> </pos>
-	<pos> <x>1995</x> <y>70</y> </pos>
-	<pos> <x>1995</x> <y>140</y> </pos>
-	<pos> <x>1995</x> <y>175</y> </pos>
-	<pos> <x>1995</x> <y>210</y> </pos>
-	<pos> <x>1995</x> <y>245</y> </pos>
-	<pos> <x>1995</x> <y>280</y> </pos>
-	<pos> <x>1995</x> <y>315</y> </pos>
-	<pos> <x>1995</x> <y>350</y> </pos>
-	<pos> <x>1995</x> <y>385</y> </pos>
-	<pos> <x>1995</x> <y>420</y> </pos>
-	<pos> <x>1995</x> <y>455</y> </pos>
 	<pos> <x>1995</x> <y>525</y> </pos>
 	<pos> <x>1995</x> <y>560</y> </pos>
 	<pos> <x>1995</x> <y>595</y> </pos>
 	<pos> <x>1995</x> <y>630</y> </pos>
 	<pos> <x>1995</x> <y>665</y> </pos>
 	<pos> <x>1995</x> <y>700</y> </pos>
-	<pos> <x>2030</x> <y>0</y> </pos>
-	<pos> <x>2030</x> <y>35</y> </pos>
-	<pos> <x>2030</x> <y>70</y> </pos>
-	<pos> <x>2030</x> <y>105</y> </pos>
-	<pos> <x>2030</x> <y>175</y> </pos>
-	<pos> <x>2030</x> <y>210</y> </pos>
-	<pos> <x>2030</x> <y>245</y> </pos>
-	<pos> <x>2030</x> <y>280</y> </pos>
-	<pos> <x>2030</x> <y>315</y> </pos>
-	<pos> <x>2030</x> <y>350</y> </pos>
-	<pos> <x>2030</x> <y>385</y> </pos>
-	<pos> <x>2030</x> <y>420</y> </pos>
-	<pos> <x>2030</x> <y>455</y> </pos>
 	<pos> <x>2030</x> <y>525</y> </pos>
 	<pos> <x>2030</x> <y>560</y> </pos>
 	<pos> <x>2030</x> <y>595</y> </pos>
 	<pos> <x>2030</x> <y>630</y> </pos>
 	<pos> <x>2030</x> <y>665</y> </pos>
 	<pos> <x>2030</x> <y>700</y> </pos>
-	<pos> <x>2065</x> <y>0</y> </pos>
-	<pos> <x>2065</x> <y>35</y> </pos>
-	<pos> <x>2065</x> <y>70</y> </pos>
-	<pos> <x>2065</x> <y>105</y> </pos>
-	<pos> <x>2065</x> <y>210</y> </pos>
-	<pos> <x>2065</x> <y>245</y> </pos>
-	<pos> <x>2065</x> <y>280</y> </pos>
-	<pos> <x>2065</x> <y>315</y> </pos>
-	<pos> <x>2065</x> <y>350</y> </pos>
-	<pos> <x>2065</x> <y>385</y> </pos>
-	<pos> <x>2065</x> <y>420</y> </pos>
-	<pos> <x>2065</x> <y>455</y> </pos>
 	<pos> <x>2065</x> <y>490</y> </pos>
 	<pos> <x>2065</x> <y>525</y> </pos>
 	<pos> <x>2065</x> <y>560</y> </pos>
@@ -1199,17 +339,7 @@
 	<pos> <x>2065</x> <y>630</y> </pos>
 	<pos> <x>2065</x> <y>665</y> </pos>
 	<pos> <x>2065</x> <y>700</y> </pos>
-	<pos> <x>2100</x> <y>0</y> </pos>
-	<pos> <x>2100</x> <y>35</y> </pos>
-	<pos> <x>2100</x> <y>70</y> </pos>
-	<pos> <x>2100</x> <y>105</y> </pos>
-	<pos> <x>2100</x> <y>140</y> </pos>
-	<pos> <x>2100</x> <y>245</y> </pos>
 	<pos> <x>2100</x> <y>280</y> </pos>
-	<pos> <x>2100</x> <y>315</y> </pos>
-	<pos> <x>2100</x> <y>350</y> </pos>
-	<pos> <x>2100</x> <y>385</y> </pos>
-	<pos> <x>2100</x> <y>420</y> </pos>
 	<pos> <x>2100</x> <y>455</y> </pos>
 	<pos> <x>2100</x> <y>490</y> </pos>
 	<pos> <x>2100</x> <y>525</y> </pos>
@@ -1218,20 +348,7 @@
 	<pos> <x>2100</x> <y>630</y> </pos>
 	<pos> <x>2100</x> <y>665</y> </pos>
 	<pos> <x>2100</x> <y>700</y> </pos>
-	<pos> <x>2135</x> <y>0</y> </pos>
-	<pos> <x>2135</x> <y>35</y> </pos>
-	<pos> <x>2135</x> <y>70</y> </pos>
-	<pos> <x>2135</x> <y>105</y> </pos>
-	<pos> <x>2135</x> <y>140</y> </pos>
-	<pos> <x>2135</x> <y>175</y> </pos>
-	<pos> <x>2135</x> <y>210</y> </pos>
-	<pos> <x>2135</x> <y>245</y> </pos>
 	<pos> <x>2135</x> <y>280</y> </pos>
-	<pos> <x>2135</x> <y>315</y> </pos>
-	<pos> <x>2135</x> <y>350</y> </pos>
-	<pos> <x>2135</x> <y>385</y> </pos>
-	<pos> <x>2135</x> <y>420</y> </pos>
-	<pos> <x>2135</x> <y>455</y> </pos>
 	<pos> <x>2135</x> <y>490</y> </pos>
 	<pos> <x>2135</x> <y>525</y> </pos>
 	<pos> <x>2135</x> <y>560</y> </pos>
@@ -1239,102 +356,32 @@
 	<pos> <x>2135</x> <y>630</y> </pos>
 	<pos> <x>2135</x> <y>665</y> </pos>
 	<pos> <x>2135</x> <y>700</y> </pos>
-	<pos> <x>2170</x> <y>0</y> </pos>
-	<pos> <x>2170</x> <y>35</y> </pos>
-	<pos> <x>2170</x> <y>70</y> </pos>
-	<pos> <x>2170</x> <y>105</y> </pos>
-	<pos> <x>2170</x> <y>140</y> </pos>
-	<pos> <x>2170</x> <y>175</y> </pos>
-	<pos> <x>2170</x> <y>210</y> </pos>
-	<pos> <x>2170</x> <y>245</y> </pos>
 	<pos> <x>2170</x> <y>280</y> </pos>
-	<pos> <x>2170</x> <y>315</y> </pos>
-	<pos> <x>2170</x> <y>350</y> </pos>
-	<pos> <x>2170</x> <y>385</y> </pos>
-	<pos> <x>2170</x> <y>420</y> </pos>
-	<pos> <x>2170</x> <y>455</y> </pos>
-	<pos> <x>2170</x> <y>490</y> </pos>
-	<pos> <x>2170</x> <y>525</y> </pos>
 	<pos> <x>2170</x> <y>560</y> </pos>
 	<pos> <x>2170</x> <y>595</y> </pos>
 	<pos> <x>2170</x> <y>630</y> </pos>
 	<pos> <x>2170</x> <y>665</y> </pos>
 	<pos> <x>2170</x> <y>700</y> </pos>
-	<pos> <x>2205</x> <y>0</y> </pos>
-	<pos> <x>2205</x> <y>35</y> </pos>
-	<pos> <x>2205</x> <y>105</y> </pos>
-	<pos> <x>2205</x> <y>140</y> </pos>
-	<pos> <x>2205</x> <y>175</y> </pos>
-	<pos> <x>2205</x> <y>210</y> </pos>
-	<pos> <x>2205</x> <y>245</y> </pos>
 	<pos> <x>2205</x> <y>280</y> </pos>
-	<pos> <x>2205</x> <y>315</y> </pos>
-	<pos> <x>2205</x> <y>350</y> </pos>
-	<pos> <x>2205</x> <y>385</y> </pos>
-	<pos> <x>2205</x> <y>420</y> </pos>
-	<pos> <x>2205</x> <y>455</y> </pos>
-	<pos> <x>2205</x> <y>490</y> </pos>
-	<pos> <x>2205</x> <y>525</y> </pos>
 	<pos> <x>2205</x> <y>595</y> </pos>
 	<pos> <x>2205</x> <y>630</y> </pos>
 	<pos> <x>2205</x> <y>665</y> </pos>
 	<pos> <x>2205</x> <y>700</y> </pos>
-	<pos> <x>2240</x> <y>0</y> </pos>
-	<pos> <x>2240</x> <y>35</y> </pos>
-	<pos> <x>2240</x> <y>70</y> </pos>
-	<pos> <x>2240</x> <y>105</y> </pos>
-	<pos> <x>2240</x> <y>140</y> </pos>
-	<pos> <x>2240</x> <y>175</y> </pos>
-	<pos> <x>2240</x> <y>210</y> </pos>
-	<pos> <x>2240</x> <y>245</y> </pos>
 	<pos> <x>2240</x> <y>280</y> </pos>
-	<pos> <x>2240</x> <y>315</y> </pos>
-	<pos> <x>2240</x> <y>350</y> </pos>
-	<pos> <x>2240</x> <y>385</y> </pos>
-	<pos> <x>2240</x> <y>420</y> </pos>
-	<pos> <x>2240</x> <y>455</y> </pos>
-	<pos> <x>2240</x> <y>490</y> </pos>
-	<pos> <x>2240</x> <y>525</y> </pos>
 	<pos> <x>2240</x> <y>560</y> </pos>
 	<pos> <x>2240</x> <y>595</y> </pos>
 	<pos> <x>2240</x> <y>630</y> </pos>
 	<pos> <x>2240</x> <y>665</y> </pos>
 	<pos> <x>2240</x> <y>700</y> </pos>
-	<pos> <x>2275</x> <y>0</y> </pos>
-	<pos> <x>2275</x> <y>35</y> </pos>
-	<pos> <x>2275</x> <y>70</y> </pos>
-	<pos> <x>2275</x> <y>105</y> </pos>
-	<pos> <x>2275</x> <y>140</y> </pos>
-	<pos> <x>2275</x> <y>175</y> </pos>
-	<pos> <x>2275</x> <y>210</y> </pos>
-	<pos> <x>2275</x> <y>245</y> </pos>
 	<pos> <x>2275</x> <y>280</y> </pos>
-	<pos> <x>2275</x> <y>315</y> </pos>
-	<pos> <x>2275</x> <y>350</y> </pos>
-	<pos> <x>2275</x> <y>385</y> </pos>
-	<pos> <x>2275</x> <y>420</y> </pos>
-	<pos> <x>2275</x> <y>455</y> </pos>
-	<pos> <x>2275</x> <y>490</y> </pos>
 	<pos> <x>2275</x> <y>525</y> </pos>
 	<pos> <x>2275</x> <y>560</y> </pos>
 	<pos> <x>2275</x> <y>595</y> </pos>
 	<pos> <x>2275</x> <y>630</y> </pos>
 	<pos> <x>2275</x> <y>665</y> </pos>
 	<pos> <x>2275</x> <y>700</y> </pos>
-	<pos> <x>2310</x> <y>0</y> </pos>
-	<pos> <x>2310</x> <y>35</y> </pos>
-	<pos> <x>2310</x> <y>70</y> </pos>
-	<pos> <x>2310</x> <y>105</y> </pos>
-	<pos> <x>2310</x> <y>140</y> </pos>
 	<pos> <x>2310</x> <y>175</y> </pos>
-	<pos> <x>2310</x> <y>210</y> </pos>
-	<pos> <x>2310</x> <y>245</y> </pos>
 	<pos> <x>2310</x> <y>280</y> </pos>
-	<pos> <x>2310</x> <y>315</y> </pos>
-	<pos> <x>2310</x> <y>350</y> </pos>
-	<pos> <x>2310</x> <y>385</y> </pos>
-	<pos> <x>2310</x> <y>420</y> </pos>
-	<pos> <x>2310</x> <y>455</y> </pos>
 	<pos> <x>2310</x> <y>490</y> </pos>
 	<pos> <x>2310</x> <y>525</y> </pos>
 	<pos> <x>2310</x> <y>560</y> </pos>
@@ -1342,17 +389,7 @@
 	<pos> <x>2310</x> <y>630</y> </pos>
 	<pos> <x>2310</x> <y>665</y> </pos>
 	<pos> <x>2310</x> <y>700</y> </pos>
-	<pos> <x>2345</x> <y>0</y> </pos>
-	<pos> <x>2345</x> <y>35</y> </pos>
-	<pos> <x>2345</x> <y>70</y> </pos>
 	<pos> <x>2345</x> <y>175</y> </pos>
-	<pos> <x>2345</x> <y>210</y> </pos>
-	<pos> <x>2345</x> <y>245</y> </pos>
-	<pos> <x>2345</x> <y>280</y> </pos>
-	<pos> <x>2345</x> <y>315</y> </pos>
-	<pos> <x>2345</x> <y>350</y> </pos>
-	<pos> <x>2345</x> <y>385</y> </pos>
-	<pos> <x>2345</x> <y>420</y> </pos>
 	<pos> <x>2345</x> <y>490</y> </pos>
 	<pos> <x>2345</x> <y>525</y> </pos>
 	<pos> <x>2345</x> <y>560</y> </pos>
@@ -1360,53 +397,21 @@
 	<pos> <x>2345</x> <y>630</y> </pos>
 	<pos> <x>2345</x> <y>665</y> </pos>
 	<pos> <x>2345</x> <y>700</y> </pos>
-	<pos> <x>2380</x> <y>0</y> </pos>
-	<pos> <x>2380</x> <y>35</y> </pos>
-	<pos> <x>2380</x> <y>70</y> </pos>
-	<pos> <x>2380</x> <y>105</y> </pos>
 	<pos> <x>2380</x> <y>175</y> </pos>
-	<pos> <x>2380</x> <y>210</y> </pos>
-	<pos> <x>2380</x> <y>245</y> </pos>
-	<pos> <x>2380</x> <y>280</y> </pos>
-	<pos> <x>2380</x> <y>315</y> </pos>
-	<pos> <x>2380</x> <y>350</y> </pos>
-	<pos> <x>2380</x> <y>385</y> </pos>
-	<pos> <x>2380</x> <y>420</y> </pos>
-	<pos> <x>2380</x> <y>455</y> </pos>
-	<pos> <x>2380</x> <y>490</y> </pos>
 	<pos> <x>2380</x> <y>560</y> </pos>
 	<pos> <x>2380</x> <y>595</y> </pos>
 	<pos> <x>2380</x> <y>630</y> </pos>
 	<pos> <x>2380</x> <y>665</y> </pos>
 	<pos> <x>2380</x> <y>700</y> </pos>
-	<pos> <x>2415</x> <y>0</y> </pos>
-	<pos> <x>2415</x> <y>35</y> </pos>
-	<pos> <x>2415</x> <y>70</y> </pos>
-	<pos> <x>2415</x> <y>105</y> </pos>
 	<pos> <x>2415</x> <y>175</y> </pos>
-	<pos> <x>2415</x> <y>210</y> </pos>
-	<pos> <x>2415</x> <y>245</y> </pos>
-	<pos> <x>2415</x> <y>280</y> </pos>
-	<pos> <x>2415</x> <y>315</y> </pos>
-	<pos> <x>2415</x> <y>350</y> </pos>
-	<pos> <x>2415</x> <y>385</y> </pos>
-	<pos> <x>2415</x> <y>420</y> </pos>
-	<pos> <x>2415</x> <y>455</y> </pos>
 	<pos> <x>2415</x> <y>525</y> </pos>
 	<pos> <x>2415</x> <y>560</y> </pos>
 	<pos> <x>2415</x> <y>595</y> </pos>
 	<pos> <x>2415</x> <y>630</y> </pos>
 	<pos> <x>2415</x> <y>665</y> </pos>
 	<pos> <x>2415</x> <y>700</y> </pos>
-	<pos> <x>2450</x> <y>0</y> </pos>
-	<pos> <x>2450</x> <y>35</y> </pos>
 	<pos> <x>2450</x> <y>175</y> </pos>
-	<pos> <x>2450</x> <y>210</y> </pos>
-	<pos> <x>2450</x> <y>245</y> </pos>
 	<pos> <x>2450</x> <y>315</y> </pos>
-	<pos> <x>2450</x> <y>350</y> </pos>
-	<pos> <x>2450</x> <y>385</y> </pos>
-	<pos> <x>2450</x> <y>420</y> </pos>
 	<pos> <x>2450</x> <y>455</y> </pos>
 	<pos> <x>2450</x> <y>490</y> </pos>
 	<pos> <x>2450</x> <y>525</y> </pos>
@@ -1415,14 +420,8 @@
 	<pos> <x>2450</x> <y>630</y> </pos>
 	<pos> <x>2450</x> <y>665</y> </pos>
 	<pos> <x>2450</x> <y>700</y> </pos>
-	<pos> <x>2485</x> <y>0</y> </pos>
-	<pos> <x>2485</x> <y>35</y> </pos>
 	<pos> <x>2485</x> <y>175</y> </pos>
-	<pos> <x>2485</x> <y>210</y> </pos>
 	<pos> <x>2485</x> <y>280</y> </pos>
-	<pos> <x>2485</x> <y>315</y> </pos>
-	<pos> <x>2485</x> <y>350</y> </pos>
-	<pos> <x>2485</x> <y>385</y> </pos>
 	<pos> <x>2485</x> <y>420</y> </pos>
 	<pos> <x>2485</x> <y>455</y> </pos>
 	<pos> <x>2485</x> <y>490</y> </pos>
@@ -1432,17 +431,8 @@
 	<pos> <x>2485</x> <y>630</y> </pos>
 	<pos> <x>2485</x> <y>665</y> </pos>
 	<pos> <x>2485</x> <y>700</y> </pos>
-	<pos> <x>2520</x> <y>0</y> </pos>
-	<pos> <x>2520</x> <y>35</y> </pos>
-	<pos> <x>2520</x> <y>70</y> </pos>
-	<pos> <x>2520</x> <y>105</y> </pos>
 	<pos> <x>2520</x> <y>175</y> </pos>
-	<pos> <x>2520</x> <y>210</y> </pos>
 	<pos> <x>2520</x> <y>280</y> </pos>
-	<pos> <x>2520</x> <y>315</y> </pos>
-	<pos> <x>2520</x> <y>350</y> </pos>
-	<pos> <x>2520</x> <y>385</y> </pos>
-	<pos> <x>2520</x> <y>420</y> </pos>
 	<pos> <x>2520</x> <y>490</y> </pos>
 	<pos> <x>2520</x> <y>525</y> </pos>
 	<pos> <x>2520</x> <y>560</y> </pos>
@@ -1450,18 +440,6 @@
 	<pos> <x>2520</x> <y>630</y> </pos>
 	<pos> <x>2520</x> <y>665</y> </pos>
 	<pos> <x>2520</x> <y>700</y> </pos>
-	<pos> <x>2555</x> <y>0</y> </pos>
-	<pos> <x>2555</x> <y>35</y> </pos>
-	<pos> <x>2555</x> <y>70</y> </pos>
-	<pos> <x>2555</x> <y>105</y> </pos>
-	<pos> <x>2555</x> <y>140</y> </pos>
-	<pos> <x>2555</x> <y>175</y> </pos>
-	<pos> <x>2555</x> <y>210</y> </pos>
-	<pos> <x>2555</x> <y>245</y> </pos>
-	<pos> <x>2555</x> <y>280</y> </pos>
-	<pos> <x>2555</x> <y>315</y> </pos>
-	<pos> <x>2555</x> <y>350</y> </pos>
-	<pos> <x>2555</x> <y>385</y> </pos>
 	<pos> <x>2555</x> <y>490</y> </pos>
 	<pos> <x>2555</x> <y>525</y> </pos>
 	<pos> <x>2555</x> <y>560</y> </pos>
@@ -1469,16 +447,6 @@
 	<pos> <x>2555</x> <y>630</y> </pos>
 	<pos> <x>2555</x> <y>665</y> </pos>
 	<pos> <x>2555</x> <y>700</y> </pos>
-	<pos> <x>2590</x> <y>0</y> </pos>
-	<pos> <x>2590</x> <y>35</y> </pos>
-	<pos> <x>2590</x> <y>70</y> </pos>
-	<pos> <x>2590</x> <y>105</y> </pos>
-	<pos> <x>2590</x> <y>140</y> </pos>
-	<pos> <x>2590</x> <y>175</y> </pos>
-	<pos> <x>2590</x> <y>210</y> </pos>
-	<pos> <x>2590</x> <y>245</y> </pos>
-	<pos> <x>2590</x> <y>280</y> </pos>
-	<pos> <x>2590</x> <y>315</y> </pos>
 	<pos> <x>2590</x> <y>350</y> </pos>
 	<pos> <x>2590</x> <y>455</y> </pos>
 	<pos> <x>2590</x> <y>490</y> </pos>
@@ -1488,16 +456,6 @@
 	<pos> <x>2590</x> <y>630</y> </pos>
 	<pos> <x>2590</x> <y>665</y> </pos>
 	<pos> <x>2590</x> <y>700</y> </pos>
-	<pos> <x>2625</x> <y>0</y> </pos>
-	<pos> <x>2625</x> <y>35</y> </pos>
-	<pos> <x>2625</x> <y>70</y> </pos>
-	<pos> <x>2625</x> <y>105</y> </pos>
-	<pos> <x>2625</x> <y>140</y> </pos>
-	<pos> <x>2625</x> <y>175</y> </pos>
-	<pos> <x>2625</x> <y>210</y> </pos>
-	<pos> <x>2625</x> <y>245</y> </pos>
-	<pos> <x>2625</x> <y>280</y> </pos>
-	<pos> <x>2625</x> <y>315</y> </pos>
 	<pos> <x>2625</x> <y>350</y> </pos>
 	<pos> <x>2625</x> <y>385</y> </pos>
 	<pos> <x>2625</x> <y>420</y> </pos>
@@ -1509,17 +467,6 @@
 	<pos> <x>2625</x> <y>630</y> </pos>
 	<pos> <x>2625</x> <y>665</y> </pos>
 	<pos> <x>2625</x> <y>700</y> </pos>
-	<pos> <x>2660</x> <y>0</y> </pos>
-	<pos> <x>2660</x> <y>35</y> </pos>
-	<pos> <x>2660</x> <y>70</y> </pos>
-	<pos> <x>2660</x> <y>105</y> </pos>
-	<pos> <x>2660</x> <y>140</y> </pos>
-	<pos> <x>2660</x> <y>175</y> </pos>
-	<pos> <x>2660</x> <y>210</y> </pos>
-	<pos> <x>2660</x> <y>245</y> </pos>
-	<pos> <x>2660</x> <y>280</y> </pos>
-	<pos> <x>2660</x> <y>315</y> </pos>
-	<pos> <x>2660</x> <y>350</y> </pos>
 	<pos> <x>2660</x> <y>385</y> </pos>
 	<pos> <x>2660</x> <y>420</y> </pos>
 	<pos> <x>2660</x> <y>455</y> </pos>
@@ -1530,19 +477,6 @@
 	<pos> <x>2660</x> <y>630</y> </pos>
 	<pos> <x>2660</x> <y>665</y> </pos>
 	<pos> <x>2660</x> <y>700</y> </pos>
-	<pos> <x>2695</x> <y>0</y> </pos>
-	<pos> <x>2695</x> <y>35</y> </pos>
-	<pos> <x>2695</x> <y>70</y> </pos>
-	<pos> <x>2695</x> <y>105</y> </pos>
-	<pos> <x>2695</x> <y>140</y> </pos>
-	<pos> <x>2695</x> <y>175</y> </pos>
-	<pos> <x>2695</x> <y>210</y> </pos>
-	<pos> <x>2695</x> <y>245</y> </pos>
-	<pos> <x>2695</x> <y>280</y> </pos>
-	<pos> <x>2695</x> <y>315</y> </pos>
-	<pos> <x>2695</x> <y>350</y> </pos>
-	<pos> <x>2695</x> <y>385</y> </pos>
-	<pos> <x>2695</x> <y>420</y> </pos>
 	<pos> <x>2695</x> <y>455</y> </pos>
 	<pos> <x>2695</x> <y>490</y> </pos>
 	<pos> <x>2695</x> <y>525</y> </pos>
@@ -1551,57 +485,9 @@
 	<pos> <x>2695</x> <y>630</y> </pos>
 	<pos> <x>2695</x> <y>665</y> </pos>
 	<pos> <x>2695</x> <y>700</y> </pos>
-	<pos> <x>2730</x> <y>0</y> </pos>
-	<pos> <x>2730</x> <y>35</y> </pos>
-	<pos> <x>2730</x> <y>70</y> </pos>
-	<pos> <x>2730</x> <y>105</y> </pos>
-	<pos> <x>2730</x> <y>140</y> </pos>
-	<pos> <x>2730</x> <y>175</y> </pos>
-	<pos> <x>2730</x> <y>210</y> </pos>
 	<pos> <x>2730</x> <y>245</y> </pos>
-	<pos> <x>2730</x> <y>315</y> </pos>
-	<pos> <x>2730</x> <y>350</y> </pos>
-	<pos> <x>2730</x> <y>385</y> </pos>
-	<pos> <x>2730</x> <y>420</y> </pos>
-	<pos> <x>2730</x> <y>455</y> </pos>
-	<pos> <x>2730</x> <y>490</y> </pos>
-	<pos> <x>2730</x> <y>525</y> </pos>
-	<pos> <x>2730</x> <y>560</y> </pos>
-	<pos> <x>2730</x> <y>595</y> </pos>
-	<pos> <x>2730</x> <y>630</y> </pos>
-	<pos> <x>2730</x> <y>665</y> </pos>
-	<pos> <x>2765</x> <y>0</y> </pos>
-	<pos> <x>2765</x> <y>35</y> </pos>
-	<pos> <x>2765</x> <y>70</y> </pos>
-	<pos> <x>2765</x> <y>105</y> </pos>
-	<pos> <x>2765</x> <y>140</y> </pos>
-	<pos> <x>2765</x> <y>175</y> </pos>
-	<pos> <x>2765</x> <y>210</y> </pos>
 	<pos> <x>2765</x> <y>245</y> </pos>
-	<pos> <x>2765</x> <y>315</y> </pos>
-	<pos> <x>2765</x> <y>350</y> </pos>
-	<pos> <x>2765</x> <y>385</y> </pos>
-	<pos> <x>2765</x> <y>420</y> </pos>
-	<pos> <x>2765</x> <y>455</y> </pos>
-	<pos> <x>2765</x> <y>490</y> </pos>
-	<pos> <x>2765</x> <y>525</y> </pos>
-	<pos> <x>2765</x> <y>560</y> </pos>
-	<pos> <x>2765</x> <y>595</y> </pos>
-	<pos> <x>2765</x> <y>630</y> </pos>
-	<pos> <x>2765</x> <y>665</y> </pos>
-	<pos> <x>2800</x> <y>0</y> </pos>
-	<pos> <x>2800</x> <y>35</y> </pos>
-	<pos> <x>2800</x> <y>70</y> </pos>
-	<pos> <x>2800</x> <y>105</y> </pos>
-	<pos> <x>2800</x> <y>140</y> </pos>
-	<pos> <x>2800</x> <y>175</y> </pos>
-	<pos> <x>2800</x> <y>210</y> </pos>
 	<pos> <x>2800</x> <y>245</y> </pos>
-	<pos> <x>2800</x> <y>315</y> </pos>
-	<pos> <x>2800</x> <y>350</y> </pos>
-	<pos> <x>2800</x> <y>385</y> </pos>
-	<pos> <x>2800</x> <y>420</y> </pos>
-	<pos> <x>2800</x> <y>455</y> </pos>
 	<pos> <x>2800</x> <y>490</y> </pos>
 	<pos> <x>2800</x> <y>525</y> </pos>
 	<pos> <x>2800</x> <y>560</y> </pos>
@@ -1609,17 +495,8 @@
 	<pos> <x>2800</x> <y>630</y> </pos>
 	<pos> <x>2800</x> <y>665</y> </pos>
 	<pos> <x>2800</x> <y>700</y> </pos>
-	<pos> <x>2835</x> <y>0</y> </pos>
-	<pos> <x>2835</x> <y>35</y> </pos>
-	<pos> <x>2835</x> <y>70</y> </pos>
-	<pos> <x>2835</x> <y>105</y> </pos>
 	<pos> <x>2835</x> <y>140</y> </pos>
-	<pos> <x>2835</x> <y>175</y> </pos>
-	<pos> <x>2835</x> <y>210</y> </pos>
 	<pos> <x>2835</x> <y>245</y> </pos>
-	<pos> <x>2835</x> <y>315</y> </pos>
-	<pos> <x>2835</x> <y>350</y> </pos>
-	<pos> <x>2835</x> <y>385</y> </pos>
 	<pos> <x>2835</x> <y>420</y> </pos>
 	<pos> <x>2835</x> <y>455</y> </pos>
 	<pos> <x>2835</x> <y>490</y> </pos>
@@ -1629,18 +506,7 @@
 	<pos> <x>2835</x> <y>630</y> </pos>
 	<pos> <x>2835</x> <y>665</y> </pos>
 	<pos> <x>2835</x> <y>700</y> </pos>
-	<pos> <x>2870</x> <y>0</y> </pos>
-	<pos> <x>2870</x> <y>35</y> </pos>
-	<pos> <x>2870</x> <y>70</y> </pos>
-	<pos> <x>2870</x> <y>105</y> </pos>
 	<pos> <x>2870</x> <y>140</y> </pos>
-	<pos> <x>2870</x> <y>175</y> </pos>
-	<pos> <x>2870</x> <y>210</y> </pos>
-	<pos> <x>2870</x> <y>245</y> </pos>
-	<pos> <x>2870</x> <y>280</y> </pos>
-	<pos> <x>2870</x> <y>315</y> </pos>
-	<pos> <x>2870</x> <y>350</y> </pos>
-	<pos> <x>2870</x> <y>385</y> </pos>
 	<pos> <x>2870</x> <y>490</y> </pos>
 	<pos> <x>2870</x> <y>525</y> </pos>
 	<pos> <x>2870</x> <y>560</y> </pos>
@@ -1648,17 +514,7 @@
 	<pos> <x>2870</x> <y>630</y> </pos>
 	<pos> <x>2870</x> <y>665</y> </pos>
 	<pos> <x>2870</x> <y>700</y> </pos>
-	<pos> <x>2905</x> <y>0</y> </pos>
-	<pos> <x>2905</x> <y>35</y> </pos>
-	<pos> <x>2905</x> <y>70</y> </pos>
 	<pos> <x>2905</x> <y>140</y> </pos>
-	<pos> <x>2905</x> <y>175</y> </pos>
-	<pos> <x>2905</x> <y>210</y> </pos>
-	<pos> <x>2905</x> <y>245</y> </pos>
-	<pos> <x>2905</x> <y>280</y> </pos>
-	<pos> <x>2905</x> <y>315</y> </pos>
-	<pos> <x>2905</x> <y>350</y> </pos>
-	<pos> <x>2905</x> <y>385</y> </pos>
 	<pos> <x>2905</x> <y>420</y> </pos>
 	<pos> <x>2905</x> <y>455</y> </pos>
 	<pos> <x>2905</x> <y>490</y> </pos>
@@ -1668,19 +524,7 @@
 	<pos> <x>2905</x> <y>630</y> </pos>
 	<pos> <x>2905</x> <y>665</y> </pos>
 	<pos> <x>2905</x> <y>700</y> </pos>
-	<pos> <x>2940</x> <y>0</y> </pos>
-	<pos> <x>2940</x> <y>35</y> </pos>
-	<pos> <x>2940</x> <y>70</y> </pos>
-	<pos> <x>2940</x> <y>105</y> </pos>
-	<pos> <x>2940</x> <y>140</y> </pos>
 	<pos> <x>2940</x> <y>175</y> </pos>
-	<pos> <x>2940</x> <y>210</y> </pos>
-	<pos> <x>2940</x> <y>245</y> </pos>
-	<pos> <x>2940</x> <y>280</y> </pos>
-	<pos> <x>2940</x> <y>315</y> </pos>
-	<pos> <x>2940</x> <y>350</y> </pos>
-	<pos> <x>2940</x> <y>385</y> </pos>
-	<pos> <x>2940</x> <y>420</y> </pos>
 	<pos> <x>2940</x> <y>455</y> </pos>
 	<pos> <x>2940</x> <y>490</y> </pos>
 	<pos> <x>2940</x> <y>525</y> </pos>
@@ -1689,19 +533,7 @@
 	<pos> <x>2940</x> <y>630</y> </pos>
 	<pos> <x>2940</x> <y>665</y> </pos>
 	<pos> <x>2940</x> <y>700</y> </pos>
-	<pos> <x>2975</x> <y>0</y> </pos>
-	<pos> <x>2975</x> <y>35</y> </pos>
-	<pos> <x>2975</x> <y>70</y> </pos>
-	<pos> <x>2975</x> <y>105</y> </pos>
-	<pos> <x>2975</x> <y>140</y> </pos>
 	<pos> <x>2975</x> <y>175</y> </pos>
-	<pos> <x>2975</x> <y>210</y> </pos>
-	<pos> <x>2975</x> <y>245</y> </pos>
-	<pos> <x>2975</x> <y>280</y> </pos>
-	<pos> <x>2975</x> <y>315</y> </pos>
-	<pos> <x>2975</x> <y>350</y> </pos>
-	<pos> <x>2975</x> <y>385</y> </pos>
-	<pos> <x>2975</x> <y>420</y> </pos>
 	<pos> <x>2975</x> <y>455</y> </pos>
 	<pos> <x>2975</x> <y>490</y> </pos>
 	<pos> <x>2975</x> <y>525</y> </pos>
@@ -1710,97 +542,35 @@
 	<pos> <x>2975</x> <y>630</y> </pos>
 	<pos> <x>2975</x> <y>665</y> </pos>
 	<pos> <x>2975</x> <y>700</y> </pos>
-	<pos> <x>3010</x> <y>0</y> </pos>
-	<pos> <x>3010</x> <y>35</y> </pos>
-	<pos> <x>3010</x> <y>70</y> </pos>
-	<pos> <x>3010</x> <y>105</y> </pos>
 	<pos> <x>3010</x> <y>175</y> </pos>
-	<pos> <x>3010</x> <y>210</y> </pos>
-	<pos> <x>3010</x> <y>245</y> </pos>
-	<pos> <x>3010</x> <y>280</y> </pos>
-	<pos> <x>3010</x> <y>315</y> </pos>
-	<pos> <x>3010</x> <y>350</y> </pos>
-	<pos> <x>3010</x> <y>385</y> </pos>
-	<pos> <x>3010</x> <y>420</y> </pos>
-	<pos> <x>3010</x> <y>455</y> </pos>
 	<pos> <x>3010</x> <y>525</y> </pos>
 	<pos> <x>3010</x> <y>560</y> </pos>
 	<pos> <x>3010</x> <y>595</y> </pos>
 	<pos> <x>3010</x> <y>630</y> </pos>
 	<pos> <x>3010</x> <y>665</y> </pos>
 	<pos> <x>3010</x> <y>700</y> </pos>
-	<pos> <x>3045</x> <y>0</y> </pos>
-	<pos> <x>3045</x> <y>35</y> </pos>
-	<pos> <x>3045</x> <y>70</y> </pos>
-	<pos> <x>3045</x> <y>105</y> </pos>
 	<pos> <x>3045</x> <y>175</y> </pos>
-	<pos> <x>3045</x> <y>210</y> </pos>
-	<pos> <x>3045</x> <y>245</y> </pos>
-	<pos> <x>3045</x> <y>280</y> </pos>
-	<pos> <x>3045</x> <y>315</y> </pos>
-	<pos> <x>3045</x> <y>350</y> </pos>
-	<pos> <x>3045</x> <y>385</y> </pos>
-	<pos> <x>3045</x> <y>420</y> </pos>
-	<pos> <x>3045</x> <y>455</y> </pos>
 	<pos> <x>3045</x> <y>525</y> </pos>
 	<pos> <x>3045</x> <y>560</y> </pos>
 	<pos> <x>3045</x> <y>595</y> </pos>
 	<pos> <x>3045</x> <y>630</y> </pos>
 	<pos> <x>3045</x> <y>665</y> </pos>
 	<pos> <x>3045</x> <y>700</y> </pos>
-	<pos> <x>3080</x> <y>0</y> </pos>
-	<pos> <x>3080</x> <y>35</y> </pos>
-	<pos> <x>3080</x> <y>70</y> </pos>
-	<pos> <x>3080</x> <y>105</y> </pos>
 	<pos> <x>3080</x> <y>175</y> </pos>
-	<pos> <x>3080</x> <y>210</y> </pos>
-	<pos> <x>3080</x> <y>245</y> </pos>
-	<pos> <x>3080</x> <y>280</y> </pos>
-	<pos> <x>3080</x> <y>315</y> </pos>
-	<pos> <x>3080</x> <y>350</y> </pos>
-	<pos> <x>3080</x> <y>385</y> </pos>
-	<pos> <x>3080</x> <y>420</y> </pos>
-	<pos> <x>3080</x> <y>455</y> </pos>
 	<pos> <x>3080</x> <y>525</y> </pos>
 	<pos> <x>3080</x> <y>560</y> </pos>
 	<pos> <x>3080</x> <y>595</y> </pos>
 	<pos> <x>3080</x> <y>630</y> </pos>
 	<pos> <x>3080</x> <y>665</y> </pos>
 	<pos> <x>3080</x> <y>700</y> </pos>
-	<pos> <x>3115</x> <y>0</y> </pos>
-	<pos> <x>3115</x> <y>35</y> </pos>
-	<pos> <x>3115</x> <y>70</y> </pos>
-	<pos> <x>3115</x> <y>105</y> </pos>
-	<pos> <x>3115</x> <y>140</y> </pos>
 	<pos> <x>3115</x> <y>175</y> </pos>
-	<pos> <x>3115</x> <y>210</y> </pos>
-	<pos> <x>3115</x> <y>245</y> </pos>
-	<pos> <x>3115</x> <y>280</y> </pos>
-	<pos> <x>3115</x> <y>315</y> </pos>
-	<pos> <x>3115</x> <y>350</y> </pos>
-	<pos> <x>3115</x> <y>385</y> </pos>
-	<pos> <x>3115</x> <y>420</y> </pos>
-	<pos> <x>3115</x> <y>455</y> </pos>
 	<pos> <x>3115</x> <y>525</y> </pos>
 	<pos> <x>3115</x> <y>560</y> </pos>
 	<pos> <x>3115</x> <y>595</y> </pos>
 	<pos> <x>3115</x> <y>630</y> </pos>
 	<pos> <x>3115</x> <y>665</y> </pos>
 	<pos> <x>3115</x> <y>700</y> </pos>
-	<pos> <x>3150</x> <y>0</y> </pos>
-	<pos> <x>3150</x> <y>35</y> </pos>
-	<pos> <x>3150</x> <y>70</y> </pos>
-	<pos> <x>3150</x> <y>105</y> </pos>
-	<pos> <x>3150</x> <y>140</y> </pos>
-	<pos> <x>3150</x> <y>175</y> </pos>
-	<pos> <x>3150</x> <y>210</y> </pos>
-	<pos> <x>3150</x> <y>245</y> </pos>
-	<pos> <x>3150</x> <y>280</y> </pos>
 	<pos> <x>3150</x> <y>315</y> </pos>
-	<pos> <x>3150</x> <y>350</y> </pos>
-	<pos> <x>3150</x> <y>385</y> </pos>
-	<pos> <x>3150</x> <y>420</y> </pos>
-	<pos> <x>3150</x> <y>455</y> </pos>
 	<pos> <x>3150</x> <y>490</y> </pos>
 	<pos> <x>3150</x> <y>525</y> </pos>
 	<pos> <x>3150</x> <y>560</y> </pos>
@@ -1808,20 +578,7 @@
 	<pos> <x>3150</x> <y>630</y> </pos>
 	<pos> <x>3150</x> <y>665</y> </pos>
 	<pos> <x>3150</x> <y>700</y> </pos>
-	<pos> <x>3185</x> <y>0</y> </pos>
-	<pos> <x>3185</x> <y>35</y> </pos>
-	<pos> <x>3185</x> <y>70</y> </pos>
-	<pos> <x>3185</x> <y>105</y> </pos>
-	<pos> <x>3185</x> <y>140</y> </pos>
-	<pos> <x>3185</x> <y>175</y> </pos>
-	<pos> <x>3185</x> <y>210</y> </pos>
-	<pos> <x>3185</x> <y>245</y> </pos>
-	<pos> <x>3185</x> <y>280</y> </pos>
 	<pos> <x>3185</x> <y>315</y> </pos>
-	<pos> <x>3185</x> <y>350</y> </pos>
-	<pos> <x>3185</x> <y>385</y> </pos>
-	<pos> <x>3185</x> <y>420</y> </pos>
-	<pos> <x>3185</x> <y>455</y> </pos>
 	<pos> <x>3185</x> <y>490</y> </pos>
 	<pos> <x>3185</x> <y>525</y> </pos>
 	<pos> <x>3185</x> <y>560</y> </pos>
@@ -1829,19 +586,7 @@
 	<pos> <x>3185</x> <y>630</y> </pos>
 	<pos> <x>3185</x> <y>665</y> </pos>
 	<pos> <x>3185</x> <y>700</y> </pos>
-	<pos> <x>3220</x> <y>0</y> </pos>
-	<pos> <x>3220</x> <y>35</y> </pos>
-	<pos> <x>3220</x> <y>70</y> </pos>
-	<pos> <x>3220</x> <y>105</y> </pos>
-	<pos> <x>3220</x> <y>140</y> </pos>
-	<pos> <x>3220</x> <y>175</y> </pos>
-	<pos> <x>3220</x> <y>210</y> </pos>
-	<pos> <x>3220</x> <y>245</y> </pos>
-	<pos> <x>3220</x> <y>280</y> </pos>
 	<pos> <x>3220</x> <y>315</y> </pos>
-	<pos> <x>3220</x> <y>350</y> </pos>
-	<pos> <x>3220</x> <y>385</y> </pos>
-	<pos> <x>3220</x> <y>420</y> </pos>
 	<pos> <x>3220</x> <y>490</y> </pos>
 	<pos> <x>3220</x> <y>525</y> </pos>
 	<pos> <x>3220</x> <y>560</y> </pos>
@@ -1849,18 +594,7 @@
 	<pos> <x>3220</x> <y>630</y> </pos>
 	<pos> <x>3220</x> <y>665</y> </pos>
 	<pos> <x>3220</x> <y>700</y> </pos>
-	<pos> <x>3255</x> <y>0</y> </pos>
-	<pos> <x>3255</x> <y>35</y> </pos>
-	<pos> <x>3255</x> <y>70</y> </pos>
-	<pos> <x>3255</x> <y>105</y> </pos>
-	<pos> <x>3255</x> <y>140</y> </pos>
-	<pos> <x>3255</x> <y>175</y> </pos>
-	<pos> <x>3255</x> <y>210</y> </pos>
-	<pos> <x>3255</x> <y>245</y> </pos>
-	<pos> <x>3255</x> <y>280</y> </pos>
 	<pos> <x>3255</x> <y>315</y> </pos>
-	<pos> <x>3255</x> <y>350</y> </pos>
-	<pos> <x>3255</x> <y>385</y> </pos>
 	<pos> <x>3255</x> <y>455</y> </pos>
 	<pos> <x>3255</x> <y>490</y> </pos>
 	<pos> <x>3255</x> <y>525</y> </pos>
@@ -1869,17 +603,6 @@
 	<pos> <x>3255</x> <y>630</y> </pos>
 	<pos> <x>3255</x> <y>665</y> </pos>
 	<pos> <x>3255</x> <y>700</y> </pos>
-	<pos> <x>3290</x> <y>0</y> </pos>
-	<pos> <x>3290</x> <y>35</y> </pos>
-	<pos> <x>3290</x> <y>70</y> </pos>
-	<pos> <x>3290</x> <y>140</y> </pos>
-	<pos> <x>3290</x> <y>175</y> </pos>
-	<pos> <x>3290</x> <y>210</y> </pos>
-	<pos> <x>3290</x> <y>245</y> </pos>
-	<pos> <x>3290</x> <y>280</y> </pos>
-	<pos> <x>3290</x> <y>315</y> </pos>
-	<pos> <x>3290</x> <y>350</y> </pos>
-	<pos> <x>3290</x> <y>385</y> </pos>
 	<pos> <x>3290</x> <y>420</y> </pos>
 	<pos> <x>3290</x> <y>455</y> </pos>
 	<pos> <x>3290</x> <y>490</y> </pos>
@@ -1889,20 +612,6 @@
 	<pos> <x>3290</x> <y>630</y> </pos>
 	<pos> <x>3290</x> <y>665</y> </pos>
 	<pos> <x>3290</x> <y>700</y> </pos>
-	<pos> <x>3325</x> <y>0</y> </pos>
-	<pos> <x>3325</x> <y>35</y> </pos>
-	<pos> <x>3325</x> <y>70</y> </pos>
-	<pos> <x>3325</x> <y>105</y> </pos>
-	<pos> <x>3325</x> <y>140</y> </pos>
-	<pos> <x>3325</x> <y>175</y> </pos>
-	<pos> <x>3325</x> <y>210</y> </pos>
-	<pos> <x>3325</x> <y>245</y> </pos>
-	<pos> <x>3325</x> <y>280</y> </pos>
-	<pos> <x>3325</x> <y>315</y> </pos>
-	<pos> <x>3325</x> <y>350</y> </pos>
-	<pos> <x>3325</x> <y>385</y> </pos>
-	<pos> <x>3325</x> <y>420</y> </pos>
-	<pos> <x>3325</x> <y>455</y> </pos>
 	<pos> <x>3325</x> <y>490</y> </pos>
 	<pos> <x>3325</x> <y>525</y> </pos>
 	<pos> <x>3325</x> <y>560</y> </pos>
@@ -1910,117 +619,40 @@
 	<pos> <x>3325</x> <y>630</y> </pos>
 	<pos> <x>3325</x> <y>665</y> </pos>
 	<pos> <x>3325</x> <y>700</y> </pos>
-	<pos> <x>3360</x> <y>0</y> </pos>
-	<pos> <x>3360</x> <y>35</y> </pos>
-	<pos> <x>3360</x> <y>70</y> </pos>
-	<pos> <x>3360</x> <y>105</y> </pos>
-	<pos> <x>3360</x> <y>140</y> </pos>
-	<pos> <x>3360</x> <y>175</y> </pos>
-	<pos> <x>3360</x> <y>210</y> </pos>
-	<pos> <x>3360</x> <y>245</y> </pos>
-	<pos> <x>3360</x> <y>280</y> </pos>
-	<pos> <x>3360</x> <y>315</y> </pos>
-	<pos> <x>3360</x> <y>350</y> </pos>
-	<pos> <x>3360</x> <y>385</y> </pos>
-	<pos> <x>3360</x> <y>420</y> </pos>
-	<pos> <x>3360</x> <y>455</y> </pos>
-	<pos> <x>3360</x> <y>490</y> </pos>
 	<pos> <x>3360</x> <y>560</y> </pos>
 	<pos> <x>3360</x> <y>595</y> </pos>
 	<pos> <x>3360</x> <y>630</y> </pos>
 	<pos> <x>3360</x> <y>665</y> </pos>
 	<pos> <x>3360</x> <y>700</y> </pos>
-	<pos> <x>3395</x> <y>0</y> </pos>
-	<pos> <x>3395</x> <y>35</y> </pos>
-	<pos> <x>3395</x> <y>70</y> </pos>
-	<pos> <x>3395</x> <y>105</y> </pos>
 	<pos> <x>3395</x> <y>140</y> </pos>
-	<pos> <x>3395</x> <y>175</y> </pos>
-	<pos> <x>3395</x> <y>210</y> </pos>
-	<pos> <x>3395</x> <y>245</y> </pos>
-	<pos> <x>3395</x> <y>280</y> </pos>
-	<pos> <x>3395</x> <y>315</y> </pos>
-	<pos> <x>3395</x> <y>350</y> </pos>
-	<pos> <x>3395</x> <y>385</y> </pos>
-	<pos> <x>3395</x> <y>420</y> </pos>
-	<pos> <x>3395</x> <y>455</y> </pos>
-	<pos> <x>3395</x> <y>490</y> </pos>
 	<pos> <x>3395</x> <y>525</y> </pos>
 	<pos> <x>3395</x> <y>560</y> </pos>
 	<pos> <x>3395</x> <y>595</y> </pos>
 	<pos> <x>3395</x> <y>630</y> </pos>
 	<pos> <x>3395</x> <y>665</y> </pos>
 	<pos> <x>3395</x> <y>700</y> </pos>
-	<pos> <x>3430</x> <y>0</y> </pos>
-	<pos> <x>3430</x> <y>35</y> </pos>
-	<pos> <x>3430</x> <y>70</y> </pos>
-	<pos> <x>3430</x> <y>105</y> </pos>
 	<pos> <x>3430</x> <y>140</y> </pos>
-	<pos> <x>3430</x> <y>175</y> </pos>
-	<pos> <x>3430</x> <y>210</y> </pos>
-	<pos> <x>3430</x> <y>245</y> </pos>
-	<pos> <x>3430</x> <y>280</y> </pos>
-	<pos> <x>3430</x> <y>315</y> </pos>
-	<pos> <x>3430</x> <y>385</y> </pos>
-	<pos> <x>3430</x> <y>420</y> </pos>
-	<pos> <x>3430</x> <y>455</y> </pos>
 	<pos> <x>3430</x> <y>525</y> </pos>
 	<pos> <x>3430</x> <y>560</y> </pos>
 	<pos> <x>3430</x> <y>595</y> </pos>
 	<pos> <x>3430</x> <y>630</y> </pos>
 	<pos> <x>3430</x> <y>665</y> </pos>
 	<pos> <x>3430</x> <y>700</y> </pos>
-	<pos> <x>3465</x> <y>0</y> </pos>
-	<pos> <x>3465</x> <y>35</y> </pos>
-	<pos> <x>3465</x> <y>70</y> </pos>
-	<pos> <x>3465</x> <y>105</y> </pos>
 	<pos> <x>3465</x> <y>140</y> </pos>
-	<pos> <x>3465</x> <y>175</y> </pos>
-	<pos> <x>3465</x> <y>210</y> </pos>
-	<pos> <x>3465</x> <y>245</y> </pos>
-	<pos> <x>3465</x> <y>280</y> </pos>
-	<pos> <x>3465</x> <y>315</y> </pos>
-	<pos> <x>3465</x> <y>350</y> </pos>
-	<pos> <x>3465</x> <y>385</y> </pos>
-	<pos> <x>3465</x> <y>420</y> </pos>
-	<pos> <x>3465</x> <y>455</y> </pos>
 	<pos> <x>3465</x> <y>525</y> </pos>
 	<pos> <x>3465</x> <y>560</y> </pos>
 	<pos> <x>3465</x> <y>595</y> </pos>
 	<pos> <x>3465</x> <y>630</y> </pos>
 	<pos> <x>3465</x> <y>665</y> </pos>
 	<pos> <x>3465</x> <y>700</y> </pos>
-	<pos> <x>3500</x> <y>0</y> </pos>
-	<pos> <x>3500</x> <y>35</y> </pos>
 	<pos> <x>3500</x> <y>140</y> </pos>
-	<pos> <x>3500</x> <y>175</y> </pos>
-	<pos> <x>3500</x> <y>210</y> </pos>
-	<pos> <x>3500</x> <y>245</y> </pos>
-	<pos> <x>3500</x> <y>280</y> </pos>
-	<pos> <x>3500</x> <y>315</y> </pos>
-	<pos> <x>3500</x> <y>350</y> </pos>
-	<pos> <x>3500</x> <y>385</y> </pos>
-	<pos> <x>3500</x> <y>420</y> </pos>
-	<pos> <x>3500</x> <y>455</y> </pos>
 	<pos> <x>3500</x> <y>525</y> </pos>
 	<pos> <x>3500</x> <y>560</y> </pos>
 	<pos> <x>3500</x> <y>595</y> </pos>
 	<pos> <x>3500</x> <y>630</y> </pos>
 	<pos> <x>3500</x> <y>665</y> </pos>
 	<pos> <x>3500</x> <y>700</y> </pos>
-	<pos> <x>3535</x> <y>0</y> </pos>
-	<pos> <x>3535</x> <y>35</y> </pos>
-	<pos> <x>3535</x> <y>105</y> </pos>
 	<pos> <x>3535</x> <y>140</y> </pos>
-	<pos> <x>3535</x> <y>175</y> </pos>
-	<pos> <x>3535</x> <y>210</y> </pos>
-	<pos> <x>3535</x> <y>245</y> </pos>
-	<pos> <x>3535</x> <y>280</y> </pos>
-	<pos> <x>3535</x> <y>315</y> </pos>
-	<pos> <x>3535</x> <y>350</y> </pos>
-	<pos> <x>3535</x> <y>385</y> </pos>
-	<pos> <x>3535</x> <y>420</y> </pos>
-	<pos> <x>3535</x> <y>455</y> </pos>
 	<pos> <x>3535</x> <y>490</y> </pos>
 	<pos> <x>3535</x> <y>525</y> </pos>
 	<pos> <x>3535</x> <y>560</y> </pos>
@@ -2028,19 +660,8 @@
 	<pos> <x>3535</x> <y>630</y> </pos>
 	<pos> <x>3535</x> <y>665</y> </pos>
 	<pos> <x>3535</x> <y>700</y> </pos>
-	<pos> <x>3570</x> <y>0</y> </pos>
-	<pos> <x>3570</x> <y>35</y> </pos>
-	<pos> <x>3570</x> <y>105</y> </pos>
 	<pos> <x>3570</x> <y>140</y> </pos>
-	<pos> <x>3570</x> <y>175</y> </pos>
-	<pos> <x>3570</x> <y>210</y> </pos>
-	<pos> <x>3570</x> <y>245</y> </pos>
 	<pos> <x>3570</x> <y>280</y> </pos>
-	<pos> <x>3570</x> <y>315</y> </pos>
-	<pos> <x>3570</x> <y>350</y> </pos>
-	<pos> <x>3570</x> <y>385</y> </pos>
-	<pos> <x>3570</x> <y>420</y> </pos>
-	<pos> <x>3570</x> <y>455</y> </pos>
 	<pos> <x>3570</x> <y>490</y> </pos>
 	<pos> <x>3570</x> <y>525</y> </pos>
 	<pos> <x>3570</x> <y>560</y> </pos>
@@ -2048,19 +669,7 @@
 	<pos> <x>3570</x> <y>630</y> </pos>
 	<pos> <x>3570</x> <y>665</y> </pos>
 	<pos> <x>3570</x> <y>700</y> </pos>
-	<pos> <x>3605</x> <y>0</y> </pos>
-	<pos> <x>3605</x> <y>35</y> </pos>
-	<pos> <x>3605</x> <y>105</y> </pos>
 	<pos> <x>3605</x> <y>140</y> </pos>
-	<pos> <x>3605</x> <y>175</y> </pos>
-	<pos> <x>3605</x> <y>210</y> </pos>
-	<pos> <x>3605</x> <y>245</y> </pos>
-	<pos> <x>3605</x> <y>280</y> </pos>
-	<pos> <x>3605</x> <y>315</y> </pos>
-	<pos> <x>3605</x> <y>350</y> </pos>
-	<pos> <x>3605</x> <y>385</y> </pos>
-	<pos> <x>3605</x> <y>420</y> </pos>
-	<pos> <x>3605</x> <y>455</y> </pos>
 	<pos> <x>3605</x> <y>490</y> </pos>
 	<pos> <x>3605</x> <y>525</y> </pos>
 	<pos> <x>3605</x> <y>560</y> </pos>
@@ -2068,18 +677,6 @@
 	<pos> <x>3605</x> <y>630</y> </pos>
 	<pos> <x>3605</x> <y>665</y> </pos>
 	<pos> <x>3605</x> <y>700</y> </pos>
-	<pos> <x>3640</x> <y>0</y> </pos>
-	<pos> <x>3640</x> <y>35</y> </pos>
-	<pos> <x>3640</x> <y>70</y> </pos>
-	<pos> <x>3640</x> <y>105</y> </pos>
-	<pos> <x>3640</x> <y>140</y> </pos>
-	<pos> <x>3640</x> <y>175</y> </pos>
-	<pos> <x>3640</x> <y>210</y> </pos>
-	<pos> <x>3640</x> <y>245</y> </pos>
-	<pos> <x>3640</x> <y>280</y> </pos>
-	<pos> <x>3640</x> <y>315</y> </pos>
-	<pos> <x>3640</x> <y>350</y> </pos>
-	<pos> <x>3640</x> <y>385</y> </pos>
 	<pos> <x>3640</x> <y>455</y> </pos>
 	<pos> <x>3640</x> <y>490</y> </pos>
 	<pos> <x>3640</x> <y>525</y> </pos>
@@ -2088,18 +685,6 @@
 	<pos> <x>3640</x> <y>630</y> </pos>
 	<pos> <x>3640</x> <y>665</y> </pos>
 	<pos> <x>3640</x> <y>700</y> </pos>
-	<pos> <x>3675</x> <y>0</y> </pos>
-	<pos> <x>3675</x> <y>35</y> </pos>
-	<pos> <x>3675</x> <y>70</y> </pos>
-	<pos> <x>3675</x> <y>105</y> </pos>
-	<pos> <x>3675</x> <y>140</y> </pos>
-	<pos> <x>3675</x> <y>175</y> </pos>
-	<pos> <x>3675</x> <y>210</y> </pos>
-	<pos> <x>3675</x> <y>245</y> </pos>
-	<pos> <x>3675</x> <y>280</y> </pos>
-	<pos> <x>3675</x> <y>315</y> </pos>
-	<pos> <x>3675</x> <y>350</y> </pos>
-	<pos> <x>3675</x> <y>385</y> </pos>
 	<pos> <x>3675</x> <y>455</y> </pos>
 	<pos> <x>3675</x> <y>490</y> </pos>
 	<pos> <x>3675</x> <y>525</y> </pos>
@@ -2108,17 +693,6 @@
 	<pos> <x>3675</x> <y>630</y> </pos>
 	<pos> <x>3675</x> <y>665</y> </pos>
 	<pos> <x>3675</x> <y>700</y> </pos>
-	<pos> <x>3710</x> <y>0</y> </pos>
-	<pos> <x>3710</x> <y>35</y> </pos>
-	<pos> <x>3710</x> <y>105</y> </pos>
-	<pos> <x>3710</x> <y>140</y> </pos>
-	<pos> <x>3710</x> <y>175</y> </pos>
-	<pos> <x>3710</x> <y>210</y> </pos>
-	<pos> <x>3710</x> <y>245</y> </pos>
-	<pos> <x>3710</x> <y>280</y> </pos>
-	<pos> <x>3710</x> <y>315</y> </pos>
-	<pos> <x>3710</x> <y>350</y> </pos>
-	<pos> <x>3710</x> <y>385</y> </pos>
 	<pos> <x>3710</x> <y>455</y> </pos>
 	<pos> <x>3710</x> <y>490</y> </pos>
 	<pos> <x>3710</x> <y>525</y> </pos>
@@ -2127,500 +701,150 @@
 	<pos> <x>3710</x> <y>630</y> </pos>
 	<pos> <x>3710</x> <y>665</y> </pos>
 	<pos> <x>3710</x> <y>700</y> </pos>
-	<pos> <x>3745</x> <y>0</y> </pos>
-	<pos> <x>3745</x> <y>35</y> </pos>
-	<pos> <x>3745</x> <y>70</y> </pos>
-	<pos> <x>3745</x> <y>140</y> </pos>
-	<pos> <x>3745</x> <y>175</y> </pos>
-	<pos> <x>3745</x> <y>210</y> </pos>
-	<pos> <x>3745</x> <y>245</y> </pos>
-	<pos> <x>3745</x> <y>280</y> </pos>
-	<pos> <x>3745</x> <y>315</y> </pos>
-	<pos> <x>3745</x> <y>350</y> </pos>
-	<pos> <x>3745</x> <y>385</y> </pos>
-	<pos> <x>3745</x> <y>420</y> </pos>
-	<pos> <x>3745</x> <y>455</y> </pos>
-	<pos> <x>3745</x> <y>490</y> </pos>
-	<pos> <x>3745</x> <y>525</y> </pos>
 	<pos> <x>3745</x> <y>595</y> </pos>
 	<pos> <x>3745</x> <y>630</y> </pos>
 	<pos> <x>3745</x> <y>665</y> </pos>
 	<pos> <x>3745</x> <y>700</y> </pos>
-	<pos> <x>3780</x> <y>0</y> </pos>
-	<pos> <x>3780</x> <y>35</y> </pos>
-	<pos> <x>3780</x> <y>70</y> </pos>
-	<pos> <x>3780</x> <y>175</y> </pos>
 	<pos> <x>3780</x> <y>210</y> </pos>
-	<pos> <x>3780</x> <y>245</y> </pos>
-	<pos> <x>3780</x> <y>280</y> </pos>
-	<pos> <x>3780</x> <y>315</y> </pos>
-	<pos> <x>3780</x> <y>350</y> </pos>
-	<pos> <x>3780</x> <y>385</y> </pos>
-	<pos> <x>3780</x> <y>420</y> </pos>
-	<pos> <x>3780</x> <y>455</y> </pos>
-	<pos> <x>3780</x> <y>490</y> </pos>
-	<pos> <x>3780</x> <y>525</y> </pos>
 	<pos> <x>3780</x> <y>595</y> </pos>
 	<pos> <x>3780</x> <y>630</y> </pos>
 	<pos> <x>3780</x> <y>665</y> </pos>
 	<pos> <x>3780</x> <y>700</y> </pos>
-	<pos> <x>3815</x> <y>0</y> </pos>
-	<pos> <x>3815</x> <y>35</y> </pos>
-	<pos> <x>3815</x> <y>70</y> </pos>
-	<pos> <x>3815</x> <y>105</y> </pos>
 	<pos> <x>3815</x> <y>210</y> </pos>
-	<pos> <x>3815</x> <y>245</y> </pos>
-	<pos> <x>3815</x> <y>280</y> </pos>
-	<pos> <x>3815</x> <y>315</y> </pos>
-	<pos> <x>3815</x> <y>350</y> </pos>
-	<pos> <x>3815</x> <y>385</y> </pos>
-	<pos> <x>3815</x> <y>420</y> </pos>
-	<pos> <x>3815</x> <y>455</y> </pos>
-	<pos> <x>3815</x> <y>490</y> </pos>
-	<pos> <x>3815</x> <y>525</y> </pos>
 	<pos> <x>3815</x> <y>595</y> </pos>
 	<pos> <x>3815</x> <y>630</y> </pos>
 	<pos> <x>3815</x> <y>665</y> </pos>
 	<pos> <x>3815</x> <y>700</y> </pos>
-	<pos> <x>3850</x> <y>0</y> </pos>
-	<pos> <x>3850</x> <y>35</y> </pos>
-	<pos> <x>3850</x> <y>70</y> </pos>
-	<pos> <x>3850</x> <y>105</y> </pos>
-	<pos> <x>3850</x> <y>140</y> </pos>
-	<pos> <x>3850</x> <y>175</y> </pos>
 	<pos> <x>3850</x> <y>210</y> </pos>
-	<pos> <x>3850</x> <y>245</y> </pos>
-	<pos> <x>3850</x> <y>280</y> </pos>
-	<pos> <x>3850</x> <y>315</y> </pos>
-	<pos> <x>3850</x> <y>350</y> </pos>
-	<pos> <x>3850</x> <y>385</y> </pos>
-	<pos> <x>3850</x> <y>420</y> </pos>
-	<pos> <x>3850</x> <y>455</y> </pos>
-	<pos> <x>3850</x> <y>490</y> </pos>
 	<pos> <x>3850</x> <y>560</y> </pos>
 	<pos> <x>3850</x> <y>595</y> </pos>
 	<pos> <x>3850</x> <y>630</y> </pos>
 	<pos> <x>3850</x> <y>665</y> </pos>
 	<pos> <x>3850</x> <y>700</y> </pos>
-	<pos> <x>3885</x> <y>0</y> </pos>
-	<pos> <x>3885</x> <y>35</y> </pos>
-	<pos> <x>3885</x> <y>70</y> </pos>
-	<pos> <x>3885</x> <y>105</y> </pos>
-	<pos> <x>3885</x> <y>140</y> </pos>
-	<pos> <x>3885</x> <y>175</y> </pos>
 	<pos> <x>3885</x> <y>210</y> </pos>
-	<pos> <x>3885</x> <y>245</y> </pos>
-	<pos> <x>3885</x> <y>280</y> </pos>
 	<pos> <x>3885</x> <y>315</y> </pos>
-	<pos> <x>3885</x> <y>350</y> </pos>
-	<pos> <x>3885</x> <y>385</y> </pos>
-	<pos> <x>3885</x> <y>420</y> </pos>
-	<pos> <x>3885</x> <y>455</y> </pos>
-	<pos> <x>3885</x> <y>490</y> </pos>
 	<pos> <x>3885</x> <y>560</y> </pos>
 	<pos> <x>3885</x> <y>595</y> </pos>
 	<pos> <x>3885</x> <y>630</y> </pos>
 	<pos> <x>3885</x> <y>665</y> </pos>
 	<pos> <x>3885</x> <y>700</y> </pos>
-	<pos> <x>3920</x> <y>0</y> </pos>
-	<pos> <x>3920</x> <y>35</y> </pos>
-	<pos> <x>3920</x> <y>70</y> </pos>
-	<pos> <x>3920</x> <y>105</y> </pos>
-	<pos> <x>3920</x> <y>140</y> </pos>
 	<pos> <x>3920</x> <y>175</y> </pos>
-	<pos> <x>3920</x> <y>210</y> </pos>
-	<pos> <x>3920</x> <y>245</y> </pos>
-	<pos> <x>3920</x> <y>280</y> </pos>
-	<pos> <x>3920</x> <y>315</y> </pos>
-	<pos> <x>3920</x> <y>350</y> </pos>
-	<pos> <x>3920</x> <y>385</y> </pos>
-	<pos> <x>3920</x> <y>420</y> </pos>
-	<pos> <x>3920</x> <y>490</y> </pos>
 	<pos> <x>3920</x> <y>525</y> </pos>
 	<pos> <x>3920</x> <y>560</y> </pos>
 	<pos> <x>3920</x> <y>595</y> </pos>
 	<pos> <x>3920</x> <y>630</y> </pos>
 	<pos> <x>3920</x> <y>665</y> </pos>
 	<pos> <x>3920</x> <y>700</y> </pos>
-	<pos> <x>3955</x> <y>0</y> </pos>
-	<pos> <x>3955</x> <y>35</y> </pos>
-	<pos> <x>3955</x> <y>70</y> </pos>
-	<pos> <x>3955</x> <y>105</y> </pos>
-	<pos> <x>3955</x> <y>140</y> </pos>
 	<pos> <x>3955</x> <y>175</y> </pos>
-	<pos> <x>3955</x> <y>210</y> </pos>
-	<pos> <x>3955</x> <y>245</y> </pos>
-	<pos> <x>3955</x> <y>280</y> </pos>
-	<pos> <x>3955</x> <y>315</y> </pos>
-	<pos> <x>3955</x> <y>350</y> </pos>
-	<pos> <x>3955</x> <y>385</y> </pos>
-	<pos> <x>3955</x> <y>420</y> </pos>
 	<pos> <x>3955</x> <y>525</y> </pos>
 	<pos> <x>3955</x> <y>560</y> </pos>
 	<pos> <x>3955</x> <y>595</y> </pos>
 	<pos> <x>3955</x> <y>630</y> </pos>
 	<pos> <x>3955</x> <y>665</y> </pos>
 	<pos> <x>3955</x> <y>700</y> </pos>
-	<pos> <x>3990</x> <y>0</y> </pos>
-	<pos> <x>3990</x> <y>35</y> </pos>
-	<pos> <x>3990</x> <y>70</y> </pos>
-	<pos> <x>3990</x> <y>105</y> </pos>
-	<pos> <x>3990</x> <y>140</y> </pos>
 	<pos> <x>3990</x> <y>175</y> </pos>
-	<pos> <x>3990</x> <y>210</y> </pos>
-	<pos> <x>3990</x> <y>245</y> </pos>
-	<pos> <x>3990</x> <y>280</y> </pos>
-	<pos> <x>3990</x> <y>315</y> </pos>
-	<pos> <x>3990</x> <y>350</y> </pos>
-	<pos> <x>3990</x> <y>385</y> </pos>
-	<pos> <x>3990</x> <y>420</y> </pos>
-	<pos> <x>3990</x> <y>455</y> </pos>
 	<pos> <x>3990</x> <y>560</y> </pos>
 	<pos> <x>3990</x> <y>595</y> </pos>
 	<pos> <x>3990</x> <y>630</y> </pos>
 	<pos> <x>3990</x> <y>665</y> </pos>
 	<pos> <x>3990</x> <y>700</y> </pos>
-	<pos> <x>4025</x> <y>0</y> </pos>
-	<pos> <x>4025</x> <y>35</y> </pos>
-	<pos> <x>4025</x> <y>70</y> </pos>
-	<pos> <x>4025</x> <y>140</y> </pos>
 	<pos> <x>4025</x> <y>175</y> </pos>
-	<pos> <x>4025</x> <y>210</y> </pos>
-	<pos> <x>4025</x> <y>245</y> </pos>
-	<pos> <x>4025</x> <y>280</y> </pos>
-	<pos> <x>4025</x> <y>315</y> </pos>
-	<pos> <x>4025</x> <y>350</y> </pos>
-	<pos> <x>4025</x> <y>385</y> </pos>
-	<pos> <x>4025</x> <y>420</y> </pos>
-	<pos> <x>4025</x> <y>455</y> </pos>
-	<pos> <x>4025</x> <y>490</y> </pos>
 	<pos> <x>4025</x> <y>560</y> </pos>
 	<pos> <x>4025</x> <y>595</y> </pos>
 	<pos> <x>4025</x> <y>630</y> </pos>
 	<pos> <x>4025</x> <y>665</y> </pos>
 	<pos> <x>4025</x> <y>700</y> </pos>
-	<pos> <x>4060</x> <y>0</y> </pos>
-	<pos> <x>4060</x> <y>35</y> </pos>
-	<pos> <x>4060</x> <y>70</y> </pos>
-	<pos> <x>4060</x> <y>140</y> </pos>
-	<pos> <x>4060</x> <y>175</y> </pos>
-	<pos> <x>4060</x> <y>210</y> </pos>
-	<pos> <x>4060</x> <y>245</y> </pos>
-	<pos> <x>4060</x> <y>280</y> </pos>
-	<pos> <x>4060</x> <y>315</y> </pos>
-	<pos> <x>4060</x> <y>350</y> </pos>
-	<pos> <x>4060</x> <y>385</y> </pos>
-	<pos> <x>4060</x> <y>420</y> </pos>
-	<pos> <x>4060</x> <y>455</y> </pos>
-	<pos> <x>4060</x> <y>490</y> </pos>
-	<pos> <x>4060</x> <y>525</y> </pos>
-	<pos> <x>4060</x> <y>560</y> </pos>
 	<pos> <x>4060</x> <y>595</y> </pos>
 	<pos> <x>4060</x> <y>630</y> </pos>
 	<pos> <x>4060</x> <y>665</y> </pos>
 	<pos> <x>4060</x> <y>700</y> </pos>
-	<pos> <x>4095</x> <y>0</y> </pos>
-	<pos> <x>4095</x> <y>35</y> </pos>
-	<pos> <x>4095</x> <y>70</y> </pos>
-	<pos> <x>4095</x> <y>140</y> </pos>
-	<pos> <x>4095</x> <y>175</y> </pos>
-	<pos> <x>4095</x> <y>210</y> </pos>
-	<pos> <x>4095</x> <y>245</y> </pos>
-	<pos> <x>4095</x> <y>280</y> </pos>
-	<pos> <x>4095</x> <y>315</y> </pos>
 	<pos> <x>4095</x> <y>350</y> </pos>
-	<pos> <x>4095</x> <y>385</y> </pos>
-	<pos> <x>4095</x> <y>420</y> </pos>
-	<pos> <x>4095</x> <y>455</y> </pos>
-	<pos> <x>4095</x> <y>490</y> </pos>
-	<pos> <x>4095</x> <y>525</y> </pos>
-	<pos> <x>4095</x> <y>560</y> </pos>
 	<pos> <x>4095</x> <y>595</y> </pos>
 	<pos> <x>4095</x> <y>630</y> </pos>
 	<pos> <x>4095</x> <y>665</y> </pos>
 	<pos> <x>4095</x> <y>700</y> </pos>
-	<pos> <x>4130</x> <y>0</y> </pos>
-	<pos> <x>4130</x> <y>35</y> </pos>
-	<pos> <x>4130</x> <y>70</y> </pos>
-	<pos> <x>4130</x> <y>140</y> </pos>
-	<pos> <x>4130</x> <y>175</y> </pos>
-	<pos> <x>4130</x> <y>210</y> </pos>
-	<pos> <x>4130</x> <y>245</y> </pos>
-	<pos> <x>4130</x> <y>280</y> </pos>
-	<pos> <x>4130</x> <y>315</y> </pos>
 	<pos> <x>4130</x> <y>350</y> </pos>
-	<pos> <x>4130</x> <y>385</y> </pos>
-	<pos> <x>4130</x> <y>420</y> </pos>
-	<pos> <x>4130</x> <y>455</y> </pos>
-	<pos> <x>4130</x> <y>490</y> </pos>
-	<pos> <x>4130</x> <y>525</y> </pos>
-	<pos> <x>4130</x> <y>560</y> </pos>
 	<pos> <x>4130</x> <y>595</y> </pos>
 	<pos> <x>4130</x> <y>630</y> </pos>
 	<pos> <x>4130</x> <y>665</y> </pos>
 	<pos> <x>4130</x> <y>700</y> </pos>
-	<pos> <x>4165</x> <y>0</y> </pos>
-	<pos> <x>4165</x> <y>35</y> </pos>
-	<pos> <x>4165</x> <y>70</y> </pos>
-	<pos> <x>4165</x> <y>175</y> </pos>
-	<pos> <x>4165</x> <y>210</y> </pos>
 	<pos> <x>4165</x> <y>245</y> </pos>
-	<pos> <x>4165</x> <y>280</y> </pos>
-	<pos> <x>4165</x> <y>315</y> </pos>
 	<pos> <x>4165</x> <y>350</y> </pos>
 	<pos> <x>4165</x> <y>385</y> </pos>
-	<pos> <x>4165</x> <y>420</y> </pos>
-	<pos> <x>4165</x> <y>455</y> </pos>
-	<pos> <x>4165</x> <y>490</y> </pos>
-	<pos> <x>4165</x> <y>525</y> </pos>
 	<pos> <x>4165</x> <y>595</y> </pos>
 	<pos> <x>4165</x> <y>630</y> </pos>
 	<pos> <x>4165</x> <y>665</y> </pos>
 	<pos> <x>4165</x> <y>700</y> </pos>
-	<pos> <x>4200</x> <y>0</y> </pos>
-	<pos> <x>4200</x> <y>35</y> </pos>
-	<pos> <x>4200</x> <y>70</y> </pos>
-	<pos> <x>4200</x> <y>105</y> </pos>
-	<pos> <x>4200</x> <y>140</y> </pos>
-	<pos> <x>4200</x> <y>175</y> </pos>
 	<pos> <x>4200</x> <y>210</y> </pos>
-	<pos> <x>4200</x> <y>245</y> </pos>
-	<pos> <x>4200</x> <y>280</y> </pos>
-	<pos> <x>4200</x> <y>350</y> </pos>
 	<pos> <x>4200</x> <y>385</y> </pos>
-	<pos> <x>4200</x> <y>420</y> </pos>
-	<pos> <x>4200</x> <y>455</y> </pos>
-	<pos> <x>4200</x> <y>490</y> </pos>
-	<pos> <x>4200</x> <y>525</y> </pos>
 	<pos> <x>4200</x> <y>595</y> </pos>
 	<pos> <x>4200</x> <y>630</y> </pos>
 	<pos> <x>4200</x> <y>665</y> </pos>
 	<pos> <x>4200</x> <y>700</y> </pos>
-	<pos> <x>4235</x> <y>0</y> </pos>
-	<pos> <x>4235</x> <y>35</y> </pos>
-	<pos> <x>4235</x> <y>70</y> </pos>
-	<pos> <x>4235</x> <y>105</y> </pos>
-	<pos> <x>4235</x> <y>140</y> </pos>
-	<pos> <x>4235</x> <y>175</y> </pos>
 	<pos> <x>4235</x> <y>210</y> </pos>
-	<pos> <x>4235</x> <y>245</y> </pos>
-	<pos> <x>4235</x> <y>280</y> </pos>
-	<pos> <x>4235</x> <y>350</y> </pos>
 	<pos> <x>4235</x> <y>385</y> </pos>
 	<pos> <x>4235</x> <y>420</y> </pos>
-	<pos> <x>4235</x> <y>455</y> </pos>
-	<pos> <x>4235</x> <y>490</y> </pos>
-	<pos> <x>4235</x> <y>525</y> </pos>
-	<pos> <x>4235</x> <y>560</y> </pos>
 	<pos> <x>4235</x> <y>595</y> </pos>
 	<pos> <x>4235</x> <y>630</y> </pos>
 	<pos> <x>4235</x> <y>665</y> </pos>
 	<pos> <x>4235</x> <y>700</y> </pos>
-	<pos> <x>4270</x> <y>0</y> </pos>
-	<pos> <x>4270</x> <y>35</y> </pos>
-	<pos> <x>4270</x> <y>70</y> </pos>
-	<pos> <x>4270</x> <y>105</y> </pos>
-	<pos> <x>4270</x> <y>140</y> </pos>
-	<pos> <x>4270</x> <y>175</y> </pos>
 	<pos> <x>4270</x> <y>210</y> </pos>
 	<pos> <x>4270</x> <y>245</y> </pos>
-	<pos> <x>4270</x> <y>280</y> </pos>
 	<pos> <x>4270</x> <y>420</y> </pos>
-	<pos> <x>4270</x> <y>455</y> </pos>
-	<pos> <x>4270</x> <y>490</y> </pos>
-	<pos> <x>4270</x> <y>525</y> </pos>
-	<pos> <x>4270</x> <y>560</y> </pos>
 	<pos> <x>4270</x> <y>595</y> </pos>
 	<pos> <x>4270</x> <y>630</y> </pos>
 	<pos> <x>4270</x> <y>665</y> </pos>
 	<pos> <x>4270</x> <y>700</y> </pos>
-	<pos> <x>4305</x> <y>0</y> </pos>
-	<pos> <x>4305</x> <y>35</y> </pos>
-	<pos> <x>4305</x> <y>70</y> </pos>
-	<pos> <x>4305</x> <y>105</y> </pos>
-	<pos> <x>4305</x> <y>140</y> </pos>
-	<pos> <x>4305</x> <y>175</y> </pos>
-	<pos> <x>4305</x> <y>210</y> </pos>
 	<pos> <x>4305</x> <y>245</y> </pos>
-	<pos> <x>4305</x> <y>280</y> </pos>
-	<pos> <x>4305</x> <y>315</y> </pos>
-	<pos> <x>4305</x> <y>350</y> </pos>
-	<pos> <x>4305</x> <y>420</y> </pos>
 	<pos> <x>4305</x> <y>455</y> </pos>
-	<pos> <x>4305</x> <y>490</y> </pos>
-	<pos> <x>4305</x> <y>525</y> </pos>
-	<pos> <x>4305</x> <y>560</y> </pos>
 	<pos> <x>4305</x> <y>595</y> </pos>
 	<pos> <x>4305</x> <y>630</y> </pos>
 	<pos> <x>4305</x> <y>665</y> </pos>
 	<pos> <x>4305</x> <y>700</y> </pos>
-	<pos> <x>4340</x> <y>0</y> </pos>
-	<pos> <x>4340</x> <y>35</y> </pos>
-	<pos> <x>4340</x> <y>70</y> </pos>
-	<pos> <x>4340</x> <y>105</y> </pos>
-	<pos> <x>4340</x> <y>140</y> </pos>
-	<pos> <x>4340</x> <y>175</y> </pos>
-	<pos> <x>4340</x> <y>210</y> </pos>
 	<pos> <x>4340</x> <y>245</y> </pos>
-	<pos> <x>4340</x> <y>280</y> </pos>
-	<pos> <x>4340</x> <y>315</y> </pos>
-	<pos> <x>4340</x> <y>350</y> </pos>
-	<pos> <x>4340</x> <y>385</y> </pos>
-	<pos> <x>4340</x> <y>455</y> </pos>
-	<pos> <x>4340</x> <y>490</y> </pos>
-	<pos> <x>4340</x> <y>525</y> </pos>
 	<pos> <x>4340</x> <y>560</y> </pos>
 	<pos> <x>4340</x> <y>595</y> </pos>
 	<pos> <x>4340</x> <y>630</y> </pos>
 	<pos> <x>4340</x> <y>665</y> </pos>
 	<pos> <x>4340</x> <y>700</y> </pos>
-	<pos> <x>4375</x> <y>0</y> </pos>
-	<pos> <x>4375</x> <y>35</y> </pos>
-	<pos> <x>4375</x> <y>70</y> </pos>
-	<pos> <x>4375</x> <y>105</y> </pos>
-	<pos> <x>4375</x> <y>140</y> </pos>
-	<pos> <x>4375</x> <y>175</y> </pos>
-	<pos> <x>4375</x> <y>210</y> </pos>
 	<pos> <x>4375</x> <y>245</y> </pos>
-	<pos> <x>4375</x> <y>280</y> </pos>
-	<pos> <x>4375</x> <y>315</y> </pos>
-	<pos> <x>4375</x> <y>350</y> </pos>
-	<pos> <x>4375</x> <y>385</y> </pos>
-	<pos> <x>4375</x> <y>420</y> </pos>
-	<pos> <x>4375</x> <y>455</y> </pos>
-	<pos> <x>4375</x> <y>490</y> </pos>
-	<pos> <x>4375</x> <y>525</y> </pos>
 	<pos> <x>4375</x> <y>560</y> </pos>
 	<pos> <x>4375</x> <y>595</y> </pos>
 	<pos> <x>4375</x> <y>630</y> </pos>
 	<pos> <x>4375</x> <y>665</y> </pos>
 	<pos> <x>4375</x> <y>700</y> </pos>
-	<pos> <x>4410</x> <y>0</y> </pos>
-	<pos> <x>4410</x> <y>35</y> </pos>
-	<pos> <x>4410</x> <y>70</y> </pos>
 	<pos> <x>4410</x> <y>105</y> </pos>
-	<pos> <x>4410</x> <y>140</y> </pos>
-	<pos> <x>4410</x> <y>175</y> </pos>
-	<pos> <x>4410</x> <y>210</y> </pos>
 	<pos> <x>4410</x> <y>245</y> </pos>
-	<pos> <x>4410</x> <y>280</y> </pos>
-	<pos> <x>4410</x> <y>315</y> </pos>
-	<pos> <x>4410</x> <y>350</y> </pos>
-	<pos> <x>4410</x> <y>385</y> </pos>
-	<pos> <x>4410</x> <y>420</y> </pos>
-	<pos> <x>4410</x> <y>455</y> </pos>
-	<pos> <x>4410</x> <y>490</y> </pos>
 	<pos> <x>4410</x> <y>560</y> </pos>
 	<pos> <x>4410</x> <y>595</y> </pos>
 	<pos> <x>4410</x> <y>630</y> </pos>
 	<pos> <x>4410</x> <y>665</y> </pos>
 	<pos> <x>4410</x> <y>700</y> </pos>
-	<pos> <x>4445</x> <y>0</y> </pos>
-	<pos> <x>4445</x> <y>35</y> </pos>
-	<pos> <x>4445</x> <y>70</y> </pos>
 	<pos> <x>4445</x> <y>105</y> </pos>
-	<pos> <x>4445</x> <y>140</y> </pos>
-	<pos> <x>4445</x> <y>175</y> </pos>
-	<pos> <x>4445</x> <y>210</y> </pos>
 	<pos> <x>4445</x> <y>245</y> </pos>
-	<pos> <x>4445</x> <y>280</y> </pos>
-	<pos> <x>4445</x> <y>315</y> </pos>
-	<pos> <x>4445</x> <y>350</y> </pos>
-	<pos> <x>4445</x> <y>385</y> </pos>
-	<pos> <x>4445</x> <y>420</y> </pos>
-	<pos> <x>4445</x> <y>525</y> </pos>
 	<pos> <x>4445</x> <y>560</y> </pos>
 	<pos> <x>4445</x> <y>595</y> </pos>
 	<pos> <x>4445</x> <y>630</y> </pos>
 	<pos> <x>4445</x> <y>665</y> </pos>
 	<pos> <x>4445</x> <y>700</y> </pos>
-	<pos> <x>4480</x> <y>0</y> </pos>
-	<pos> <x>4480</x> <y>35</y> </pos>
-	<pos> <x>4480</x> <y>105</y> </pos>
 	<pos> <x>4480</x> <y>140</y> </pos>
-	<pos> <x>4480</x> <y>175</y> </pos>
-	<pos> <x>4480</x> <y>210</y> </pos>
 	<pos> <x>4480</x> <y>245</y> </pos>
-	<pos> <x>4480</x> <y>280</y> </pos>
-	<pos> <x>4480</x> <y>315</y> </pos>
-	<pos> <x>4480</x> <y>350</y> </pos>
-	<pos> <x>4480</x> <y>455</y> </pos>
-	<pos> <x>4480</x> <y>490</y> </pos>
 	<pos> <x>4480</x> <y>560</y> </pos>
 	<pos> <x>4480</x> <y>595</y> </pos>
 	<pos> <x>4480</x> <y>630</y> </pos>
 	<pos> <x>4480</x> <y>665</y> </pos>
 	<pos> <x>4480</x> <y>700</y> </pos>
-	<pos> <x>4515</x> <y>0</y> </pos>
-	<pos> <x>4515</x> <y>35</y> </pos>
-	<pos> <x>4515</x> <y>105</y> </pos>
 	<pos> <x>4515</x> <y>140</y> </pos>
-	<pos> <x>4515</x> <y>175</y> </pos>
-	<pos> <x>4515</x> <y>210</y> </pos>
 	<pos> <x>4515</x> <y>245</y> </pos>
-	<pos> <x>4515</x> <y>280</y> </pos>
-	<pos> <x>4515</x> <y>315</y> </pos>
-	<pos> <x>4515</x> <y>350</y> </pos>
-	<pos> <x>4515</x> <y>385</y> </pos>
-	<pos> <x>4515</x> <y>420</y> </pos>
-	<pos> <x>4515</x> <y>455</y> </pos>
-	<pos> <x>4515</x> <y>490</y> </pos>
-	<pos> <x>4515</x> <y>525</y> </pos>
-	<pos> <x>4515</x> <y>560</y> </pos>
-	<pos> <x>4515</x> <y>595</y> </pos>
-	<pos> <x>4515</x> <y>630</y> </pos>
-	<pos> <x>4515</x> <y>665</y> </pos>
-	<pos> <x>4550</x> <y>0</y> </pos>
-	<pos> <x>4550</x> <y>35</y> </pos>
-	<pos> <x>4550</x> <y>105</y> </pos>
 	<pos> <x>4550</x> <y>140</y> </pos>
-	<pos> <x>4550</x> <y>175</y> </pos>
-	<pos> <x>4550</x> <y>210</y> </pos>
-	<pos> <x>4550</x> <y>245</y> </pos>
-	<pos> <x>4550</x> <y>280</y> </pos>
-	<pos> <x>4550</x> <y>315</y> </pos>
-	<pos> <x>4550</x> <y>350</y> </pos>
-	<pos> <x>4550</x> <y>385</y> </pos>
-	<pos> <x>4550</x> <y>420</y> </pos>
-	<pos> <x>4550</x> <y>455</y> </pos>
-	<pos> <x>4550</x> <y>490</y> </pos>
-	<pos> <x>4550</x> <y>525</y> </pos>
-	<pos> <x>4550</x> <y>560</y> </pos>
-	<pos> <x>4550</x> <y>595</y> </pos>
-	<pos> <x>4550</x> <y>630</y> </pos>
-	<pos> <x>4550</x> <y>665</y> </pos>
-	<pos> <x>4585</x> <y>0</y> </pos>
-	<pos> <x>4585</x> <y>35</y> </pos>
-	<pos> <x>4585</x> <y>70</y> </pos>
-	<pos> <x>4585</x> <y>105</y> </pos>
 	<pos> <x>4585</x> <y>140</y> </pos>
-	<pos> <x>4585</x> <y>175</y> </pos>
-	<pos> <x>4585</x> <y>210</y> </pos>
-	<pos> <x>4585</x> <y>245</y> </pos>
-	<pos> <x>4585</x> <y>280</y> </pos>
-	<pos> <x>4585</x> <y>315</y> </pos>
-	<pos> <x>4585</x> <y>350</y> </pos>
-	<pos> <x>4585</x> <y>385</y> </pos>
-	<pos> <x>4585</x> <y>420</y> </pos>
-	<pos> <x>4585</x> <y>455</y> </pos>
 	<pos> <x>4585</x> <y>525</y> </pos>
 	<pos> <x>4585</x> <y>560</y> </pos>
 	<pos> <x>4585</x> <y>595</y> </pos>
 	<pos> <x>4585</x> <y>630</y> </pos>
 	<pos> <x>4585</x> <y>665</y> </pos>
 	<pos> <x>4585</x> <y>700</y> </pos>
-	<pos> <x>4620</x> <y>0</y> </pos>
-	<pos> <x>4620</x> <y>35</y> </pos>
-	<pos> <x>4620</x> <y>70</y> </pos>
-	<pos> <x>4620</x> <y>105</y> </pos>
 	<pos> <x>4620</x> <y>140</y> </pos>
-	<pos> <x>4620</x> <y>175</y> </pos>
-	<pos> <x>4620</x> <y>210</y> </pos>
-	<pos> <x>4620</x> <y>245</y> </pos>
-	<pos> <x>4620</x> <y>280</y> </pos>
-	<pos> <x>4620</x> <y>315</y> </pos>
-	<pos> <x>4620</x> <y>350</y> </pos>
-	<pos> <x>4620</x> <y>385</y> </pos>
 	<pos> <x>4620</x> <y>490</y> </pos>
 	<pos> <x>4620</x> <y>525</y> </pos>
 	<pos> <x>4620</x> <y>560</y> </pos>
@@ -2628,18 +852,7 @@
 	<pos> <x>4620</x> <y>630</y> </pos>
 	<pos> <x>4620</x> <y>665</y> </pos>
 	<pos> <x>4620</x> <y>700</y> </pos>
-	<pos> <x>4655</x> <y>0</y> </pos>
-	<pos> <x>4655</x> <y>35</y> </pos>
-	<pos> <x>4655</x> <y>70</y> </pos>
-	<pos> <x>4655</x> <y>105</y> </pos>
-	<pos> <x>4655</x> <y>140</y> </pos>
 	<pos> <x>4655</x> <y>175</y> </pos>
-	<pos> <x>4655</x> <y>210</y> </pos>
-	<pos> <x>4655</x> <y>245</y> </pos>
-	<pos> <x>4655</x> <y>280</y> </pos>
-	<pos> <x>4655</x> <y>315</y> </pos>
-	<pos> <x>4655</x> <y>350</y> </pos>
-	<pos> <x>4655</x> <y>385</y> </pos>
 	<pos> <x>4655</x> <y>490</y> </pos>
 	<pos> <x>4655</x> <y>525</y> </pos>
 	<pos> <x>4655</x> <y>560</y> </pos>
@@ -2647,19 +860,7 @@
 	<pos> <x>4655</x> <y>630</y> </pos>
 	<pos> <x>4655</x> <y>665</y> </pos>
 	<pos> <x>4655</x> <y>700</y> </pos>
-	<pos> <x>4690</x> <y>0</y> </pos>
-	<pos> <x>4690</x> <y>35</y> </pos>
-	<pos> <x>4690</x> <y>70</y> </pos>
-	<pos> <x>4690</x> <y>105</y> </pos>
-	<pos> <x>4690</x> <y>140</y> </pos>
 	<pos> <x>4690</x> <y>175</y> </pos>
-	<pos> <x>4690</x> <y>210</y> </pos>
-	<pos> <x>4690</x> <y>245</y> </pos>
-	<pos> <x>4690</x> <y>280</y> </pos>
-	<pos> <x>4690</x> <y>315</y> </pos>
-	<pos> <x>4690</x> <y>350</y> </pos>
-	<pos> <x>4690</x> <y>385</y> </pos>
-	<pos> <x>4690</x> <y>420</y> </pos>
 	<pos> <x>4690</x> <y>490</y> </pos>
 	<pos> <x>4690</x> <y>525</y> </pos>
 	<pos> <x>4690</x> <y>560</y> </pos>
@@ -2667,19 +868,6 @@
 	<pos> <x>4690</x> <y>630</y> </pos>
 	<pos> <x>4690</x> <y>665</y> </pos>
 	<pos> <x>4690</x> <y>700</y> </pos>
-	<pos> <x>4725</x> <y>0</y> </pos>
-	<pos> <x>4725</x> <y>35</y> </pos>
-	<pos> <x>4725</x> <y>70</y> </pos>
-	<pos> <x>4725</x> <y>105</y> </pos>
-	<pos> <x>4725</x> <y>140</y> </pos>
-	<pos> <x>4725</x> <y>175</y> </pos>
-	<pos> <x>4725</x> <y>210</y> </pos>
-	<pos> <x>4725</x> <y>245</y> </pos>
-	<pos> <x>4725</x> <y>280</y> </pos>
-	<pos> <x>4725</x> <y>315</y> </pos>
-	<pos> <x>4725</x> <y>350</y> </pos>
-	<pos> <x>4725</x> <y>420</y> </pos>
-	<pos> <x>4725</x> <y>455</y> </pos>
 	<pos> <x>4725</x> <y>490</y> </pos>
 	<pos> <x>4725</x> <y>525</y> </pos>
 	<pos> <x>4725</x> <y>560</y> </pos>
@@ -2687,18 +875,6 @@
 	<pos> <x>4725</x> <y>630</y> </pos>
 	<pos> <x>4725</x> <y>665</y> </pos>
 	<pos> <x>4725</x> <y>700</y> </pos>
-	<pos> <x>4760</x> <y>0</y> </pos>
-	<pos> <x>4760</x> <y>35</y> </pos>
-	<pos> <x>4760</x> <y>70</y> </pos>
-	<pos> <x>4760</x> <y>105</y> </pos>
-	<pos> <x>4760</x> <y>140</y> </pos>
-	<pos> <x>4760</x> <y>175</y> </pos>
-	<pos> <x>4760</x> <y>210</y> </pos>
-	<pos> <x>4760</x> <y>245</y> </pos>
-	<pos> <x>4760</x> <y>280</y> </pos>
-	<pos> <x>4760</x> <y>315</y> </pos>
-	<pos> <x>4760</x> <y>385</y> </pos>
-	<pos> <x>4760</x> <y>420</y> </pos>
 	<pos> <x>4760</x> <y>490</y> </pos>
 	<pos> <x>4760</x> <y>525</y> </pos>
 	<pos> <x>4760</x> <y>560</y> </pos>
@@ -2706,18 +882,6 @@
 	<pos> <x>4760</x> <y>630</y> </pos>
 	<pos> <x>4760</x> <y>665</y> </pos>
 	<pos> <x>4760</x> <y>700</y> </pos>
-	<pos> <x>4795</x> <y>0</y> </pos>
-	<pos> <x>4795</x> <y>35</y> </pos>
-	<pos> <x>4795</x> <y>70</y> </pos>
-	<pos> <x>4795</x> <y>105</y> </pos>
-	<pos> <x>4795</x> <y>140</y> </pos>
-	<pos> <x>4795</x> <y>175</y> </pos>
-	<pos> <x>4795</x> <y>210</y> </pos>
-	<pos> <x>4795</x> <y>245</y> </pos>
-	<pos> <x>4795</x> <y>280</y> </pos>
-	<pos> <x>4795</x> <y>315</y> </pos>
-	<pos> <x>4795</x> <y>385</y> </pos>
-	<pos> <x>4795</x> <y>420</y> </pos>
 	<pos> <x>4795</x> <y>490</y> </pos>
 	<pos> <x>4795</x> <y>525</y> </pos>
 	<pos> <x>4795</x> <y>560</y> </pos>
@@ -2725,19 +889,7 @@
 	<pos> <x>4795</x> <y>630</y> </pos>
 	<pos> <x>4795</x> <y>665</y> </pos>
 	<pos> <x>4795</x> <y>700</y> </pos>
-	<pos> <x>4830</x> <y>0</y> </pos>
-	<pos> <x>4830</x> <y>35</y> </pos>
-	<pos> <x>4830</x> <y>70</y> </pos>
-	<pos> <x>4830</x> <y>105</y> </pos>
-	<pos> <x>4830</x> <y>140</y> </pos>
-	<pos> <x>4830</x> <y>175</y> </pos>
-	<pos> <x>4830</x> <y>210</y> </pos>
-	<pos> <x>4830</x> <y>245</y> </pos>
 	<pos> <x>4830</x> <y>280</y> </pos>
-	<pos> <x>4830</x> <y>315</y> </pos>
-	<pos> <x>4830</x> <y>350</y> </pos>
-	<pos> <x>4830</x> <y>385</y> </pos>
-	<pos> <x>4830</x> <y>420</y> </pos>
 	<pos> <x>4830</x> <y>490</y> </pos>
 	<pos> <x>4830</x> <y>525</y> </pos>
 	<pos> <x>4830</x> <y>560</y> </pos>
@@ -2745,265 +897,83 @@
 	<pos> <x>4830</x> <y>630</y> </pos>
 	<pos> <x>4830</x> <y>665</y> </pos>
 	<pos> <x>4830</x> <y>700</y> </pos>
-	<pos> <x>4865</x> <y>0</y> </pos>
-	<pos> <x>4865</x> <y>35</y> </pos>
-	<pos> <x>4865</x> <y>70</y> </pos>
-	<pos> <x>4865</x> <y>105</y> </pos>
-	<pos> <x>4865</x> <y>140</y> </pos>
-	<pos> <x>4865</x> <y>175</y> </pos>
-	<pos> <x>4865</x> <y>210</y> </pos>
-	<pos> <x>4865</x> <y>245</y> </pos>
 	<pos> <x>4865</x> <y>280</y> </pos>
-	<pos> <x>4865</x> <y>315</y> </pos>
-	<pos> <x>4865</x> <y>350</y> </pos>
-	<pos> <x>4865</x> <y>455</y> </pos>
-	<pos> <x>4865</x> <y>490</y> </pos>
-	<pos> <x>4865</x> <y>525</y> </pos>
 	<pos> <x>4865</x> <y>560</y> </pos>
 	<pos> <x>4865</x> <y>595</y> </pos>
 	<pos> <x>4865</x> <y>630</y> </pos>
 	<pos> <x>4865</x> <y>665</y> </pos>
 	<pos> <x>4865</x> <y>700</y> </pos>
-	<pos> <x>4900</x> <y>0</y> </pos>
-	<pos> <x>4900</x> <y>35</y> </pos>
-	<pos> <x>4900</x> <y>105</y> </pos>
-	<pos> <x>4900</x> <y>140</y> </pos>
-	<pos> <x>4900</x> <y>175</y> </pos>
-	<pos> <x>4900</x> <y>210</y> </pos>
 	<pos> <x>4900</x> <y>280</y> </pos>
-	<pos> <x>4900</x> <y>315</y> </pos>
-	<pos> <x>4900</x> <y>350</y> </pos>
-	<pos> <x>4900</x> <y>385</y> </pos>
-	<pos> <x>4900</x> <y>420</y> </pos>
-	<pos> <x>4900</x> <y>525</y> </pos>
-	<pos> <x>4900</x> <y>560</y> </pos>
 	<pos> <x>4900</x> <y>595</y> </pos>
 	<pos> <x>4900</x> <y>630</y> </pos>
 	<pos> <x>4900</x> <y>665</y> </pos>
 	<pos> <x>4900</x> <y>700</y> </pos>
-	<pos> <x>4935</x> <y>0</y> </pos>
-	<pos> <x>4935</x> <y>35</y> </pos>
-	<pos> <x>4935</x> <y>70</y> </pos>
-	<pos> <x>4935</x> <y>105</y> </pos>
-	<pos> <x>4935</x> <y>140</y> </pos>
 	<pos> <x>4935</x> <y>245</y> </pos>
-	<pos> <x>4935</x> <y>280</y> </pos>
-	<pos> <x>4935</x> <y>315</y> </pos>
-	<pos> <x>4935</x> <y>350</y> </pos>
-	<pos> <x>4935</x> <y>385</y> </pos>
-	<pos> <x>4935</x> <y>420</y> </pos>
-	<pos> <x>4935</x> <y>455</y> </pos>
-	<pos> <x>4935</x> <y>490</y> </pos>
 	<pos> <x>4935</x> <y>595</y> </pos>
 	<pos> <x>4935</x> <y>630</y> </pos>
 	<pos> <x>4935</x> <y>665</y> </pos>
 	<pos> <x>4935</x> <y>700</y> </pos>
-	<pos> <x>4970</x> <y>0</y> </pos>
-	<pos> <x>4970</x> <y>35</y> </pos>
-	<pos> <x>4970</x> <y>70</y> </pos>
-	<pos> <x>4970</x> <y>105</y> </pos>
 	<pos> <x>4970</x> <y>245</y> </pos>
-	<pos> <x>4970</x> <y>280</y> </pos>
-	<pos> <x>4970</x> <y>315</y> </pos>
-	<pos> <x>4970</x> <y>350</y> </pos>
-	<pos> <x>4970</x> <y>385</y> </pos>
-	<pos> <x>4970</x> <y>420</y> </pos>
-	<pos> <x>4970</x> <y>455</y> </pos>
-	<pos> <x>4970</x> <y>490</y> </pos>
-	<pos> <x>4970</x> <y>525</y> </pos>
-	<pos> <x>4970</x> <y>560</y> </pos>
 	<pos> <x>4970</x> <y>595</y> </pos>
 	<pos> <x>4970</x> <y>630</y> </pos>
 	<pos> <x>4970</x> <y>665</y> </pos>
 	<pos> <x>4970</x> <y>700</y> </pos>
-	<pos> <x>5005</x> <y>0</y> </pos>
-	<pos> <x>5005</x> <y>35</y> </pos>
-	<pos> <x>5005</x> <y>70</y> </pos>
-	<pos> <x>5005</x> <y>105</y> </pos>
 	<pos> <x>5005</x> <y>245</y> </pos>
-	<pos> <x>5005</x> <y>280</y> </pos>
-	<pos> <x>5005</x> <y>315</y> </pos>
-	<pos> <x>5005</x> <y>350</y> </pos>
-	<pos> <x>5005</x> <y>385</y> </pos>
-	<pos> <x>5005</x> <y>420</y> </pos>
-	<pos> <x>5005</x> <y>455</y> </pos>
-	<pos> <x>5005</x> <y>490</y> </pos>
-	<pos> <x>5005</x> <y>525</y> </pos>
 	<pos> <x>5005</x> <y>560</y> </pos>
 	<pos> <x>5005</x> <y>595</y> </pos>
 	<pos> <x>5005</x> <y>630</y> </pos>
 	<pos> <x>5005</x> <y>665</y> </pos>
 	<pos> <x>5005</x> <y>700</y> </pos>
-	<pos> <x>5040</x> <y>0</y> </pos>
-	<pos> <x>5040</x> <y>35</y> </pos>
-	<pos> <x>5040</x> <y>70</y> </pos>
-	<pos> <x>5040</x> <y>105</y> </pos>
-	<pos> <x>5040</x> <y>140</y> </pos>
-	<pos> <x>5040</x> <y>175</y> </pos>
 	<pos> <x>5040</x> <y>210</y> </pos>
-	<pos> <x>5040</x> <y>245</y> </pos>
-	<pos> <x>5040</x> <y>280</y> </pos>
-	<pos> <x>5040</x> <y>315</y> </pos>
-	<pos> <x>5040</x> <y>350</y> </pos>
-	<pos> <x>5040</x> <y>385</y> </pos>
-	<pos> <x>5040</x> <y>420</y> </pos>
-	<pos> <x>5040</x> <y>455</y> </pos>
-	<pos> <x>5040</x> <y>490</y> </pos>
-	<pos> <x>5040</x> <y>525</y> </pos>
 	<pos> <x>5040</x> <y>560</y> </pos>
 	<pos> <x>5040</x> <y>595</y> </pos>
 	<pos> <x>5040</x> <y>630</y> </pos>
 	<pos> <x>5040</x> <y>665</y> </pos>
 	<pos> <x>5040</x> <y>700</y> </pos>
-	<pos> <x>5075</x> <y>0</y> </pos>
-	<pos> <x>5075</x> <y>35</y> </pos>
-	<pos> <x>5075</x> <y>70</y> </pos>
-	<pos> <x>5075</x> <y>105</y> </pos>
 	<pos> <x>5075</x> <y>210</y> </pos>
-	<pos> <x>5075</x> <y>245</y> </pos>
-	<pos> <x>5075</x> <y>280</y> </pos>
-	<pos> <x>5075</x> <y>315</y> </pos>
-	<pos> <x>5075</x> <y>350</y> </pos>
-	<pos> <x>5075</x> <y>385</y> </pos>
-	<pos> <x>5075</x> <y>420</y> </pos>
-	<pos> <x>5075</x> <y>455</y> </pos>
-	<pos> <x>5075</x> <y>490</y> </pos>
-	<pos> <x>5075</x> <y>525</y> </pos>
 	<pos> <x>5075</x> <y>595</y> </pos>
 	<pos> <x>5075</x> <y>630</y> </pos>
 	<pos> <x>5075</x> <y>665</y> </pos>
 	<pos> <x>5075</x> <y>700</y> </pos>
-	<pos> <x>5110</x> <y>0</y> </pos>
-	<pos> <x>5110</x> <y>35</y> </pos>
-	<pos> <x>5110</x> <y>70</y> </pos>
-	<pos> <x>5110</x> <y>105</y> </pos>
-	<pos> <x>5110</x> <y>175</y> </pos>
-	<pos> <x>5110</x> <y>210</y> </pos>
-	<pos> <x>5110</x> <y>245</y> </pos>
-	<pos> <x>5110</x> <y>280</y> </pos>
-	<pos> <x>5110</x> <y>315</y> </pos>
-	<pos> <x>5110</x> <y>350</y> </pos>
-	<pos> <x>5110</x> <y>385</y> </pos>
-	<pos> <x>5110</x> <y>420</y> </pos>
-	<pos> <x>5110</x> <y>455</y> </pos>
-	<pos> <x>5110</x> <y>490</y> </pos>
-	<pos> <x>5110</x> <y>525</y> </pos>
 	<pos> <x>5110</x> <y>595</y> </pos>
 	<pos> <x>5110</x> <y>630</y> </pos>
 	<pos> <x>5110</x> <y>665</y> </pos>
 	<pos> <x>5110</x> <y>700</y> </pos>
-	<pos> <x>5145</x> <y>0</y> </pos>
-	<pos> <x>5145</x> <y>35</y> </pos>
-	<pos> <x>5145</x> <y>70</y> </pos>
-	<pos> <x>5145</x> <y>140</y> </pos>
-	<pos> <x>5145</x> <y>175</y> </pos>
-	<pos> <x>5145</x> <y>210</y> </pos>
-	<pos> <x>5145</x> <y>245</y> </pos>
-	<pos> <x>5145</x> <y>280</y> </pos>
-	<pos> <x>5145</x> <y>315</y> </pos>
-	<pos> <x>5145</x> <y>385</y> </pos>
-	<pos> <x>5145</x> <y>420</y> </pos>
-	<pos> <x>5145</x> <y>455</y> </pos>
-	<pos> <x>5145</x> <y>490</y> </pos>
-	<pos> <x>5145</x> <y>525</y> </pos>
 	<pos> <x>5145</x> <y>560</y> </pos>
 	<pos> <x>5145</x> <y>595</y> </pos>
 	<pos> <x>5145</x> <y>630</y> </pos>
 	<pos> <x>5145</x> <y>665</y> </pos>
 	<pos> <x>5145</x> <y>700</y> </pos>
-	<pos> <x>5180</x> <y>0</y> </pos>
-	<pos> <x>5180</x> <y>35</y> </pos>
-	<pos> <x>5180</x> <y>70</y> </pos>
 	<pos> <x>5180</x> <y>140</y> </pos>
-	<pos> <x>5180</x> <y>175</y> </pos>
-	<pos> <x>5180</x> <y>210</y> </pos>
-	<pos> <x>5180</x> <y>245</y> </pos>
-	<pos> <x>5180</x> <y>280</y> </pos>
-	<pos> <x>5180</x> <y>315</y> </pos>
-	<pos> <x>5180</x> <y>350</y> </pos>
-	<pos> <x>5180</x> <y>385</y> </pos>
-	<pos> <x>5180</x> <y>420</y> </pos>
-	<pos> <x>5180</x> <y>455</y> </pos>
-	<pos> <x>5180</x> <y>490</y> </pos>
 	<pos> <x>5180</x> <y>525</y> </pos>
 	<pos> <x>5180</x> <y>560</y> </pos>
 	<pos> <x>5180</x> <y>595</y> </pos>
 	<pos> <x>5180</x> <y>630</y> </pos>
 	<pos> <x>5180</x> <y>665</y> </pos>
 	<pos> <x>5180</x> <y>700</y> </pos>
-	<pos> <x>5215</x> <y>0</y> </pos>
-	<pos> <x>5215</x> <y>35</y> </pos>
-	<pos> <x>5215</x> <y>70</y> </pos>
-	<pos> <x>5215</x> <y>105</y> </pos>
 	<pos> <x>5215</x> <y>140</y> </pos>
-	<pos> <x>5215</x> <y>175</y> </pos>
-	<pos> <x>5215</x> <y>210</y> </pos>
-	<pos> <x>5215</x> <y>245</y> </pos>
-	<pos> <x>5215</x> <y>280</y> </pos>
-	<pos> <x>5215</x> <y>315</y> </pos>
-	<pos> <x>5215</x> <y>350</y> </pos>
-	<pos> <x>5215</x> <y>385</y> </pos>
-	<pos> <x>5215</x> <y>420</y> </pos>
-	<pos> <x>5215</x> <y>455</y> </pos>
-	<pos> <x>5215</x> <y>490</y> </pos>
 	<pos> <x>5215</x> <y>525</y> </pos>
 	<pos> <x>5215</x> <y>560</y> </pos>
 	<pos> <x>5215</x> <y>595</y> </pos>
 	<pos> <x>5215</x> <y>630</y> </pos>
 	<pos> <x>5215</x> <y>665</y> </pos>
 	<pos> <x>5215</x> <y>700</y> </pos>
-	<pos> <x>5250</x> <y>0</y> </pos>
-	<pos> <x>5250</x> <y>35</y> </pos>
-	<pos> <x>5250</x> <y>105</y> </pos>
 	<pos> <x>5250</x> <y>140</y> </pos>
-	<pos> <x>5250</x> <y>175</y> </pos>
-	<pos> <x>5250</x> <y>210</y> </pos>
-	<pos> <x>5250</x> <y>245</y> </pos>
-	<pos> <x>5250</x> <y>280</y> </pos>
-	<pos> <x>5250</x> <y>315</y> </pos>
-	<pos> <x>5250</x> <y>350</y> </pos>
-	<pos> <x>5250</x> <y>385</y> </pos>
-	<pos> <x>5250</x> <y>420</y> </pos>
-	<pos> <x>5250</x> <y>455</y> </pos>
-	<pos> <x>5250</x> <y>490</y> </pos>
 	<pos> <x>5250</x> <y>525</y> </pos>
 	<pos> <x>5250</x> <y>560</y> </pos>
 	<pos> <x>5250</x> <y>595</y> </pos>
 	<pos> <x>5250</x> <y>630</y> </pos>
 	<pos> <x>5250</x> <y>665</y> </pos>
 	<pos> <x>5250</x> <y>700</y> </pos>
-	<pos> <x>5285</x> <y>0</y> </pos>
 	<pos> <x>5285</x> <y>105</y> </pos>
-	<pos> <x>5285</x> <y>140</y> </pos>
-	<pos> <x>5285</x> <y>175</y> </pos>
-	<pos> <x>5285</x> <y>210</y> </pos>
-	<pos> <x>5285</x> <y>245</y> </pos>
-	<pos> <x>5285</x> <y>280</y> </pos>
-	<pos> <x>5285</x> <y>315</y> </pos>
-	<pos> <x>5285</x> <y>350</y> </pos>
-	<pos> <x>5285</x> <y>385</y> </pos>
-	<pos> <x>5285</x> <y>420</y> </pos>
-	<pos> <x>5285</x> <y>455</y> </pos>
-	<pos> <x>5285</x> <y>490</y> </pos>
 	<pos> <x>5285</x> <y>525</y> </pos>
 	<pos> <x>5285</x> <y>560</y> </pos>
 	<pos> <x>5285</x> <y>595</y> </pos>
 	<pos> <x>5285</x> <y>630</y> </pos>
 	<pos> <x>5285</x> <y>665</y> </pos>
 	<pos> <x>5285</x> <y>700</y> </pos>
-	<pos> <x>5320</x> <y>0</y> </pos>
 	<pos> <x>5320</x> <y>70</y> </pos>
 	<pos> <x>5320</x> <y>105</y> </pos>
-	<pos> <x>5320</x> <y>140</y> </pos>
-	<pos> <x>5320</x> <y>175</y> </pos>
-	<pos> <x>5320</x> <y>210</y> </pos>
-	<pos> <x>5320</x> <y>245</y> </pos>
-	<pos> <x>5320</x> <y>280</y> </pos>
-	<pos> <x>5320</x> <y>315</y> </pos>
-	<pos> <x>5320</x> <y>350</y> </pos>
-	<pos> <x>5320</x> <y>385</y> </pos>
-	<pos> <x>5320</x> <y>420</y> </pos>
-	<pos> <x>5320</x> <y>455</y> </pos>
 	<pos> <x>5320</x> <y>490</y> </pos>
 	<pos> <x>5320</x> <y>525</y> </pos>
 	<pos> <x>5320</x> <y>560</y> </pos>
@@ -3011,16 +981,7 @@
 	<pos> <x>5320</x> <y>630</y> </pos>
 	<pos> <x>5320</x> <y>665</y> </pos>
 	<pos> <x>5320</x> <y>700</y> </pos>
-	<pos> <x>5355</x> <y>0</y> </pos>
-	<pos> <x>5355</x> <y>35</y> </pos>
 	<pos> <x>5355</x> <y>70</y> </pos>
-	<pos> <x>5355</x> <y>105</y> </pos>
-	<pos> <x>5355</x> <y>140</y> </pos>
-	<pos> <x>5355</x> <y>175</y> </pos>
-	<pos> <x>5355</x> <y>210</y> </pos>
-	<pos> <x>5355</x> <y>245</y> </pos>
-	<pos> <x>5355</x> <y>280</y> </pos>
-	<pos> <x>5355</x> <y>315</y> </pos>
 	<pos> <x>5355</x> <y>350</y> </pos>
 	<pos> <x>5355</x> <y>385</y> </pos>
 	<pos> <x>5355</x> <y>420</y> </pos>
@@ -3032,15 +993,7 @@
 	<pos> <x>5355</x> <y>630</y> </pos>
 	<pos> <x>5355</x> <y>665</y> </pos>
 	<pos> <x>5355</x> <y>700</y> </pos>
-	<pos> <x>5390</x> <y>0</y> </pos>
-	<pos> <x>5390</x> <y>35</y> </pos>
-	<pos> <x>5390</x> <y>70</y> </pos>
-	<pos> <x>5390</x> <y>105</y> </pos>
 	<pos> <x>5390</x> <y>175</y> </pos>
-	<pos> <x>5390</x> <y>210</y> </pos>
-	<pos> <x>5390</x> <y>245</y> </pos>
-	<pos> <x>5390</x> <y>280</y> </pos>
-	<pos> <x>5390</x> <y>315</y> </pos>
 	<pos> <x>5390</x> <y>350</y> </pos>
 	<pos> <x>5390</x> <y>385</y> </pos>
 	<pos> <x>5390</x> <y>420</y> </pos>
@@ -3098,3 +1051,167 @@
 	<pos> <x>5075</x> <y>560</y> </pos>
 	<pos> <x>5110</x> <y>560</y> </pos>
 </spikePositions>
+<coinPositions type = "Vector2List">
+	<pos> <x>140</x> <y>490</y> </pos>
+	<pos> <x>175</x> <y>490</y> </pos>
+	<pos> <x>490</x> <y>490</y> </pos>
+	<pos> <x>525</x> <y>455</y> </pos>
+	<pos> <x>560</x> <y>420</y> </pos>
+	<pos> <x>595</x> <y>385</y> </pos>
+	<pos> <x>630</x> <y>420</y> </pos>
+	<pos> <x>665</x> <y>455</y> </pos>
+	<pos> <x>665</x> <y>490</y> </pos>
+	<pos> <x>735</x> <y>350</y> </pos>
+	<pos> <x>770</x> <y>350</y> </pos>
+	<pos> <x>805</x> <y>350</y> </pos>
+	<pos> <x>1015</x> <y>245</y> </pos>
+	<pos> <x>1050</x> <y>210</y> </pos>
+	<pos> <x>1050</x> <y>245</y> </pos>
+	<pos> <x>1085</x> <y>175</y> </pos>
+	<pos> <x>1085</x> <y>210</y> </pos>
+	<pos> <x>1085</x> <y>245</y> </pos>
+	<pos> <x>1260</x> <y>350</y> </pos>
+	<pos> <x>1260</x> <y>385</y> </pos>
+	<pos> <x>1295</x> <y>140</y> </pos>
+	<pos> <x>1295</x> <y>385</y> </pos>
+	<pos> <x>1295</x> <y>420</y> </pos>
+	<pos> <x>1330</x> <y>175</y> </pos>
+	<pos> <x>1330</x> <y>420</y> </pos>
+	<pos> <x>1330</x> <y>455</y> </pos>
+	<pos> <x>1365</x> <y>455</y> </pos>
+	<pos> <x>1365</x> <y>490</y> </pos>
+	<pos> <x>1435</x> <y>140</y> </pos>
+	<pos> <x>1435</x> <y>175</y> </pos>
+	<pos> <x>1470</x> <y>140</y> </pos>
+	<pos> <x>1505</x> <y>105</y> </pos>
+	<pos> <x>1505</x> <y>140</y> </pos>
+	<pos> <x>1540</x> <y>105</y> </pos>
+	<pos> <x>1575</x> <y>105</y> </pos>
+	<pos> <x>1575</x> <y>140</y> </pos>
+	<pos> <x>1610</x> <y>140</y> </pos>
+	<pos> <x>1610</x> <y>175</y> </pos>
+	<pos> <x>1820</x> <y>385</y> </pos>
+	<pos> <x>1820</x> <y>420</y> </pos>
+	<pos> <x>1820</x> <y>455</y> </pos>
+	<pos> <x>1855</x> <y>385</y> </pos>
+	<pos> <x>1855</x> <y>420</y> </pos>
+	<pos> <x>1855</x> <y>455</y> </pos>
+	<pos> <x>1890</x> <y>385</y> </pos>
+	<pos> <x>1890</x> <y>420</y> </pos>
+	<pos> <x>1890</x> <y>455</y> </pos>
+	<pos> <x>1995</x> <y>105</y> </pos>
+	<pos> <x>2030</x> <y>140</y> </pos>
+	<pos> <x>2065</x> <y>140</y> </pos>
+	<pos> <x>2065</x> <y>175</y> </pos>
+	<pos> <x>2100</x> <y>175</y> </pos>
+	<pos> <x>2100</x> <y>210</y> </pos>
+	<pos> <x>2345</x> <y>105</y> </pos>
+	<pos> <x>2380</x> <y>140</y> </pos>
+	<pos> <x>2415</x> <y>140</y> </pos>
+	<pos> <x>2450</x> <y>70</y> </pos>
+	<pos> <x>2450</x> <y>105</y> </pos>
+	<pos> <x>2450</x> <y>140</y> </pos>
+	<pos> <x>2450</x> <y>280</y> </pos>
+	<pos> <x>2485</x> <y>70</y> </pos>
+	<pos> <x>2485</x> <y>105</y> </pos>
+	<pos> <x>2485</x> <y>140</y> </pos>
+	<pos> <x>2485</x> <y>245</y> </pos>
+	<pos> <x>2520</x> <y>140</y> </pos>
+	<pos> <x>2520</x> <y>245</y> </pos>
+	<pos> <x>2520</x> <y>455</y> </pos>
+	<pos> <x>2555</x> <y>420</y> </pos>
+	<pos> <x>2555</x> <y>455</y> </pos>
+	<pos> <x>2590</x> <y>385</y> </pos>
+	<pos> <x>2590</x> <y>420</y> </pos>
+	<pos> <x>2730</x> <y>280</y> </pos>
+	<pos> <x>2765</x> <y>280</y> </pos>
+	<pos> <x>2800</x> <y>280</y> </pos>
+	<pos> <x>2835</x> <y>280</y> </pos>
+	<pos> <x>2870</x> <y>420</y> </pos>
+	<pos> <x>2870</x> <y>455</y> </pos>
+	<pos> <x>2905</x> <y>105</y> </pos>
+	<pos> <x>3010</x> <y>140</y> </pos>
+	<pos> <x>3010</x> <y>490</y> </pos>
+	<pos> <x>3045</x> <y>140</y> </pos>
+	<pos> <x>3045</x> <y>490</y> </pos>
+	<pos> <x>3080</x> <y>140</y> </pos>
+	<pos> <x>3220</x> <y>455</y> </pos>
+	<pos> <x>3255</x> <y>420</y> </pos>
+	<pos> <x>3430</x> <y>490</y> </pos>
+	<pos> <x>3465</x> <y>490</y> </pos>
+	<pos> <x>3500</x> <y>70</y> </pos>
+	<pos> <x>3500</x> <y>105</y> </pos>
+	<pos> <x>3500</x> <y>490</y> </pos>
+	<pos> <x>3535</x> <y>70</y> </pos>
+	<pos> <x>3570</x> <y>70</y> </pos>
+	<pos> <x>3605</x> <y>70</y> </pos>
+	<pos> <x>3640</x> <y>420</y> </pos>
+	<pos> <x>3675</x> <y>420</y> </pos>
+	<pos> <x>3710</x> <y>70</y> </pos>
+	<pos> <x>3710</x> <y>420</y> </pos>
+	<pos> <x>3745</x> <y>105</y> </pos>
+	<pos> <x>3780</x> <y>105</y> </pos>
+	<pos> <x>3780</x> <y>140</y> </pos>
+	<pos> <x>3815</x> <y>140</y> </pos>
+	<pos> <x>3815</x> <y>175</y> </pos>
+	<pos> <x>3920</x> <y>455</y> </pos>
+	<pos> <x>3955</x> <y>455</y> </pos>
+	<pos> <x>3955</x> <y>490</y> </pos>
+	<pos> <x>3990</x> <y>490</y> </pos>
+	<pos> <x>3990</x> <y>525</y> </pos>
+	<pos> <x>4025</x> <y>105</y> </pos>
+	<pos> <x>4025</x> <y>525</y> </pos>
+	<pos> <x>4060</x> <y>105</y> </pos>
+	<pos> <x>4095</x> <y>105</y> </pos>
+	<pos> <x>4130</x> <y>105</y> </pos>
+	<pos> <x>4165</x> <y>105</y> </pos>
+	<pos> <x>4165</x> <y>140</y> </pos>
+	<pos> <x>4200</x> <y>315</y> </pos>
+	<pos> <x>4235</x> <y>315</y> </pos>
+	<pos> <x>4270</x> <y>315</y> </pos>
+	<pos> <x>4270</x> <y>350</y> </pos>
+	<pos> <x>4270</x> <y>385</y> </pos>
+	<pos> <x>4305</x> <y>385</y> </pos>
+	<pos> <x>4340</x> <y>420</y> </pos>
+	<pos> <x>4410</x> <y>525</y> </pos>
+	<pos> <x>4445</x> <y>455</y> </pos>
+	<pos> <x>4445</x> <y>490</y> </pos>
+	<pos> <x>4480</x> <y>70</y> </pos>
+	<pos> <x>4480</x> <y>385</y> </pos>
+	<pos> <x>4480</x> <y>420</y> </pos>
+	<pos> <x>4515</x> <y>70</y> </pos>
+	<pos> <x>4550</x> <y>70</y> </pos>
+	<pos> <x>4585</x> <y>490</y> </pos>
+	<pos> <x>4620</x> <y>420</y> </pos>
+	<pos> <x>4620</x> <y>455</y> </pos>
+	<pos> <x>4655</x> <y>420</y> </pos>
+	<pos> <x>4655</x> <y>455</y> </pos>
+	<pos> <x>4690</x> <y>455</y> </pos>
+	<pos> <x>4725</x> <y>385</y> </pos>
+	<pos> <x>4760</x> <y>350</y> </pos>
+	<pos> <x>4795</x> <y>350</y> </pos>
+	<pos> <x>4865</x> <y>385</y> </pos>
+	<pos> <x>4865</x> <y>420</y> </pos>
+	<pos> <x>4900</x> <y>245</y> </pos>
+	<pos> <x>4900</x> <y>455</y> </pos>
+	<pos> <x>4900</x> <y>490</y> </pos>
+	<pos> <x>4935</x> <y>175</y> </pos>
+	<pos> <x>4935</x> <y>210</y> </pos>
+	<pos> <x>4935</x> <y>525</y> </pos>
+	<pos> <x>4935</x> <y>560</y> </pos>
+	<pos> <x>4970</x> <y>140</y> </pos>
+	<pos> <x>4970</x> <y>175</y> </pos>
+	<pos> <x>4970</x> <y>210</y> </pos>
+	<pos> <x>5005</x> <y>140</y> </pos>
+	<pos> <x>5005</x> <y>175</y> </pos>
+	<pos> <x>5005</x> <y>210</y> </pos>
+	<pos> <x>5075</x> <y>140</y> </pos>
+	<pos> <x>5075</x> <y>175</y> </pos>
+	<pos> <x>5110</x> <y>140</y> </pos>
+	<pos> <x>5145</x> <y>105</y> </pos>
+	<pos> <x>5180</x> <y>105</y> </pos>
+	<pos> <x>5250</x> <y>70</y> </pos>
+	<pos> <x>5285</x> <y>35</y> </pos>
+	<pos> <x>5285</x> <y>70</y> </pos>
+	<pos> <x>5320</x> <y>35</y> </pos>
+</coinPositions>

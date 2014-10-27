@@ -113,7 +113,7 @@ namespace Platformer_v1
         public void LoadContent(ContentManager content)
         {
             song = content.Load<Song>("chant1");
-            //MediaPlayer.Play(song);
+            MediaPlayer.Play(song);
 
             backgroundImage = content.Load<Texture2D>("spriteArt/background");
             scrollingBackground = new ScrollingBackground(content, "spriteArt/background");

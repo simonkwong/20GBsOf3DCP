@@ -3,8 +3,6 @@
 from PIL import Image
 import math
 
-
-
 im = Image.open("test.png") #Can be many different formats.
 
 pix = im.load()
@@ -13,42 +11,88 @@ height = im.size[1]
 
 f = open('worldoutput.txt', 'w')
 
+def isBlack(rgba):
+    if (rgba[0] == 0 and rgba[1] == 0 and rgba[2] == 0 and rgba[3] == 255):
+        return True
+    else:
+        return False
 
-f.write("<enemyPositions type = \"Vector2List\">\n")
+def isYellow(rgba):
+    if (rgba[0] == 255 and rgba[1] == 255 and rgba[2] == 0 and rgba[3] == 255):
+        return True
+    else:
+        return False
+
+def isRed(rgba):
+    if (rgba[0] == 255 and rgba[1] == 0 and rgba[2] == 0 and rgba[3] == 255):
+        return True
+    else:
+        return False
+
+def isBlue(rgba):
+    if (rgba[0] == 0 and rgba[1] == 0 and rgba[2] == 255 and rgba[3] == 255):
+        return True
+    else:
+        return False
+
+def isGreen(rgba):
+    if (rgba[0] == 0 and rgba[1] == 255 and rgba[2] == 0 and rgba[3] == 255):
+        return True
+    else:
+        return False
+    
+
+coins = []
+enemies = []
+platforms = []
+spikes = []
+scrolls = []
+
 for x in range(width):
     for y in range(height):
-        tempRGB = pix[x,y]
-        if tempRGB[0] >= 250 and tempRGB[0] <=255 and tempRGB[1] == 0 and tempRGB[2] == 0:
-            f.write("\t<pos> <x>" + str(x * 35) + "</x> <y>" + str(y * 35) + "</y> </pos>\n")
-            print ('r'),
-        elif tempRGB[0] >= 0 and tempRGB[0] <=10 and tempRGB[1] >= 0 and tempRGB[1] <=10 and tempRGB[2] >= 0 and tempRGB[2] <=10:
-            print ('.'),
-        elif  tempRGB[2] >= 240 and tempRGB[2] <=255 and tempRGB[1] >= 0 and tempRGB[1] <= 10 and tempRGB[0] >= 0 and tempRGB[0] <= 10:
-            print ('b'),
+        RGBA = pix[x,y]
+        if isBlack(RGBA):
+            platforms.append("\t<pos> <x>" + str(x * 35) + "</x> <y>" + str(y * 35) + "</y> </pos>\n")
+            print '*',
+        elif isYellow(RGBA):
+            print 'Y',
+            coins.append("\t<pos> <x>" + str(x * 35) + "</x> <y>" + str(y * 35) + "</y> </pos>\n")
+        elif isRed(RGBA):
+            enemies.append("\t<pos> <x>" + str(x * 35) + "</x> <y>" + str(y * 35) + "</y> </pos>\n")
+            print 'R',
+        elif isBlue(RGBA):
+            print 'B',
+            spikes.append("\t<pos> <x>" + str(x * 35) + "</x> <y>" + str(y * 35) + "</y> </pos>\n")
+        elif isGreen(RGBA):
+            print 'G',
+            scrolls.append("\t<pos> <x>" + str(x * 35) + "</x> <y>" + str(y * 35) + "</y> </pos>\n")
         else:
-            print ('?'),            
-    print ()
+            print '_',
+    print ""
+                        
+f.write("<enemyPositions type = \"Vector2List\">\n")
+for x in enemies:
+    f.write(x)
 f.write("</enemyPositions>\n")
 
 
 f.write("\n")
 
 f.write("<platformPositions type = \"Vector2List\">\n")
-for x in range(width):
-    for y in range(height):
-        tempRGB = pix[x,y]
-        if tempRGB[0] >= 0 and tempRGB[0] <=10 and tempRGB[1] >= 0 and tempRGB[1] <=10 and tempRGB[2] >= 0 and tempRGB[2] <=10:
-            f.write("\t<pos> <x>" + str(x * 35) + "</x> <y>" + str(y * 35) + "</y> </pos>\n")
+for x in platforms:
+    f.write(x)
 f.write("</platformPositions>\n")
 
 
 f.write("\n")
 
 f.write("<spikePositions type = \"Vector2List\">\n")
-for x in range(width):
-    for y in range(height):
-        tempRGB = pix[x,y]
-        if tempRGB[2] >= 240 and tempRGB[2] <=255 and tempRGB[1] >= 0 and tempRGB[1] <= 10 and tempRGB[0] >= 0 and tempRGB[0] <= 10:
-            f.write("\t<pos> <x>" + str(x * 35) + "</x> <y>" + str(y * 35) + "</y> </pos>\n")
+for x in spikes:
+    f.write(x)
 f.write("</spikePositions>\n")
 
+
+f.write("<coinPositions type = \"Vector2List\">\n")
+for x in coins:
+    f.write(x)
+f.write("</coinPositions>\n")
