@@ -220,15 +220,6 @@
       <Time>2014-10-26T20:30:34.0798291-07:00</Time>
     </Item>
     <Item>
-      <Source>spriteArt\church.png</Source>
-      <Name>spriteArt\church</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\church.xnb</Output>
-      <Time>2014-10-27T17:29:19.2126691-07:00</Time>
-    </Item>
-    <Item>
       <Source>spriteArt\endgame.jpg</Source>
       <Name>spriteArt\endgame</Name>
       <Importer>TextureImporter</Importer>
@@ -246,6 +237,25 @@
       <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\endmusic.xnb</Output>
       <Extra>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\endmusic.wma</Extra>
       <Time>2014-10-27T22:22:46.3762513-07:00</Time>
+    </Item>
+    <Item>
+      <Source>spriteArt\church.png</Source>
+      <Name>spriteArt\church</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\church.xnb</Output>
+      <Time>2014-10-27T23:23:33.8846059-07:00</Time>
+    </Item>
+    <Item>
+      <Source>halloween.mp3</Source>
+      <Name>halloween</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\halloween.xnb</Output>
+      <Extra>C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\halloween.wma</Extra>
+      <Time>2014-10-27T23:33:48.7936501-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

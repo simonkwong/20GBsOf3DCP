@@ -177,13 +177,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="spriteArt\church.png">
-      <Name>church</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="endmusic.mp3">
       <Name>endmusic</Name>
       <Importer>Mp3Importer</Importer>
@@ -195,6 +188,20 @@
       <Name>endgame</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="spriteArt\church.png">
+      <Name>church</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="halloween.mp3">
+      <Name>halloween</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

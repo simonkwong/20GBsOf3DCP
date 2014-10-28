@@ -42,6 +42,7 @@ namespace Platformer_v1
         Song prelude;
         private background firstBackground;
         private background initialBackground;
+        private Song gamescreensong;
 
 
         //private void DrawText(String st, SpriteBatch sb, SpriteFont font)
@@ -60,32 +61,19 @@ namespace Platformer_v1
             
             worldObjectspre = new List<I_WorldObject>();
             worldtextObjects = new List<I_WorldObject>();
-            faces f = new faces("Adam", WorldData.GetInstance().playerInitialPosition, worldObjects);
-            //faces fp = new faces("pachecofacebig", WorldData.GetInstance().playerInitialPosition, worldObjects);
-            camera = new Camera(containingGame.spriteBatch, f);
-            //worldObjects.Add(f);
-            //worldObjects.Add(fp);
-            //fp.setPosition(new Vector2(1000, 0));
-            f.setPosition(new Vector2(300, 100));
-            //phrases = new Dictionary<string,string>();
-                
-              
-            //for (int i = 0; i < WorldData.GetInstance().fieldvaluepairs.Count; i += 2)
-            //{
-            //    phrases.Add(WorldData.GetInstance().fieldvaluepairs.ElementAt<string>(i), WorldData.GetInstance().fieldvaluepairs.ElementAt<string>(i + 1));
-            //}
+            
 
             foreach (Vector2 platPos in WorldData.GetInstance().textPositions)
             {
                 messagebox box = new messagebox("poke_text_messagenew", platPos);
-                box.setPosition(new Vector2(-25, 100));
+                box.setPosition(new Vector2(-25, 110));
                 worldObjectspre.Add(box);
             }
 
             foreach (String s in WorldData.GetInstance().fieldvaluepairs)
             {
                 messagetexts text = new messagetexts(s, new Vector2(0, 0));
-                text.setPosition(new Vector2(200, 530));
+                text.setPosition(new Vector2(200, 540));
                 worldtextObjects.Add(text);
             }
 
@@ -143,6 +131,7 @@ namespace Platformer_v1
             }
             song = content.Load<Song>("chant1");
             prelude = content.Load<Song>("bar");
+            gamescreensong = content.Load<Song>("halloween");
             camera.LoadContent(content);
             initialimage = content.Load<Texture2D>("spriteArt/church");
             initialBackground = new background(content, "spriteArt/church");
@@ -159,7 +148,7 @@ namespace Platformer_v1
         {
             if (gamemenu == true && flipsong == 0)
             {
-                MediaPlayer.Play(song);
+                MediaPlayer.Play(gamescreensong);
                 flipsong = 1;
             }
             else if (gamemenu != true && storyflip == false && flipsong == 0)
