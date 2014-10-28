@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Level2>
+<WorldData>
   <Gravity type = "Vector2">
     <x> 0 </x>
     <y> 0.1 </y>
@@ -1268,4 +1268,4 @@
 
 
   
-</Level2>
+</WorldData>

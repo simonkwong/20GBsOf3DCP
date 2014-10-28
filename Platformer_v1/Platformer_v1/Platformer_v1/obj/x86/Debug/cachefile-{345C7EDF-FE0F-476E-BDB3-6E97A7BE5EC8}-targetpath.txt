@@ -18,11 +18,10 @@ Content\spriteArt\pachecoface.xnb
 Content\spriteArt\scroll.xnb
 Content\spriteArt\coin.xnb
 Content\spriteArt\movingPlatform.xnb
-Content\spriteArt\the-ring.xnb
 Content\chant1.xnb
 Content\chant1.wma
 Content\sounds\coin_collect.xnb
+Content\spriteArt\the-ring.xnb
 Content\sounds\scaryscream1.xnb
 Content\sounds\suspence.xnb
-Content\Level1.xml
-Content\Level2.xml
+Content\WorldData.xml
