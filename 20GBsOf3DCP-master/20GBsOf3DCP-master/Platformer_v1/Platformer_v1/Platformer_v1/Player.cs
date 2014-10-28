@@ -167,6 +167,13 @@ namespace Platformer_v1
                 }
 
 
+                if (collidedObject.getName() == "scroll")
+                {
+                    collidedObject.setAlive(false);
+                    WorldData.level++;
+                    Console.WriteLine("Level: " + WorldData.level);
+                }
+
 
 
 

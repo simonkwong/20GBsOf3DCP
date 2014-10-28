@@ -96,3 +96,9 @@ f.write("<coinPositions type = \"Vector2List\">\n")
 for x in coins:
     f.write(x)
 f.write("</coinPositions>\n")
+
+
+f.write("<scrollPositions type = \"Vector2List\">\n")
+for x in scrolls:
+    f.write(x)
+f.write("</scrollPositions>\n")

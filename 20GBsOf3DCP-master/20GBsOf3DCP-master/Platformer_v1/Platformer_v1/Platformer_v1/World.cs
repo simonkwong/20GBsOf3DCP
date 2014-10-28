@@ -20,6 +20,8 @@ namespace Platformer_v1
 
         const int MAX_SPIKEFIELDS = 20;
 
+        public ContentManager content;
+
         public List<I_WorldObject> worldObjects;
         public List<I_WorldObject> intersectingObjects;
         public List<I_WorldObject> toDelete;
@@ -38,10 +40,21 @@ namespace Platformer_v1
 
         public TextBox scoreDisplay;
 
+        public Game1 containingGame;
+        public int w;
+        public int h;
 
         public World(Game1 containingGame, int w, int h)
         {
-            scoreDisplay = new TextBox(new Vector2(20,0), "coins: 0", "HUDfont", Color.Yellow);
+            this.containingGame = containingGame;
+            this.w = w;
+            this.h = h;
+            init_everything();
+        }
+
+        public void init_everything()
+        {
+            scoreDisplay = new TextBox(new Vector2(20, 0), "coins: 0", "HUDfont", Color.Yellow);
             game = containingGame;
             WorldWidth = w;
             WorldHeight = h;
@@ -62,7 +75,7 @@ namespace Platformer_v1
             foreach (Vector2 spikePos in WorldData.GetInstance().spikePositions)
             {
                 if (spikePos.X > worldX)
-                    worldX = (int) spikePos.X;
+                    worldX = (int)spikePos.X;
                 if (spikePos.Y > worldY)
                     worldY = (int)spikePos.Y;
 
@@ -100,16 +113,29 @@ namespace Platformer_v1
 
             // COINS BRUH
 
-            foreach (Vector2 coinPos in WorldData.GetInstance().coinPositions) 
+            foreach (Vector2 coinPos in WorldData.GetInstance().coinPositions)
             {
                 if (coinPos.X > worldX)
                     worldX = (int)coinPos.X;
                 if (coinPos.Y > worldY)
                     worldY = (int)coinPos.Y;
 
-                Coin c = new Coin("coin", 20, new Vector2(0, 0), true, 0.08f, coinPos,scoreDisplay);
+                Coin c = new Coin("coin", 20, new Vector2(0, 0), true, 0.08f, coinPos, scoreDisplay);
                 c.setRigid(false);
                 worldObjects.Add(c);
+            }
+
+
+            foreach (Vector2 scrollPos in WorldData.GetInstance().scrollPositions)
+            {
+                if (scrollPos.X > worldX)
+                    worldX = (int)scrollPos.X;
+                if (scrollPos.Y > worldY)
+                    worldY = (int)scrollPos.Y;
+
+                TestBlock s = new TestBlock("scroll", scrollPos);
+                s.setRigid(false);
+                worldObjects.Add(s);
             }
 
             qt = new QuadTree(new Rectangle(0, 0, worldX, worldY));
@@ -118,6 +144,9 @@ namespace Platformer_v1
 
         public void LoadContent(ContentManager content)
         {
+
+            this.content = content;
+
             scoreDisplay.LoadContent(content);
             song = content.Load<Song>("chant1");
             MediaPlayer.Play(song);
@@ -141,14 +170,16 @@ namespace Platformer_v1
             foreach (I_WorldObject x in worldObjects)
             {
                 x.Update(gameTime);
-            
+
+                int level_before = WorldData.level;
+
                 if (x.getName() == "Jordan" || x.getName() == "Simon" || x.getName() == "Adam")
                 {
                     x.setNode(qt.UpdateLocation(x, x.getNode()));
                     checkCollisions(x);
                 }
 
-                if (x.getName() == "coin")
+                if (x.getName() == "coin" || x.getName() == "scroll")
                 {
                     if (!x.isAlive())
                     {
@@ -159,11 +190,23 @@ namespace Platformer_v1
                 }
  
                 checkForAliveness(x, toDelete);
+
+
+                int level_after = WorldData.level;
+
+                if (level_before != level_after)
+                {
+                    Console.WriteLine("NEW LEVEL EVENT OCCURED");
+                    init_everything();
+                    LoadContent(content);
+                }
+
+        
+
             }
 
             foreach (I_WorldObject z in toDelete)
             {
-
                 worldObjects.Remove(z);
             }
         }
@@ -179,6 +222,8 @@ namespace Platformer_v1
                 {
                     x.alertCollision(y);
                     y.alertCollision(x);
+
+
                 }
             }
         }

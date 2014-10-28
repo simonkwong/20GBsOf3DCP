@@ -14,7 +14,7 @@
   </ScreenHeight>
 
   <playerInitialPosition type = "Vector2">
-    <x> 0 </x>
+    <x> 5100 </x>
     <y> 100 </y>
   </playerInitialPosition>
 
@@ -1256,6 +1256,12 @@
 	<pos> <x>5285</x> <y>70</y> </pos>
 	<pos> <x>5320</x> <y>35</y> </pos>
 </coinPositions>
+
+<scrollPositions type = "Vector2List">
+	<pos> <x>5390</x> <y>140</y> </pos>
+</scrollPositions>
+
+
 
   
 </WorldData>

@@ -152,7 +152,7 @@ namespace Platformer_v1
 
         public void alertCollision(I_WorldObject collidedObject)
         {
-
+    
         }
 
         public bool isAlive()

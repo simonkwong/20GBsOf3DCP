@@ -27,12 +27,17 @@ namespace Platformer_v1
         public List<Vector2> spikePositions { get; private set; }
         public List<Vector2> enemyPositions { get; private set; }
         public List<Vector2> coinPositions { get; private set; }
+        public List<Vector2> scrollPositions { get; private set; }
         public Vector2 playerDirection { get; private set; }
         public int playerSpeed { get; private set; }
         public int enemySpeed { get; private set; }
         public int enemyMaxMovement { get; private set; }
 
         private static WorldData wData;
+
+        public static int level = 1;
+
+
 
         private WorldData()
         {
@@ -49,6 +54,7 @@ namespace Platformer_v1
             playerSpeed = 0;
             enemySpeed = 0;
             enemyMaxMovement = 0;
+            scrollPositions = new List<Vector2>();
         }
 
         public static WorldData GetInstance()
@@ -56,12 +62,26 @@ namespace Platformer_v1
             if (wData == null)
             {
                 wData = new WorldData();
-                wData.LoadData("Content/WorldData.xml");
+
+                switch (level)
+                {
+                    case 1:
+                        wData.LoadData("Content/WorldData.xml");
+                        break;
+                    case 2:
+                        wData.LoadData("Content/WorldData.xml");
+                        break;
+                    default:
+                        Console.WriteLine("NO LEVEL FOUND!");
+                        break;
+                }
+
             }
 
             return wData;
-
         }
+
+
 
         protected void AddData(XElement elem)
         {

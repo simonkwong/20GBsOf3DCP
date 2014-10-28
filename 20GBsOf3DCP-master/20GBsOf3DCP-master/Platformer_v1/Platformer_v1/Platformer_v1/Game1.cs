@@ -59,7 +59,6 @@ namespace Platformer_v1
 
             mGameWorld.LoadContent(Content);
 
-
             // TODO: use this.Content to load your game content here
         }
 
