@@ -184,10 +184,14 @@ namespace Platformer_v1
 
         public void alertCollision(I_WorldObject collidedObject)
         {
-            coinSound_instance.Play();
+            if (collidedObject.getName() != "fire particle")
+            {
+                coinSound_instance.Play();
 
-            scoreDisplay.text = "coins: " + ++cointCount;
-            this.setAlive(false);
+                scoreDisplay.text = "coins: " + ++cointCount;
+                this.setAlive(false);
+            }
+
         }
 
         public bool isAlive()

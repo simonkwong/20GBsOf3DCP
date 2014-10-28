@@ -13,6 +13,8 @@ namespace Platformer_v1
     {
 
         Texture2D enemyTexture;
+        Texture2D enemyTextureLeft;
+        Texture2D enemyTextureRight;
         Vector2 enemyTextureOrigin;
         Vector2 enemyPosition;
         float enemyRotation;
@@ -27,8 +29,6 @@ namespace Platformer_v1
         bool aliveness;
         bool collidable;
         static Random rndGen = new Random();
-        float movementUpdate = 0.5f;
-        float currentElapsedTime = 0f;
         QuadTreeNode mNode;
 
         float frame;
@@ -36,9 +36,25 @@ namespace Platformer_v1
         Vector2 animCenter;
         float scale;
 
-        public Enemy(String enemyName, Vector2 iniPos)
+        public static int nunCount = 0;
+
+        Vector2 acceleration;
+
+        bool inRangeSwitch;
+
+
+        float thrusterX;
+        float thrusterY;
+
+
+
+        World gameWorld;
+
+        public Enemy(String enemyName, Vector2 iniPos, World mWorld)
         {
 
+            inRangeSwitch = false;
+            this.gameWorld = mWorld;
             this.enemyName = enemyName;
             this.enemyPosition = iniPos;
             this.enemyTextureOrigin = Vector2.Zero;
@@ -61,28 +77,94 @@ namespace Platformer_v1
         public void LoadContent(ContentManager content)
         {
             enemyTexture = content.Load<Texture2D>("spriteArt/" + enemyName);
+            enemyTextureLeft = content.Load<Texture2D>("spriteArt/" + enemyName + "L");
+            enemyTextureRight = content.Load<Texture2D>("spriteArt/" + enemyName + "R");
 
             UpdateBoundingBox();
         }
 
         public void Update(GameTime gameTime)
         {
-            currentElapsedTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            // calibrate nuns thruster
+            calibrateThruster();
 
-            this.enemyColor = Color.White;
+            acceleration += new Vector2(thrusterX, thrusterY) * 0.05f;
 
-            adjustPosition();
-
-            if (currentElapsedTime >= movementUpdate)
+            // cap acceleration
+            if (acceleration.X <= -1.5f)
             {
-                RandomizeMovement();
-                currentElapsedTime = 0f;
+                acceleration.X = -1.5f;
+            }
+            else if (acceleration.X >= 1.5f)
+            {
+                acceleration.X = 1.5f;
             }
 
-            setPosition(getDirection() * getSpeed() * (float)gameTime.ElapsedGameTime.TotalSeconds);
+
+
+                if (acceleration.Y <= -1.5f)
+                {
+                    acceleration.Y = -1.5f;
+                }
+                else if (acceleration.Y >= 1.5f)
+                {
+                    acceleration.Y = 1.5f;
+                }
+
+
+
+
+            enemyPosition += acceleration;
+
 
             UpdateBoundingBox();
         }
+
+
+
+
+
+        private void calibrateThruster()
+        {
+
+            Vector2 playerPos = gameWorld.p.getPosition();
+
+            if (Vector2.Distance(playerPos, this.getPosition()) <= 400 || inRangeSwitch)
+            {
+                inRangeSwitch = true;
+
+                // calibrate x thrusters
+
+                if (enemyPosition.X > gameWorld.p.getPosition().X)
+                {
+                    thrusterX = -1;
+                    enemyTexture = enemyTextureLeft;
+                }
+                else
+                {
+                    thrusterX = 1;
+                    enemyTexture = enemyTextureRight;
+                }
+
+
+                // calibrate y thrusters 
+                if (enemyPosition.Y > gameWorld.p.getPosition().Y)
+                {
+                    thrusterY = -1;
+                }
+                else
+                {
+                    thrusterY = 1;
+                }
+            }
+            else
+            {
+
+            }
+
+        }
+
+
 
         private void RandomizeMovement()
         {
@@ -219,6 +301,15 @@ namespace Platformer_v1
         public void alertCollision(I_WorldObject collidedObject)
         {
 
+            Console.WriteLine(collidedObject.getName());
+
+            if (collidedObject.getName() == "fire particle")
+            {
+                nunCount++;
+                gameWorld.nunCount.text = "nuns impaled: " + nunCount;
+                this.setAlive(false);
+            }
+
             if (collidedObject.isRigid())
             {
 
@@ -303,10 +394,10 @@ namespace Platformer_v1
 
         protected void UpdateBoundingBox()
         {
-            this.enemyBoundingBox.Min.X = this.getPosition().X + 15;
-            this.enemyBoundingBox.Min.Y = this.getPosition().Y + 15;
-            this.enemyBoundingBox.Max.X = this.getPosition().X + this.getTexture().Width - 15;
-            this.enemyBoundingBox.Max.Y = this.getPosition().Y + this.getTexture().Height - 15;
+            this.enemyBoundingBox.Min.X = this.getPosition().X;
+            this.enemyBoundingBox.Min.Y = this.getPosition().Y;
+            this.enemyBoundingBox.Max.X = this.getPosition().X + this.getTexture().Width;
+            this.enemyBoundingBox.Max.Y = this.getPosition().Y + this.getTexture().Height;
 
 
         }

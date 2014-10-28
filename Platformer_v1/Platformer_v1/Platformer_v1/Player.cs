@@ -24,6 +24,8 @@ namespace Platformer_v1
         bool collidable;
         QuadTreeNode mNode;
 
+        public bool leftRight;
+
         int PLAYER_SPEED;
         Vector2 GRAVITY;
 
@@ -51,8 +53,10 @@ namespace Platformer_v1
         Vector2 animCenter;
         float scale;
 
+
         public Player(String playerName, Vector2 iniPos, List<I_WorldObject> objectsList)
         {
+            leftRight = true;
             this.playerName = playerName;
             this.playerPosition = iniPos;
             this.playerTextureOrigin = Vector2.Zero;
@@ -68,6 +72,8 @@ namespace Platformer_v1
             this.gravityState = true;
             this.collidable = true;
             this.playerState = State.HIGH;
+
+       
 
             frame = 0;
             frameWidth = 0;
@@ -101,6 +107,7 @@ namespace Platformer_v1
             adjustPositionByVelocity();
 
             UpdateBoundingBox();
+
         }
 
         private void UpdateMovement(KeyboardState kbCurrentState, GamePadState gpCurrentState)
@@ -126,12 +133,14 @@ namespace Platformer_v1
 
             if (kbCurrentState.IsKeyDown(Keys.Left) || gpCurrentState.IsButtonDown(Buttons.LeftThumbstickLeft))
             {
+                leftRight = false;
                 playerTexture = playerTextureLeft;
                 this.playerPosition += new Vector2(-2, 0);
             }
 
             if (kbCurrentState.IsKeyDown(Keys.Right) || gpCurrentState.IsButtonDown(Buttons.LeftThumbstickRight))
             {
+                leftRight = true;
                 playerTexture = playerTextureRight;
                 this.playerPosition += new Vector2(2, 0);
             }
@@ -150,6 +159,18 @@ namespace Platformer_v1
 
         public void alertCollision(I_WorldObject collidedObject)
         {
+
+
+            if (collidedObject.getName() == "nun")
+            {
+                this.setVelocity(Vector2.Zero);
+                this.setDirection(new Vector2(1, 0));
+                this.setSpeed(Vector2.Zero);
+                this.setPhysics(false);
+
+                playerPosition = WorldData.GetInstance().playerInitialPosition;
+            }
+
             if (!collidedObject.isRigid())
             {
                 if (collidedObject.getName() == "Spikes" || collidedObject.getName() == "SpikeField")
@@ -171,7 +192,6 @@ namespace Platformer_v1
                 {
                     collidedObject.setAlive(false);
                     WorldData.level++;
-                    Console.WriteLine("Level: " + WorldData.level);
                 }
 
 

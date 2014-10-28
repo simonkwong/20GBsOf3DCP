@@ -75,6 +75,8 @@
     <Compile Include="Coin.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="FireParticle.cs" />
+    <Compile Include="FlameThrower.cs" />
     <Compile Include="I_WorldObject.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

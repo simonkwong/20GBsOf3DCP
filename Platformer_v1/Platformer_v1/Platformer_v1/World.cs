@@ -40,6 +40,7 @@ namespace Platformer_v1
         public QuadTree qt;
 
         public TextBox scoreDisplay;
+        public TextBox nunCount;
 
         public ScaryImage scareImg;
 
@@ -48,6 +49,11 @@ namespace Platformer_v1
         public int h;
 
         public Player p;
+
+        public FlameThrower fl;
+
+
+        public List<I_WorldObject> objectsToAdd;
 
         public World(Game1 containingGame, int w, int h)
         {
@@ -59,8 +65,10 @@ namespace Platformer_v1
 
         public void init_everything()
         {
+            objectsToAdd = new List<I_WorldObject>();
             scareImg = new ScaryImage();
-            scoreDisplay = new TextBox(new Vector2(20, 0), "coins: 0", "HUDfont", Color.Yellow);
+            nunCount = new TextBox(new Vector2(20, 0), "nuns impaled: 0", "HUDfont", Color.Yellow);
+            scoreDisplay = new TextBox(new Vector2(20, 50), "coins: 0", "HUDfont", Color.Yellow);
             game = containingGame;
             WorldWidth = w;
             WorldHeight = h;
@@ -72,9 +80,17 @@ namespace Platformer_v1
             worldObjects = new List<I_WorldObject>();
             intersectingObjects = new List<I_WorldObject>();
 
-            p = new Player("Simon", WorldData.GetInstance().playerInitialPosition, worldObjects);
+            p = new Player("Jordan", WorldData.GetInstance().playerInitialPosition, worldObjects);
+
+            fl = new FlameThrower(this);
+
+
+
+
 
             worldObjects.Add(p);
+
+            worldObjects.Add(fl);
 
             camera = new Camera(containingGame.spriteBatch, p);
 
@@ -99,7 +115,7 @@ namespace Platformer_v1
                 if (enemPos.Y > worldY)
                     worldY = (int)enemPos.Y;
 
-                Enemy e = new Enemy("pachecoface", enemPos);
+                Enemy e = new Enemy("nun", enemPos, this);
                 e.setRigid(false);
                 worldObjects.Add(e);
             }
@@ -162,9 +178,9 @@ namespace Platformer_v1
 
         public void LoadContent(ContentManager content)
         {
-
             this.content = content;
 
+            nunCount.LoadContent(content);
             scareImg.LoadContent(content);
             scoreDisplay.LoadContent(content);
             song = content.Load<Song>("chant1");
@@ -175,6 +191,8 @@ namespace Platformer_v1
 
             foreach (I_WorldObject x in worldObjects)
             {
+               
+
                 x.LoadContent(content);
                 x.setNode(qt.insert(x));
             }
@@ -183,7 +201,10 @@ namespace Platformer_v1
 
         public void Update(GameTime gameTime)
         {
+            // reset objects to add
+            objectsToAdd = new List<I_WorldObject>();
             scareImg.update(gameTime);
+            
             camera.Update(gameTime);
             scrollBackground();
 
@@ -193,7 +214,7 @@ namespace Platformer_v1
 
                 int level_before = WorldData.level;
 
-                if (x.getName() == "Jordan" || x.getName() == "Simon" || x.getName() == "Adam")
+                if (x.getName() == "Jordan" || x.getName() == "Simon" || x.getName() == "Adam" || x.getName() == "fire particle")
                 {
                     x.setNode(qt.UpdateLocation(x, x.getNode()));
                     checkCollisions(x);
@@ -208,18 +229,26 @@ namespace Platformer_v1
 
                 checkForAliveness(x, toDelete);
 
-
                 int level_after = WorldData.level;
 
                 if (level_before != level_after)
                 {
                     Console.WriteLine("NEW LEVEL EVENT OCCURED");
+                    WorldData.newLevelEvent = true;
+
                     init_everything();
                     LoadContent(content);
                 }
 
         
 
+            }
+
+            // add the objects
+
+            foreach (I_WorldObject z in objectsToAdd)
+            {
+                worldObjects.Add(z);
             }
 
             foreach (I_WorldObject z in toDelete)
@@ -291,8 +320,9 @@ namespace Platformer_v1
                 camera.Draw(x);
             }
 
-            scoreDisplay.Draw(sb);
 
+            scoreDisplay.Draw(sb);
+            nunCount.Draw(sb);
             scareImg.Draw(sb);
 
         }
