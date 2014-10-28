@@ -173,6 +173,15 @@
       <Extra>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\20GBsOf3DCP-master\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\chant1.wma</Extra>
       <Time>2014-10-26T22:07:27.7957211-07:00</Time>
     </Item>
+    <Item>
+      <Source>sounds\coin_collect.wav</Source>
+      <Name>sounds\coin_collect</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\20GBsOf3DCP-master\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\sounds\coin_collect.xnb</Output>
+      <Time>2014-10-27T17:08:07.1260458-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{345C7EDF-FE0F-476E-BDB3-6E97A7BE5EC8}</ContentProjectGUID>

@@ -167,11 +167,7 @@ namespace Platformer_v1
                 }
 
 
-                if (collidedObject.getName() == "coin")
-                {
 
-                    collidedObject.setAlive(false);
-                }
 
 
             }

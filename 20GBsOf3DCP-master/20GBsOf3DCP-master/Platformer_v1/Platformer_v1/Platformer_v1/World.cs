@@ -140,12 +140,23 @@ namespace Platformer_v1
                     x.setNode(qt.UpdateLocation(x, x.getNode()));
                     checkCollisions(x);
                 }
-                 
+
+                if (x.getName() == "coin")
+                {
+                    if (!x.isAlive())
+                    {
+                        x.getNode().RemoveElement(x);
+                    }
+                    x.setNode(qt.UpdateLocation(x, x.getNode()));
+ 
+                }
+ 
                 checkForAliveness(x, toDelete);
             }
 
             foreach (I_WorldObject z in toDelete)
             {
+
                 worldObjects.Remove(z);
             }
         }
@@ -160,9 +171,9 @@ namespace Platformer_v1
                 if (!object.ReferenceEquals(x, y))
                 {
                     x.alertCollision(y);
+                    y.alertCollision(x);
                 }
             }
-
         }
 
         private Rectangle boundingBoxToRectangle(I_WorldObject obj)

@@ -192,8 +192,19 @@ namespace Platformer_v1
 
         private Rectangle boundingBoxToRectangle(I_WorldObject obj)
         {
-            Rectangle AABB = new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y,
-                                           obj.getTexture().Width, obj.getTexture().Height);
+            Rectangle AABB;
+
+            if (obj.getName().CompareTo("coin") == 0)
+            {
+                AABB = new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y,
+                               20, obj.getTexture().Height);
+            }
+            else
+            {
+                AABB = new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y,
+                               obj.getTexture().Width, obj.getTexture().Height);
+            }
+
 
             return AABB;
         }

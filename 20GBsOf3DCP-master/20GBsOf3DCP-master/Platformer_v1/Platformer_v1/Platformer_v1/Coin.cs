@@ -42,10 +42,18 @@ namespace Platformer_v1
         Vector2 mCenter;
         int mNumFrames;
         int mWidth;
+
+        SoundEffect coinSound;
+        SoundEffectInstance coinSound_instance;
         
         public void LoadContent(ContentManager content)
         {
             coinTexture = content.Load<Texture2D>("spriteArt/coin");
+            coinSound = content.Load<SoundEffect>("sounds/coin_collect");
+
+            coinSound_instance = coinSound.CreateInstance();
+            coinSound_instance.Volume = 0.1f;
+
             mNumFrames = coinTexture.Width / mWidth;
 
         }
@@ -172,9 +180,9 @@ namespace Platformer_v1
 
         public void alertCollision(I_WorldObject collidedObject)
         {
-            Console.WriteLine("HIT!");
-            coinColor = Color.Red;
+            coinSound_instance.Play();
 
+            this.setAlive(false);
         }
 
         public bool isAlive()
