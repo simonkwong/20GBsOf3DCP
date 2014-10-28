@@ -139,8 +139,6 @@ namespace Platformer_v1
             backgroundImage = content.Load<Texture2D>("spriteArt/background");
             scrollingBackground = new ScrollingBackground(content, "spriteArt/background");
             firstBackground = new background(content, "spriteArt/bar");
-            
-            
 
         }
 
@@ -178,7 +176,7 @@ namespace Platformer_v1
             if (time == 0)
             {
                 updatetext();
-                time = 6;
+                time = 8;
             }
             else
             {
