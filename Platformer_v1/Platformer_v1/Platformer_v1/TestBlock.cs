@@ -130,6 +130,7 @@ namespace Platformer_v1
 
             if (this.getName() == "movingPlatform")
             {
+                Console.WriteLine(blockPosition.X - currentPosition.X);
 
                 if (blockPosition.X - currentPosition.X > 105)
                 {
@@ -231,7 +232,6 @@ namespace Platformer_v1
 
         public void alertCollision(I_WorldObject collidedObject)
         {
-
             if (platformName == "ScareBlock")
             {
                 suspenseMusicInstance.Stop();

@@ -38,7 +38,6 @@ namespace Platformer_v1
 
         public static int level = 1;
 
-        public static bool newLevelEvent;
 
 
         private WorldData()
@@ -58,25 +57,21 @@ namespace Platformer_v1
             enemySpeed = 0;
             enemyMaxMovement = 0;
             scrollPositions = new List<Vector2>();
-            newLevelEvent = false;
         }
 
         public static WorldData GetInstance()
         {
-            if (wData == null || newLevelEvent)
+            if (wData == null)
             {
                 wData = new WorldData();
-                newLevelEvent = false;
 
                 switch (level)
                 {
                     case 1:
-                        Console.WriteLine("LOADING FROM LEVEL 1");
-                        wData.LoadData("Content/Level1.xml");
+                        wData.LoadData("Content/WorldData.xml");
                         break;
                     case 2:
-                        Console.WriteLine("LOADING FROM LEVEL 2");
-                        wData.LoadData("Content/Level2.xml");
+                        wData.LoadData("Content/WorldData.xml");
                         break;
                     default:
                         Console.WriteLine("NO LEVEL FOUND!");
