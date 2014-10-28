@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,9 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+
+
+
 
 namespace Platformer_v1
 {
@@ -30,6 +35,8 @@ namespace Platformer_v1
         public int playerSpeed { get; private set; }
         public int enemySpeed { get; private set; }
         public int enemyMaxMovement { get; private set; }
+        public List<String> fieldvaluepairs { get; private set; }
+        public List<Vector2> textPositions { get; private set; }
 
         private static WorldData wData;
 
@@ -43,6 +50,8 @@ namespace Platformer_v1
             platformPositions = new List<Vector2>();
             spikePositions = new List<Vector2>();
             enemyPositions = new List<Vector2>();
+            fieldvaluepairs = new List<String>();
+            textPositions = new List<Vector2>();
             playerDirection = Vector2.Zero;
             playerSpeed = 0;
             enemySpeed = 0;

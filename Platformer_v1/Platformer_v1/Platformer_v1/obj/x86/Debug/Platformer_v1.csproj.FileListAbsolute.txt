@@ -122,3 +122,14 @@ C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platforme
 C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Platformer_v1.exe
 C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Platformer_v1.pdb
 C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\signoutside.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\poke_text_message.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\bar.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\bar.wma
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\poke_text_messagenew.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\pachecofacebig.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\messagefont.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\bar.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\church.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\endgame.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\endmusic.xnb
+C:\Users\Adam\Documents\GitHub\20GBsOf3DCP\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\endmusic.wma

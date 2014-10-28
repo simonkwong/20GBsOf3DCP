@@ -77,12 +77,15 @@
     <Compile Include="Enemy.cs" />
     <Compile Include="faces.cs" />
     <Compile Include="I_WorldObject.cs" />
+    <Compile Include="messagebox.cs" />
+    <Compile Include="messagetexts.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="ScrollingBackground.cs" />
     <Compile Include="TestBlock.cs" />
+    <Compile Include="texts.cs" />
     <Compile Include="World.cs" />
     <Compile Include="WorldData.cs" />
     <Compile Include="XMLParse.cs" />

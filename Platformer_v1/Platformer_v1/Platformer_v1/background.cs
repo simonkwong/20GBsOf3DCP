@@ -11,38 +11,21 @@ namespace Platformer_v1
     {
         private Texture2D mytexture, backgroundim;
 
-        int screenWidth = 1080;
-        int screenHeight = 720;
-
         int backgroundWidth = 1080;
         int backgroundHeight = 720;
 
-        int scrollWidth = 1080;
-        int scrollHeight = 720;
 
-        float backgroundOffset;
-        float scrollOffset;
-
-          public background(ContentManager content, string sBackground)
-        {
-            
+        public background(ContentManager content, string sBackground)
+        {  
             mytexture = content.Load<Texture2D>(sBackground);
-            backgroundWidth = mytexture.Width;
-            backgroundHeight = mytexture.Height;
+
             backgroundim = mytexture;
-            
         }
 
         public void Draw(SpriteBatch batch)
         {
 
-            batch.Draw(mytexture, new Rectangle(-1 * (int)backgroundOffset, 0, backgroundWidth, screenHeight), Color.White);
-
-            if (backgroundOffset > backgroundWidth - screenWidth)
-            {
-                batch.Draw(mytexture, new Rectangle((-1 * (int)backgroundOffset) + backgroundWidth, 0, backgroundWidth, screenHeight), Color.White);
-            }
-
+            batch.Draw(mytexture, new Rectangle(0, 0, backgroundWidth, backgroundHeight), Color.White);
           
         }
     }

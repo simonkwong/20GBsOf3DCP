@@ -51,6 +51,19 @@ namespace Platformer_v1
 
         }
 
+        protected static void AddStringListToClassInstance(XElement elem, Object obj)
+        {
+            List<String> stringList = new List<String>();
+            foreach (XElement pathPoint in elem.Elements())
+            {
+                String nextElem = pathPoint.Value;
+                stringList.Add(nextElem);
+            }
+            PropertyInfo propertyInfo = obj.GetType().GetProperty(elem.Name.ToString());
+            propertyInfo.SetValue(obj, stringList, null);
+        }
+
+
         /// <summary>
         /// Adds a Vector2 valued property to an object, based on
         /// an XML node
@@ -156,6 +169,10 @@ namespace Platformer_v1
             {
                 AddVector2ListToClassInstance(elem, obj);
             }
+            else if (type == "stringlist")
+            {
+                AddStringListToClassInstance(elem, obj);
+            }
 
             else
             {
@@ -172,8 +189,6 @@ namespace Platformer_v1
                     int.Parse(elem.Element("w").Value),
                     int.Parse(elem.Element("h").Value));
             propertyInfo.SetValue(obj, valueToSet, null);
-
-
         }
     }
 }

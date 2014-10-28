@@ -110,6 +110,32 @@
     </pos>
   </enemyPositions>
 
+  <textPositions type ="Vector2List">
+    <pos>
+      <x>200</x>
+      <y>400</y>
+    </pos>
+  </textPositions>
+  
+  <fieldvaluepairs type="StringList">
+    <string>Prof. P: Howdy there partner!</string>
+    <string>Hi Professor P!</string>
+    <string>Prof. P: What are you doing on this fine evening?</string>
+    <string>Just finishing up that architecture work you assigned of course!</string>
+    <string>Prof. P: That's good.  I have something to tell you.</string>
+    <string>What is it?</string>
+    <string>Prof. P: When I was a younger I learned a mysterious secret about USF!</string>
+    <string>Ok</string>
+    <string>Prof. P: There is a secret cavern that lies underneath the school my boy!</string>
+    <string>Oh golly Mister</string>
+    <string>Prof. P: However, be warned.  There is a unique way to navigate these caverns.</string>
+    <string>Please do tell me more.</string>
+    <string>Prof. P: You must use the left and right arrows to move and the up arrow to jump.</string>
+    <string>Whoa suddenly I feel tired, I think I drank too much.</string>
+    <string>Prof. P: Ok</string>
+    <string>ZZZZZZzzzzzzzzzzz........</string>
+  </fieldvaluepairs>
+
   <platformPositions type = "Vector2List">
     <pos>
       <x>0</x>
