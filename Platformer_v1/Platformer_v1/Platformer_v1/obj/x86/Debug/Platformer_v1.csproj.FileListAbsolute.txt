@@ -158,3 +158,16 @@ C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platform
 C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\flameThrowerL.xnb
 C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\flameThrowerR.xnb
 C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\fire.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\messagefont.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\bar.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\endmusic.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\halloween.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\bar.wma
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\endmusic.wma
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\halloween.wma
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\bar.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\church.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\poke_text_messagenew.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\spriteArt\youre_winner.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\sounds\win.xnb
+C:\Users\Simon\Downloads\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\sounds\win.wma

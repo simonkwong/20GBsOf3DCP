@@ -39,6 +39,36 @@
     15
   </enemySpeed>
 
+
+  <textPositions type ="Vector2List">
+    <pos>
+      <x>200</x>
+      <y>400</y>
+    </pos>
+  </textPositions>
+
+  <fieldvaluepairs type="StringList">
+    <string>Prof. P: Howdy there partner!</string>
+    <string>Hi Professor P!</string>
+    <string>Prof. P: What are you doing on tis finest of evenings?</string>
+    <string>Just finishing up that architecture/parallel work you assigned of course!</string>
+    <string>Prof. P: That's good.  I have something secret to tell you.</string>
+    <string>What is it?</string>
+    <string>Prof. P: When I was a young man I learned a mysterious truth about USF!</string>
+    <string>No way! Oh my GOSH!</string>
+    <string>Prof. P: There is a secret cavern that lies underneath the school my boy!</string>
+    <string>Oh golly Mister!</string>
+    <string>Prof. P: However, be warned.  There is a unique way to navigate these caverns.</string>
+    <string>Please do tell me more.</string>
+    <string>Prof. P: You must use the left and right arrows to move and the up arrow to jump.</string>
+    <string>Ok.</string>
+    <string>Prof. P: Also, one more thing.  You will need this flamethrower.</string>
+    <string>Thanks Professor.</string>
+    <string>Prof. P: Now go quickly.  May the force be with you.</string>
+    <string>I am going to go check out those caverns now.</string>
+  </fieldvaluepairs>
+  
+  
 <enemyPositions type = "Vector2List">
 	<pos> <x>770</x> <y>245</y> </pos>
 	<pos> <x>1155</x> <y>105</y> </pos>
@@ -1319,7 +1349,7 @@
 </coinPositions>
 
 <scrollPositions type = "Vector2List">
-	<pos> <x>200</x> <y>500</y> </pos>
+	<pos> <x>100</x> <y>500</y> </pos>
 </scrollPositions>
 
 

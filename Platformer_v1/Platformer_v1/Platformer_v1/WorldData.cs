@@ -34,6 +34,10 @@ namespace Platformer_v1
         public int enemySpeed { get; private set; }
         public int enemyMaxMovement { get; private set; }
 
+        public List<String> fieldvaluepairs { get; private set; }
+        public List<Vector2> textPositions { get; private set; }
+
+
         private static WorldData wData;
 
         public static int level = 1;
@@ -43,6 +47,9 @@ namespace Platformer_v1
 
         private WorldData()
         {
+            fieldvaluepairs = new List<String>();
+            textPositions = new List<Vector2>();
+
             Gravity = Vector2.Zero; ;
             ScreenWidth = 0;
             ScreenHeight = 0;

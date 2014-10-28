@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,12 @@ namespace Platformer_v1
         private double startTime;
         private float duration;
 
+        private Song victorySong;
+
+        World gameWorld;
+
         private SoundEffectInstance currentSound;
+        int index;
 
 
         public ScaryImage()
@@ -31,17 +37,22 @@ namespace Platformer_v1
             scareEnabled = false;
             startTime = -1;
             duration = -1;
+            index = -1;
         }
 
         public void LoadContent(ContentManager content)
         {
             scaryImages.Add(content.Load<Texture2D>("spriteArt/the-ring"));
+            scaryImages.Add(content.Load<Texture2D>("spriteArt/youre_winner"));
             scarySounds.Add(content.Load<SoundEffect>("sounds/scaryscream1"));
 
+
+            victorySong = content.Load<Song>("sounds/win");
+      
+    
             currentImg = scaryImages.ElementAt(0);
             currentSound = scarySounds.ElementAt(0).CreateInstance();
             currentSound.Volume = 0.1f;
-            
         }
 
         public void update(GameTime gametime)
@@ -51,8 +62,16 @@ namespace Platformer_v1
                 // record startTime
                 startTime = gametime.TotalGameTime.TotalMilliseconds;
 
-                // play sound
-                currentSound.Play();
+                if (index == 1)
+                {
+         
+                }
+                else
+                {
+                    // play sound
+                    currentSound.Play();
+                }
+
                 
             }
 
@@ -66,18 +85,41 @@ namespace Platformer_v1
 
         public void scare(int index, float scareTime)
         {
-            currentImg = scaryImages.ElementAt(index);
-            currentSound = scarySounds.ElementAt(0).CreateInstance();
-            currentSound.Volume = 0.1f;
-            scareEnabled = true;
-            this.duration = scareTime;
+            if (index == 1)
+            {
+                Console.Write("HERE");
+                this.index = index;
+                currentImg = scaryImages.ElementAt(index);
+                MediaPlayer.Play(victorySong);
+                this.duration = scareTime;
+                scareEnabled = true;
+            }
+            else
+            {
+                this.index = index;
+                currentImg = scaryImages.ElementAt(index);
+                currentSound = scarySounds.ElementAt(index).CreateInstance();
+                currentSound.Volume = 0.1f;
+                scareEnabled = true;
+                this.duration = scareTime;
+            }
+
         }
 
         public void Draw(SpriteBatch sb)
         {
             if (scareEnabled)
             {
-                sb.Draw(currentImg, new Vector2(0,0), Color.White);
+                if (index == 1)
+                {
+                    sb.Draw(currentImg, new Vector2(400,200), Color.White);
+                }
+                else
+                {
+                    sb.Draw(currentImg, new Vector2(0,0), Color.White);
+                }
+
+                
             }
         }
     }

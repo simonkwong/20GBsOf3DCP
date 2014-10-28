@@ -32,8 +32,9 @@ namespace Platformer_v1
 
         Vector2 currentPosition = Vector2.Zero;
         Song song;
+        int once = 0;
 
-
+        bool endScene;
 
         static Random rndGen = new Random();
 
@@ -55,16 +56,64 @@ namespace Platformer_v1
 
         public List<I_WorldObject> objectsToAdd;
 
+
+
+        /* Adams Stuff */
+        int flipsong = 0;
+        private int phraseint;
+        bool storyflip = false;
+        bool gamemenu = true;
+        Texture2D initialimage;
+        Texture2D firstImage;
+        Song prelude;
+        private background firstBackground;
+        private background initialBackground;
+        private Song gamescreensong;
+        private int time;
+        public List<I_WorldObject> worldtextObjects;
+        public List<I_WorldObject> worldObjectspre;
+        /* End Adams Stuff */
+
         public World(Game1 containingGame, int w, int h)
         {
             this.containingGame = containingGame;
             this.w = w;
             this.h = h;
+
+            init_adamsStuff();
+
             init_everything();
+        }
+
+        public void init_adamsStuff()
+        {
+            phraseint = 0;
+            time = 6;
+
+
+            worldObjectspre = new List<I_WorldObject>();
+            worldtextObjects = new List<I_WorldObject>();
+
+            foreach (Vector2 textPosition in WorldData.GetInstance().textPositions)
+            {
+                messagebox box = new messagebox("poke_text_messagenew", textPosition);
+                box.setPosition(new Vector2(-25, 110));
+                worldObjectspre.Add(box);
+            }
+
+            foreach (String s in WorldData.GetInstance().fieldvaluepairs)
+            {
+                messagetexts text = new messagetexts(s, new Vector2(0, 0));
+                text.setPosition(new Vector2(200, 540));
+                worldtextObjects.Add(text);
+            }
+
+
         }
 
         public void init_everything()
         {
+            endScene = false;
             objectsToAdd = new List<I_WorldObject>();
             scareImg = new ScaryImage();
             nunCount = new TextBox(new Vector2(20, 0), "nuns impaled: 0", "HUDfont", Color.Yellow);
@@ -83,14 +132,6 @@ namespace Platformer_v1
             p = new Player("Jordan", WorldData.GetInstance().playerInitialPosition, worldObjects);
 
             fl = new FlameThrower(this);
-
-
-
-
-
-            worldObjects.Add(p);
-
-            worldObjects.Add(fl);
 
             camera = new Camera(containingGame.spriteBatch, p);
 
@@ -172,6 +213,10 @@ namespace Platformer_v1
 
             worldObjects.Add(scareBLock);
 
+            worldObjects.Add(p);
+
+            worldObjects.Add(fl);
+
             qt = new QuadTree(new Rectangle(0, 0, worldX, worldY));
         }
 
@@ -185,75 +230,197 @@ namespace Platformer_v1
             scoreDisplay.LoadContent(content);
             song = content.Load<Song>("chant1");
             MediaPlayer.Play(song);
+    
 
             backgroundImage = content.Load<Texture2D>("spriteArt/background");
             scrollingBackground = new ScrollingBackground(content, "spriteArt/background");
 
             foreach (I_WorldObject x in worldObjects)
             {
-               
 
                 x.LoadContent(content);
                 x.setNode(qt.insert(x));
             }
 
+            if (WorldData.level == 1)
+            {
+                /** Adam's Load Content **/
+                foreach (I_WorldObject word in worldtextObjects)
+                {
+                    word.LoadContent(content);
+                }
+                foreach (I_WorldObject textbox in worldObjectspre)
+                {
+                    textbox.LoadContent(content);
+                }
+                song = content.Load<Song>("chant1");
+                prelude = content.Load<Song>("bar");
+                gamescreensong = content.Load<Song>("halloween");
+                camera.LoadContent(content);
+                initialimage = content.Load<Texture2D>("spriteArt/church");
+                initialBackground = new background(content, "spriteArt/church");
+                firstImage = content.Load<Texture2D>("spriteArt/bar");
+                backgroundImage = content.Load<Texture2D>("spriteArt/background");
+                scrollingBackground = new ScrollingBackground(content, "spriteArt/background");
+                firstBackground = new background(content, "spriteArt/bar");
+                /** End Load **/
+            }
+        }
+
+        private void updatetext()
+        {
+            GamePadState controller = GamePad.GetState(PlayerIndex.One);
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Space) || controller.IsButtonDown(Buttons.B))
+            {
+                phraseint++;
+            }
+
+
+        }
+
+        private void checkforenter()
+        {
+            GamePadState controller = GamePad.GetState(PlayerIndex.One);
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Enter) || controller.IsButtonDown(Buttons.A))
+            {
+                gamemenu = false;
+                flipsong = 0;
+                once = 1;
+            }
+
+
+        }
+
+        public void musichandler()
+        {
+            if (gamemenu == true && flipsong == 0)
+            {
+                MediaPlayer.Play(gamescreensong);
+                flipsong = 1;
+            }
+            else if (gamemenu != true && storyflip == false && flipsong == 0)
+            {
+                MediaPlayer.Stop();
+                MediaPlayer.Play(prelude);
+                flipsong = 1;
+            }
+            else if (gamemenu != true && storyflip == true && flipsong == 0)
+            {
+                MediaPlayer.Stop();
+                MediaPlayer.Play(song);
+                flipsong = 1;
+            }
         }
 
         public void Update(GameTime gameTime)
         {
-            // reset objects to add
-            objectsToAdd = new List<I_WorldObject>();
-            scareImg.update(gameTime);
-            
-            camera.Update(gameTime);
-            scrollBackground();
-
-            foreach (I_WorldObject x in worldObjects)
+            if (!endScene)
             {
-                x.Update(gameTime);
 
-                int level_before = WorldData.level;
+                // reset objects to add
+                objectsToAdd = new List<I_WorldObject>();
+                scareImg.update(gameTime);
 
-                if (x.getName() == "Jordan" || x.getName() == "Simon" || x.getName() == "Adam" || x.getName() == "fire particle")
+                camera.Update(gameTime);
+                scrollBackground();
+
+
+                musichandler();
+
+                if (once == 0)
                 {
-                    x.setNode(qt.UpdateLocation(x, x.getNode()));
-                    checkCollisions(x);
+                    checkforenter();
+                }
+
+                if (time == 0)
+                {
+                    updatetext();
+                    time = 8;
+                }
+                else
+                {
+                    time--;
                 }
 
 
-                if (!x.isAlive())
+                if (storyflip == false && gamemenu == false)
                 {
-                    x.getNode().RemoveElement(x);
+                    // update worldObject's logic
+                    foreach (I_WorldObject x in worldtextObjects)
+                    {
+                        x.Update(gameTime);
+
+                    }
                 }
-                x.setNode(qt.UpdateLocation(x, x.getNode()));
-
-                checkForAliveness(x, toDelete);
-
-                int level_after = WorldData.level;
-
-                if (level_before != level_after)
+                else
                 {
-                    Console.WriteLine("NEW LEVEL EVENT OCCURED");
-                    WorldData.newLevelEvent = true;
+                    foreach (I_WorldObject x in worldObjects)
+                    {
+                        x.Update(gameTime);
 
-                    init_everything();
-                    LoadContent(content);
+                        int level_before = WorldData.level;
+
+                        if (x.getName() == "Jordan" || x.getName() == "Simon" || x.getName() == "Adam" || x.getName() == "fire particle")
+                        {
+                            x.setNode(qt.UpdateLocation(x, x.getNode()));
+                            checkCollisions(x);
+                        }
+
+
+                        if (!x.isAlive())
+                        {
+                            x.getNode().RemoveElement(x);
+                        }
+                        else
+                        {
+                            x.setNode(qt.UpdateLocation(x, x.getNode()));
+                        }
+
+
+
+                        checkForAliveness(x, toDelete);
+
+                        int level_after = WorldData.level;
+
+                        if (level_before != level_after)
+                        {
+                            Console.WriteLine("NEW LEVEL EVENT OCCURED");
+                            WorldData.newLevelEvent = true;
+
+                    
+
+                            // level that end scene occurs
+                            if (WorldData.level == 3)
+                            {
+                                
+                                endScene = true;
+                                MediaPlayer.Stop();
+
+                                scareImg.scare(1, 100000);
+                            }
+                            else
+                            {
+                                init_everything();
+                                LoadContent(content);
+                            }
+
+                        }
+
+                    }
+
+                    // add the objects
+                    foreach (I_WorldObject z in objectsToAdd)
+                    {
+                        worldObjects.Add(z);
+                    }
+
+                    foreach (I_WorldObject z in toDelete)
+                    {
+                        worldObjects.Remove(z);
+                    }
                 }
-
-        
-
-            }
-
-            // add the objects
-
-            foreach (I_WorldObject z in objectsToAdd)
-            {
-                worldObjects.Add(z);
-            }
-
-            foreach (I_WorldObject z in toDelete)
-            {
-                worldObjects.Remove(z);
             }
         }
 
@@ -312,19 +479,56 @@ namespace Platformer_v1
 
         public void Draw(SpriteBatch sb)
         {
-            scrollingBackground.Draw(sb);
-            // camera draws every worldObject
-
-            foreach (I_WorldObject x in worldObjects)
+            if (!endScene)
             {
-                camera.Draw(x);
+
+                if (gamemenu)
+                {
+                    initialBackground.Draw(sb);
+                }
+
+                if (storyflip != false && gamemenu == false)
+                {
+                    scrollingBackground.Draw(sb);
+                    // camera draws every worldObject
+
+                    foreach (I_WorldObject x in worldObjects)
+                    {
+                        camera.Draw(x);
+                    }
+
+
+                    scoreDisplay.Draw(sb);
+                    nunCount.Draw(sb);
+                    scareImg.Draw(sb);
+                }
+
+                else if (storyflip == false && gamemenu == false)
+                {
+                    firstBackground.Draw(sb);
+
+                    // camera draws every worldObject
+                    foreach (I_WorldObject x in worldObjectspre)
+                    {
+                        camera.Draw(x);
+                    }
+
+                    if (phraseint < worldtextObjects.Count)
+                    {
+                        camera.DrawText(worldtextObjects[phraseint]);
+                    }
+                    else
+                    {
+                        storyflip = true;
+                        flipsong = 0;
+                    }
+                }
             }
+            else
+            {
 
-
-            scoreDisplay.Draw(sb);
-            nunCount.Draw(sb);
-            scareImg.Draw(sb);
-
+                scareImg.Draw(sb);
+            }
         }
     }
 }
