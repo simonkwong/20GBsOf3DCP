@@ -20,6 +20,8 @@ namespace Platformer_v1
         public float SecondsPerFrame { get; set; }
         public float Scale { get; set; }
 
+        public static int cointCount = 0;
+
         Texture2D coinTexture;
         Vector2 coinTextureOrigin;
         Vector2 coinPosition;
@@ -37,7 +39,7 @@ namespace Platformer_v1
         QuadTreeNode mNode;
 
         float mTimeSinceLastFrame;
-        float mCurrentFrameTime;
+
         int mCurrentFrame;
         Vector2 mCenter;
         int mNumFrames;
@@ -45,6 +47,7 @@ namespace Platformer_v1
 
         SoundEffect coinSound;
         SoundEffectInstance coinSound_instance;
+        TextBox scoreDisplay;
         
         public void LoadContent(ContentManager content)
         {
@@ -59,9 +62,8 @@ namespace Platformer_v1
         }
 
 
-        public Coin(String name, int width, Vector2 center, bool looping, float secondsPerFrame, Vector2 position)
+        public Coin(String name, int width, Vector2 center, bool looping, float secondsPerFrame, Vector2 position, TextBox scoreDisplay)
         {
-
             this.coinTextureOrigin = Vector2.Zero;
             this.coinVelocity = Vector2.Zero;
             this.coinColor = Color.White;
@@ -82,6 +84,8 @@ namespace Platformer_v1
             Scale = 1;
             Looping = looping;
             coinName = name;
+
+            this.scoreDisplay = scoreDisplay;
         }
 
         public void Update(GameTime gameTime)
@@ -182,6 +186,7 @@ namespace Platformer_v1
         {
             coinSound_instance.Play();
 
+            scoreDisplay.text = "coins: " + ++cointCount;
             this.setAlive(false);
         }
 

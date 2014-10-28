@@ -83,6 +83,7 @@
     <Compile Include="QuadTree.cs" />
     <Compile Include="ScrollingBackground.cs" />
     <Compile Include="TestBlock.cs" />
+    <Compile Include="TextBox.cs" />
     <Compile Include="World.cs" />
     <Compile Include="WorldData.cs" />
     <Compile Include="XMLParse.cs" />

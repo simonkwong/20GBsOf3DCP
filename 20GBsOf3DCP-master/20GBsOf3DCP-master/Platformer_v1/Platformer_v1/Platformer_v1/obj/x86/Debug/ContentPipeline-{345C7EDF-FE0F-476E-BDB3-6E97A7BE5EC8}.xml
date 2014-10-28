@@ -182,6 +182,15 @@
       <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\20GBsOf3DCP-master\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\sounds\coin_collect.xnb</Output>
       <Time>2014-10-27T17:08:07.1260458-07:00</Time>
     </Item>
+    <Item>
+      <Source>HUDfont.spritefont</Source>
+      <Name>HUDfont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Jordan\Documents\GitHub\20GBsOf3DCP\20GBsOf3DCP-master\20GBsOf3DCP-master\Platformer_v1\Platformer_v1\Platformer_v1\bin\x86\Debug\Content\HUDfont.xnb</Output>
+      <Time>2014-10-27T18:17:43.6591777-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{345C7EDF-FE0F-476E-BDB3-6E97A7BE5EC8}</ContentProjectGUID>

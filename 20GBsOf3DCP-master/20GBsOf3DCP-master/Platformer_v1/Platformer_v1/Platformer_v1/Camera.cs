@@ -62,8 +62,11 @@ namespace Platformer_v1
                 mSpriteBatch.Draw(obj.getTexture(), objPosInScreenSpace, null, obj.getColor(), obj.getRotation(), obj.getTextureOrigin(), 1.0f, SpriteEffects.None, 0);
             }
             else if (obj.getName() == "coin")
-            mSpriteBatch.Draw(obj.getTexture(), objPosInScreenSpace, new Rectangle((int)obj.getFrame() * obj.getFrameWidth(), 0, obj.getFrameWidth(), obj.getTexture().Height), Color.White, obj.getRotation(), obj.getAnimCenter(), obj.getScale(), SpriteEffects.None, 0);
+            {
+                Rectangle srcRect = new Rectangle((int)obj.getFrame() * obj.getFrameWidth(), 0, obj.getFrameWidth(), obj.getTexture().Height);
 
+                mSpriteBatch.Draw(obj.getTexture(), objPosInScreenSpace, srcRect, Color.White, obj.getRotation(), Vector2.Zero, obj.getScale(), SpriteEffects.None, 0);
+            }
         }
     }
 }

@@ -19,4 +19,5 @@ Content\spriteArt\coin.xnb
 Content\chant1.xnb
 Content\chant1.wma
 Content\sounds\coin_collect.xnb
+Content\HUDfont.xnb
 Content\WorldData.xml

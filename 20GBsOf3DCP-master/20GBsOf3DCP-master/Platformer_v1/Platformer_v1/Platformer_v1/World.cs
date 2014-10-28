@@ -30,12 +30,18 @@ namespace Platformer_v1
         Vector2 currentPosition = Vector2.Zero;
         Song song;
 
+
+
         static Random rndGen = new Random();
 
         public QuadTree qt;
 
+        public TextBox scoreDisplay;
+
+
         public World(Game1 containingGame, int w, int h)
         {
+            scoreDisplay = new TextBox(new Vector2(20,0), "coins: 0", "HUDfont", Color.Yellow);
             game = containingGame;
             WorldWidth = w;
             WorldHeight = h;
@@ -101,7 +107,7 @@ namespace Platformer_v1
                 if (coinPos.Y > worldY)
                     worldY = (int)coinPos.Y;
 
-                Coin c = new Coin("coin", 20, new Vector2(0, 0), true, 0.08f, coinPos);
+                Coin c = new Coin("coin", 20, new Vector2(0, 0), true, 0.08f, coinPos,scoreDisplay);
                 c.setRigid(false);
                 worldObjects.Add(c);
             }
@@ -112,6 +118,7 @@ namespace Platformer_v1
 
         public void LoadContent(ContentManager content)
         {
+            scoreDisplay.LoadContent(content);
             song = content.Load<Song>("chant1");
             MediaPlayer.Play(song);
 
@@ -220,6 +227,8 @@ namespace Platformer_v1
             {
                 camera.Draw(x);
             }
+
+            scoreDisplay.Draw(sb);
         }
     }
 }
