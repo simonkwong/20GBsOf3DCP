@@ -19,6 +19,7 @@ namespace Platformer_v1
         public int WorldHeight { get; set; }
         Camera camera;
         int flipsong = 0;
+        int once = 0;
        
         private int phraseint;
         //Dictionary<String, String> phrases;
@@ -171,7 +172,11 @@ namespace Platformer_v1
             
             musichandler();
 
-            checkforenter();
+            if (once == 0)
+            {
+                checkforenter();
+                
+            }
 
             if (time == 0)
             {
@@ -274,6 +279,7 @@ namespace Platformer_v1
             {
                 gamemenu = false;
                 flipsong = 0;
+                once = 1;
             }
 
 
