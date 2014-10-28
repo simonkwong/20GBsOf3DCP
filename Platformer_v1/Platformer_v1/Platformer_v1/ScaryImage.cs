@@ -18,7 +18,7 @@ namespace Platformer_v1
 
         private Texture2D currentImg;
 
-        private float startTime;
+        private double startTime;
         private float duration;
 
         private SoundEffectInstance currentSound;
@@ -46,18 +46,17 @@ namespace Platformer_v1
 
         public void update(GameTime gametime)
         {
-
             if (scareEnabled && startTime == -1)
             {
                 // record startTime
-                startTime = gametime.TotalGameTime.Seconds;
+                startTime = gametime.TotalGameTime.TotalMilliseconds;
 
                 // play sound
                 currentSound.Play();
                 
             }
 
-            if (scareEnabled && gametime.TotalGameTime.Seconds - startTime >= duration)
+            if (scareEnabled && gametime.TotalGameTime.TotalMilliseconds - startTime >= 1000)
             {
                 // turn off the scare
                 startTime = -1;

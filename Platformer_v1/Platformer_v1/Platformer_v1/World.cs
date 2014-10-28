@@ -208,12 +208,13 @@ namespace Platformer_v1
 
                 checkForAliveness(x, toDelete);
 
-
                 int level_after = WorldData.level;
 
                 if (level_before != level_after)
                 {
                     Console.WriteLine("NEW LEVEL EVENT OCCURED");
+                    WorldData.newLevelEvent = true;
+
                     init_everything();
                     LoadContent(content);
                 }
