@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -10,7 +11,6 @@ namespace Platformer_v1
 {
     class TestBlock : I_WorldObject
     {
-
         Texture2D blockTexture;
         Vector2 blockTextureOrigin;
         Vector2 blockPosition;
@@ -27,12 +27,19 @@ namespace Platformer_v1
         bool aliveness;
         QuadTreeNode mNode;
 
+        private SoundEffect suspenceMusic;
+        private SoundEffectInstance suspenseMusicInstance;
+
+
         float frame;
         int frameWidth;
         Vector2 animCenter;
         float scale;
 
         Vector2 currentPosition;
+        ScaryImage scaryImage;
+
+        World gameWorld;
 
         enum Orientation
         {
@@ -41,8 +48,10 @@ namespace Platformer_v1
 
         Orientation state = Orientation.Right;
 
-        public TestBlock(String platformName, Vector2 iniPos)
+        public TestBlock(String platformName, Vector2 iniPos, ScaryImage scaryImg, World gWorld)
         {
+            this.gameWorld = gWorld;
+            scaryImage = scaryImg;
             currentPosition = iniPos;
             this.platformName = platformName;
             this.blockPosition = iniPos;
@@ -65,7 +74,21 @@ namespace Platformer_v1
 
         public void LoadContent(ContentManager content)
         {
-            blockTexture = content.Load<Texture2D>("spriteArt/" + platformName);
+
+            if (platformName == "ScareBlock")
+            {
+                blockTexture = content.Load<Texture2D>("spriteArt/" + "Demon");
+                suspenceMusic = content.Load<SoundEffect>("sounds/suspence");
+                suspenseMusicInstance = suspenceMusic.CreateInstance();
+                suspenseMusicInstance.IsLooped = true;
+                suspenseMusicInstance.Volume = 0;
+                suspenseMusicInstance.Play();
+            }
+            else
+            {
+                blockTexture = content.Load<Texture2D>("spriteArt/" + platformName);
+
+            }
 
             UpdateBoundingBox();
         }
@@ -83,8 +106,27 @@ namespace Platformer_v1
 
         public void Update(GameTime gameTime)
         {
+
+
             this.blockColor = Color.White;
             UpdateBoundingBox();
+
+            if (this.getName() == "ScareBlock")
+            {
+                Vector2 distanceV = this.blockPosition - this.gameWorld.p.getPosition();
+     
+                    float targetVolume = 20000 / (float) Math.Pow(distanceV.Length(), 2);
+                    if (targetVolume >= 1)
+                    {
+                        // floor max value
+                        suspenseMusicInstance.Volume = 1;
+                    }
+                    else
+                    {
+                        suspenseMusicInstance.Volume = targetVolume;
+                    }
+        
+            }
 
             if (this.getName() == "movingPlatform")
             {
@@ -190,6 +232,12 @@ namespace Platformer_v1
 
         public void alertCollision(I_WorldObject collidedObject)
         {
+            if (platformName == "ScareBlock")
+            {
+                suspenseMusicInstance.Stop();
+                scaryImage.scare(0, 1);
+                this.setAlive(false);
+            }
         }
 
         public bool isAlive()

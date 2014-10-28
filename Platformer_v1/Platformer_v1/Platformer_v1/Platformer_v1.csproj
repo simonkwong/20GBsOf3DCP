@@ -81,6 +81,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="QuadTree.cs" />
+    <Compile Include="ScaryImage.cs" />
     <Compile Include="ScrollingBackground.cs" />
     <Compile Include="TestBlock.cs" />
     <Compile Include="TextBox.cs" />

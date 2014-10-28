@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Platformer_v1
 {
+
     class World
     {
         protected Game1 game;
@@ -40,9 +41,13 @@ namespace Platformer_v1
 
         public TextBox scoreDisplay;
 
+        public ScaryImage scareImg;
+
         public Game1 containingGame;
         public int w;
         public int h;
+
+        public Player p;
 
         public World(Game1 containingGame, int w, int h)
         {
@@ -54,6 +59,7 @@ namespace Platformer_v1
 
         public void init_everything()
         {
+            scareImg = new ScaryImage();
             scoreDisplay = new TextBox(new Vector2(20, 0), "coins: 0", "HUDfont", Color.Yellow);
             game = containingGame;
             WorldWidth = w;
@@ -66,7 +72,7 @@ namespace Platformer_v1
             worldObjects = new List<I_WorldObject>();
             intersectingObjects = new List<I_WorldObject>();
 
-            Player p = new Player("Simon", WorldData.GetInstance().playerInitialPosition, worldObjects);
+            p = new Player("Simon", WorldData.GetInstance().playerInitialPosition, worldObjects);
 
             worldObjects.Add(p);
 
@@ -79,7 +85,7 @@ namespace Platformer_v1
                 if (spikePos.Y > worldY)
                     worldY = (int)spikePos.Y;
 
-                TestBlock s = new TestBlock("Spikes", spikePos + new Vector2(0, 2));
+                TestBlock s = new TestBlock("Spikes", spikePos + new Vector2(0, 2), scareImg, this);
                 s.setDirection(new Vector2(0, -1));
                 s.setRigid(false);
                 worldObjects.Add(s);
@@ -105,7 +111,7 @@ namespace Platformer_v1
                 if (platPos.Y > worldY)
                     worldY = (int)platPos.Y;
 
-                TestBlock b = new TestBlock("usf", platPos);
+                TestBlock b = new TestBlock("usf", platPos, scareImg, this);
                 worldObjects.Add(b);
             }
 
@@ -116,7 +122,7 @@ namespace Platformer_v1
                 if (movingPlatPos.Y > worldY)
                     worldY = (int)movingPlatPos.Y;
 
-                TestBlock mp = new TestBlock("movingPlatform", movingPlatPos);
+                TestBlock mp = new TestBlock("movingPlatform", movingPlatPos, scareImg, this);
                 worldObjects.Add(mp);
             }
 
@@ -140,10 +146,15 @@ namespace Platformer_v1
                 if (scrollPos.Y > worldY)
                     worldY = (int)scrollPos.Y;
 
-                TestBlock s = new TestBlock("scroll", scrollPos);
+                TestBlock s = new TestBlock("scroll", scrollPos, scareImg, this);
                 s.setRigid(false);
                 worldObjects.Add(s);
             }
+
+            TestBlock scareBLock = new TestBlock("ScareBlock", WorldData.GetInstance().playerInitialPosition + new Vector2(800, 300), scareImg, this);
+
+
+            worldObjects.Add(scareBLock);
 
             qt = new QuadTree(new Rectangle(0, 0, worldX, worldY));
         }
@@ -154,9 +165,10 @@ namespace Platformer_v1
 
             this.content = content;
 
+            scareImg.LoadContent(content);
             scoreDisplay.LoadContent(content);
             song = content.Load<Song>("chant1");
-            //MediaPlayer.Play(song);
+            MediaPlayer.Play(song);
 
             backgroundImage = content.Load<Texture2D>("spriteArt/background");
             scrollingBackground = new ScrollingBackground(content, "spriteArt/background");
@@ -166,12 +178,13 @@ namespace Platformer_v1
                 x.LoadContent(content);
                 x.setNode(qt.insert(x));
             }
+
         }
 
         public void Update(GameTime gameTime)
         {
+            scareImg.update(gameTime);
             camera.Update(gameTime);
-
             scrollBackground();
 
             foreach (I_WorldObject x in worldObjects)
@@ -186,16 +199,13 @@ namespace Platformer_v1
                     checkCollisions(x);
                 }
 
-                if (x.getName() == "coin" || x.getName() == "scroll")
+
+                if (!x.isAlive())
                 {
-                    if (!x.isAlive())
-                    {
-                        x.getNode().RemoveElement(x);
-                    }
-                    x.setNode(qt.UpdateLocation(x, x.getNode()));
- 
+                    x.getNode().RemoveElement(x);
                 }
- 
+                x.setNode(qt.UpdateLocation(x, x.getNode()));
+
                 checkForAliveness(x, toDelete);
 
 
@@ -275,12 +285,16 @@ namespace Platformer_v1
         {
             scrollingBackground.Draw(sb);
             // camera draws every worldObject
+
             foreach (I_WorldObject x in worldObjects)
             {
                 camera.Draw(x);
             }
 
             scoreDisplay.Draw(sb);
+
+            scareImg.Draw(sb);
+
         }
     }
 }
